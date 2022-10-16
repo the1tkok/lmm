@@ -299,7 +299,7 @@
   .heroHeading {
     color: black;
     flex-basis: 100;
-    font-size: 3rem;
+    font-size: 2.7rem;
     margin: 0;
     padding: 0 0 0px 100px;
     text-align: initial;
@@ -315,8 +315,9 @@
 
   .heroParagraph {
     padding: 0em 0 2em 100px;
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: initial;
+    line-height: 2;
   }
 
   .homeIframe {
