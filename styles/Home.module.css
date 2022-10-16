@@ -283,14 +283,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-end;
   }
 
   .heroText {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 33%;
+    flex-basis: 38%;
     align-content: flex-start;
-    padding-top: 3%;
+    padding-top: 0;
     justify-content: flex-start;
     text-align: initial;
   }
@@ -313,7 +314,7 @@
   }
 
   .heroParagraph {
-    padding: 0em 0 0 100px;
+    padding: 0em 0 4em 100px;
     margin-top: 40px;
     text-align: initial;
   }
@@ -343,7 +344,7 @@
     border: 1px solid lightgray;
     width: 17rem;
     height: 2.7rem;
-    margin: 9% 0 0 100px;
+    margin: 0 0 0 100px;
     border-radius: 6px;
     padding-left: 10px;
     flex-basis: 49%;
@@ -351,7 +352,7 @@
 
   .formButton1 {
     flex-basis: auto;
-    margin-top: 9%;
+    margin-top: 0%;
     margin-left: 10px;
     height: auto;
     border-radius: 6px;
