@@ -1,129 +1,429 @@
+/*
 .container {
   padding: 0 2rem;
 }
+*/
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+/**********MOBILE DISPLAY**********/
+
+/*****NAVIGATION*****/
+
+.navContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.footer {
+.logo2 {
+  cursor: pointer;
+}
+
+.navListMenu {
+  list-style: none;
+  display: none;
+}
+
+.mobileMenuContainer {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  flex-basis: 30px;
+  align-content: flex-start;
+  justify-content: flex-end;
+  margin: 0 5% 0 auto;
 }
 
-.footer a {
+.dot1 {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin: 0px 5px 0px 0px;
+}
+
+.dot2 {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin: 0px 5px 0px 0px;
+}
+
+.dot3 {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin: 0px 5px 0px 0px;
+}
+
+.dot4 {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin: 5px 5px 0px 0px;
+}
+
+.dot5 {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin: 5px 5px 0px 0px;
+}
+
+.dot6 {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin: 5px 5px 0px 0px;
+}
+
+.dot7 {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin: 5px 5px 0px 0px;
+}
+
+.dot8 {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin: 5px 5px 0px 0px;
+}
+
+.dot9 {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin: 5px 5px 0px 0px;
+}
+
+.viewCurriculumButton:hover,
+.pricingButton:hover,
+.blogButton:hover,
+.loginButton:hover {
+  transition-duration: 30ms;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #0025a8;
+}
+
+/*****HERO SECTION*****/
+
+.heroSection {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.homeIframe {
+  width: 420px;
+  height: 237px;
+  border: none;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.heroText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
+.heroHeading {
+  color: #a8882f;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  padding: 26px 0 20px 0;
+  flex-basis: 100%;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.heroParagraph {
+  flex-basis: 100%;
+  margin: 0;
+  padding: 20px 0 0 0;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.break1 {
+  display: none;
+}
+
+.break2 {
+  display: none;
+}
+
+/*****EMAIL FORM*****/
+
+.heroEmailForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.emailInput:focus {
+  outline: none;
+}
+
+.emailInput {
+  flex-basis: 60%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 20px 0 20px 0;
+  padding: 5px;
+}
+
+.formButton1 {
+  color: white;
+  background-color: #0025a8;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-basis: auto;
+  font-weight: bold;
+  margin: 0 0 0 0;
+  padding: 10px;
+}
+
+/*****PARTNER LOGOS*****/
+
+.partnerLogoContainer {
+  align-items: center;
+  background-color: #f5f5f5;
+  display: flex;
+  gap: 20px;
+  height: 15vh;
+  flex-basis: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0px;
+}
+
+.disneyLogo {
+  width: 60px;
+  height: 25px;
+}
+
+.sonyLogo {
+  width: 60px;
+  height: 10.8px;
+}
+
+.universalLogo {
+  width: 60px;
+  height: 31.75px;
+}
+
+.paramountLogo {
+  width: 60px;
+  height: 19.86px;
+}
+
+.lionsgateLogo {
+  display: none;
+}
+
+/**********DESKTOP DISPLAY**********/
+
+@media only screen and (min-width: 811px) {
+  /*****LOGO*****/
+  .logo2 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 6.4%;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  .card,
+  /*****NAVIGATION BAR*****/
+
+  .mobileMenuContainer {
+    display: none;
+    flex-wrap: wrap;
+    cursor: pointer;
+    flex-basis: 30px;
+    align-content: flex-start;
+    justify-content: flex-end;
+    margin: 0 5% 0 auto;
+  }
+
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navUl {
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+  }
+
+  .navListMenu {
+    display: flex;
+    list-style: none;
+    padding: 0 10px 0 10px;
+  }
+
+  .viewCurriculumButton:hover,
+  .pricingButton:hover,
+  .blogButton:hover,
+  .loginButton:hover {
+    transition-duration: 30ms;
+    padding-bottom: 0px;
+    border-bottom: 4px solid #0025a8;
+  }
+
+  .registerButton {
+    border-radius: 6px;
+    border: none;
+    background-color: #0025a8;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px 10px 20px;
+  }
+
+  /*****HERO SECTION*****/
+
+  .heroSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .heroText {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    align-content: flex-start;
+    padding-top: 3%;
+    justify-content: flex-start;
+    text-align: initial;
+  }
+
+  .heroHeading {
+    color: black;
+    flex-basis: 100;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0 0 0px 100px;
+    text-align: initial;
+  }
+
+  .break1 {
+    display: block;
+  }
+
+  .break2 {
+    display: block;
+  }
+
+  .heroParagraph {
+    padding: 0em 0 0 100px;
+    margin-top: 40px;
+    text-align: initial;
+  }
+
+  .homeIframe {
+    width: 640px;
+    height: 360px;
+    border: none;
+    margin-top: 3%;
+  }
+
+  /*****EMAIL FORM*****/
+
+  .heroEmailForm {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .emailInput:focus {
+    outline: none;
+  }
+
+  .emailInput {
+    border: 1px solid lightgray;
+    width: 17rem;
+    height: 2.7rem;
+    margin: 43px 0 0 100px;
+    border-radius: 6px;
+    padding-left: 10px;
+    flex-basis: 49%;
+  }
+
+  .formButton1 {
+    flex-basis: auto;
+    margin-top: 43px;
+    margin-left: 10px;
+    height: auto;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: #0025a8;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  /*****PARTNER LOGOS*****/
+
+  .partnerLogoContainer {
+    align-items: center;
+    background-color: #f5f5f5;
+    display: flex;
+    gap: 100px;
+    height: 20vh;
+    flex-basis: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  .disneyLogo {
+    width: 150px;
+    height: 62.99px;
+  }
+
+  .sonyLogo {
+    width: 150px;
+    height: 27.01px;
+  }
+
+  .universalLogo {
+    width: 150px;
+    height: 79.38px;
+  }
+
+  .paramountLogo {
+    width: 150px;
+    height: 83.48px;
+  }
+
+  .lionsgateLogo {
+    width: 150px;
+    height: 18.63px;
+    display: block;
+  }
+
+  /*****FOOTER*****/
+
   .footer {
-    border-color: #222;
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    /*border-top: 1px solid #eaeaea;*/
+    justify-content: center;
+    align-items: center;
   }
-  .code {
-    background: #111;
+
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
   }
-  .logo img {
-    filter: invert(1);
+
+  .logo {
+    height: 1em;
+    margin-left: 0.5rem;
   }
 }
