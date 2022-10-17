@@ -100,7 +100,7 @@
 .loginButton:hover {
   transition-duration: 30ms;
   padding-bottom: 5px;
-  border-bottom: 4px solid #0025a8;
+  border-bottom: 4px solid #3d58f0;
 }
 
 /*****HERO SECTION*****/
@@ -125,7 +125,7 @@
 }
 
 .heroHeading {
-  color: #a8882f;
+  color: #3d58f0;
   margin: 0;
   padding: 26px 0 20px 0;
   flex-basis: 100%;
@@ -167,7 +167,7 @@
 
 .formButton1 {
   color: white;
-  background-color: #404eec;
+  background-color: #3d58f0;
   border: none;
   border-radius: 5px;
   display: flex;
