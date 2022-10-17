@@ -1,0 +1,104 @@
+/**********MOBILE DISPLAY**********/
+
+/*****LOGO*****/
+.logo2 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 6.4%;
+}
+
+/*****NAVIGATION*****/
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo2 {
+  cursor: pointer;
+}
+
+.navListMenu {
+  display: none;
+}
+
+.mobileNavContainer {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  flex-basis: 30px;
+  align-content: flex-start;
+  justify-content: flex-end;
+  margin: 0 5% 0 auto;
+}
+
+.dot1,
+.dot2,
+.dot3 {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin: 0px 5px 0px 0px;
+}
+
+.dot4,
+.dot5,
+.dot6,
+.dot7,
+.dot8,
+.dot9 {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin: 5px 5px 0px 0px;
+}
+
+/**********DESKTOP DISPLAY**********/
+
+@media only screen and (min-width: 811px) {
+  /*****NAVIGATION BAR*****/
+
+  .mobileNavContainer {
+    display: none;
+  }
+
+  .navUl {
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+  }
+
+  .navListMenu {
+    display: flex;
+    list-style: none;
+    padding: 0 10px 0 10px;
+  }
+
+  .viewCurriculumButton,
+  .pricingButton,
+  .blogButton,
+  .loginButton {
+    border-bottom: 4px solid white;
+  }
+
+  .viewCurriculumButton:hover,
+  .pricingButton:hover,
+  .blogButton:hover,
+  .loginButton:hover {
+    transition-duration: 30ms;
+    padding-bottom: 0px;
+    border-bottom: 4px solid #3d58f0;
+  }
+
+  .registerButton {
+    border-radius: 6px;
+    border: none;
+    background-color: #3d58f0;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px 10px 20px;
+  }
+}

@@ -4,105 +4,6 @@
 
 /**********MOBILE DISPLAY**********/
 
-/*****NAVIGATION*****/
-
-.navContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo2 {
-  cursor: pointer;
-}
-
-.navListMenu {
-  list-style: none;
-  display: none;
-}
-
-.mobileMenuContainer {
-  display: flex;
-  flex-wrap: wrap;
-  cursor: pointer;
-  flex-basis: 30px;
-  align-content: flex-start;
-  justify-content: flex-end;
-  margin: 0 5% 0 auto;
-}
-
-.dot1 {
-  width: 5px;
-  height: 5px;
-  background-color: black;
-  margin: 0px 5px 0px 0px;
-}
-
-.dot2 {
-  width: 5px;
-  height: 5px;
-  background-color: black;
-  margin: 0px 5px 0px 0px;
-}
-
-.dot3 {
-  width: 5px;
-  height: 5px;
-  background-color: black;
-  margin: 0px 5px 0px 0px;
-}
-
-.dot4 {
-  width: 5px;
-  height: 5px;
-  background-color: black;
-  margin: 5px 5px 0px 0px;
-}
-
-.dot5 {
-  width: 5px;
-  height: 5px;
-  background-color: black;
-  margin: 5px 5px 0px 0px;
-}
-
-.dot6 {
-  width: 5px;
-  height: 5px;
-  background-color: black;
-  margin: 5px 5px 0px 0px;
-}
-
-.dot7 {
-  width: 5px;
-  height: 5px;
-  background-color: black;
-  margin: 5px 5px 0px 0px;
-}
-
-.dot8 {
-  width: 5px;
-  height: 5px;
-  background-color: black;
-  margin: 5px 5px 0px 0px;
-}
-
-.dot9 {
-  width: 5px;
-  height: 5px;
-  background-color: black;
-  margin: 5px 5px 0px 0px;
-}
-
-.viewCurriculumButton:hover,
-.pricingButton:hover,
-.blogButton:hover,
-.loginButton:hover {
-  transition-duration: 30ms;
-  padding-bottom: 5px;
-  border-bottom: 4px solid #3d58f0;
-}
-
 /*****HERO SECTION*****/
 
 .heroSection {
@@ -185,7 +86,6 @@
   display: flex;
   gap: 20px;
   height: 15vh;
-  flex-basis: 100%;
   justify-content: center;
   margin-top: 50px;
   padding: 0px;
@@ -218,70 +118,6 @@
 /**********DESKTOP DISPLAY**********/
 
 @media only screen and (min-width: 811px) {
-  /*****LOGO*****/
-  .logo2 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 6.4%;
-  }
-
-  /*****NAVIGATION BAR*****/
-
-  .mobileMenuContainer {
-    display: none;
-    flex-wrap: wrap;
-    cursor: pointer;
-    flex-basis: 30px;
-    align-content: flex-start;
-    justify-content: flex-end;
-    margin: 0 5% 0 auto;
-  }
-
-  .navContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navUl {
-    display: flex;
-    padding-right: 20px;
-    align-items: center;
-  }
-
-  .navListMenu {
-    display: flex;
-    list-style: none;
-    padding: 0 10px 0 10px;
-  }
-
-  .viewCurriculumButton,
-  .pricingButton,
-  .blogButton,
-  .loginButton {
-    border-bottom: 4px solid white;
-  }
-
-  .viewCurriculumButton:hover,
-  .pricingButton:hover,
-  .blogButton:hover,
-  .loginButton:hover {
-    transition-duration: 30ms;
-    padding-bottom: 0px;
-    border-bottom: 4px solid #3d58f0;
-  }
-
-  .registerButton {
-    border-radius: 6px;
-    border: none;
-    background-color: #3d58f0;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 10px 20px 10px 20px;
-  }
-
   /*****HERO SECTION*****/
 
   .heroSection {
@@ -379,7 +215,6 @@
     display: flex;
     gap: 100px;
     height: 20vh;
-    flex-basis: 100%;
     justify-content: center;
     margin-top: 50px;
     padding: 0px;

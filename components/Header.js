@@ -1,0 +1,51 @@
+import styles from './header.module.css'
+import Image from 'next/future/image'
+import Link from 'next/link'
+import logo from '../public/logo/lauralogo1.svg'
+
+const Header = () => {
+  return (
+    <>
+    <aside className={styles.sideBar}></aside>
+      {/*****NAVIGATION*****/}
+      <nav className={styles.navContainer}>
+        <Image className={styles.logo2} src={logo}
+        alt="logo"
+        width={125}
+        height={125}
+        layout="raw"
+        />
+        <div className={styles.mobileNavContainer}>
+          <span className={styles.dot1}></span>  
+          <span className={styles.dot2}></span>
+          <span className={styles.dot3}></span>
+          <span className={styles.dot4}></span>  
+          <span className={styles.dot5}></span>
+          <span className={styles.dot6}></span>
+          <span className={styles.dot7}></span>  
+          <span className={styles.dot8}></span>
+          <span className={styles.dot9}></span>
+        </div>
+        <ul className={styles.navUl}>
+          <li className={styles.navListMenu}>
+            <Link href={'/'}><a className={styles.viewCurriculumButton}>View Curriculum</a></Link>
+          </li>
+          <li className={styles.navListMenu}>
+            <Link href={'/'}><a className={styles.pricingButton}>Pricing</a></Link>
+          </li>
+          <li className={styles.navListMenu}>
+            <Link href={'/'}><a className={styles.blogButton}>Blog</a></Link>
+          </li>
+          <li className={styles.navListMenu}>
+            <Link href={'/'}><a className={styles.loginButton}>Login</a></Link>
+          </li>
+          <li className={styles.navListMenu}>
+            <Link href={'/'}><a className={styles.registerButton}>Register</a></Link>
+          </li>
+        </ul>
+      </nav>
+      </>
+  )
+}
+
+export default Header
