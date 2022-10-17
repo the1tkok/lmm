@@ -134,11 +134,11 @@
 .heroParagraph {
   flex-basis: 100%;
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .break1 {
-  display: none;
+  display: block;
 }
 
 .break2 {
@@ -319,8 +319,8 @@
   }
 
   .heroParagraph {
-    padding: 0em 0 2em 100px;
-    margin-top: 30px;
+    padding: 0em 0 4.15em 100px;
+    margin-top: 60px;
     text-align: initial;
     line-height: 2;
   }
