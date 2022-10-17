@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/future/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import logo from '../public/logo/logo2.png'
+import logo from '../public/logo/lauralogo1.svg'
 import disney_logo from '../public/partner_logos/disney.png'
 import sony_logo from '../public/partner_logos/sony.png'
 import universal_logo from '../public/partner_logos/universal.png'
@@ -23,8 +23,8 @@ export default function Home() {
       <nav className={styles.navContainer}>
         <Image className={styles.logo2} src={logo}
         alt="logo"
-        width={150}
-        height={72.45}
+        width={125}
+        height={125}
         layout="raw"
         />
         <div className={styles.mobileMenuContainer}>

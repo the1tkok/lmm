@@ -167,7 +167,7 @@
 
 .formButton1 {
   color: white;
-  background-color: #0025a8;
+  background-color: #404eec;
   border: none;
   border-radius: 5px;
   display: flex;
@@ -255,19 +255,26 @@
     padding: 0 10px 0 10px;
   }
 
+  .viewCurriculumButton,
+  .pricingButton,
+  .blogButton,
+  .loginButton {
+    border-bottom: 4px solid white;
+  }
+
   .viewCurriculumButton:hover,
   .pricingButton:hover,
   .blogButton:hover,
   .loginButton:hover {
     transition-duration: 30ms;
     padding-bottom: 0px;
-    border-bottom: 4px solid #0025a8;
+    border-bottom: 4px solid #3d58f0;
   }
 
   .registerButton {
     border-radius: 6px;
     border: none;
-    background-color: #0025a8;
+    background-color: #3d58f0;
     color: white;
     cursor: pointer;
     font-weight: bold;
@@ -357,7 +364,7 @@
     border-radius: 6px;
     border: none;
     color: white;
-    background-color: #0025a8;
+    background-color: #3d58f0;
     cursor: pointer;
     padding: 0.7em 1em 0.7em 1em;
     font-weight: bold;
