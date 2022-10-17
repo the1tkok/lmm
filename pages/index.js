@@ -60,7 +60,7 @@ export default function Home() {
       <section className={styles.heroSection}>
         <iframe className={styles.homeIframe} src={'https://player.vimeo.com/video/479896106?h=cde2d98eaa'}></iframe>
         <section className={styles.heroText}>
-          <h1 className={styles.heroHeading}>We Build<br className={styles.break1}></br>Working Actors<br className={styles.break2}></br></h1>
+          <h1 className={styles.heroHeading}>We Build<br className={styles.break1}></br>Working Actors.<br className={styles.break2}></br></h1>
           <br></br>
           <p className={styles.heroParagraph}>We teach world-class acting to beginner,<br></br> intermediate, and advanced level actors across <br></br> the world both online and in-person.</p>
           <form className={styles.heroEmailForm}>
