@@ -25,6 +25,7 @@
 
 .navListMenu {
   display: none;
+  font-family: "avenir medium";
 }
 
 .mobileNavContainer {
@@ -108,5 +109,6 @@
     font-weight: bold;
     font-size: 1rem;
     padding: 10px 20px 10px 20px;
+    margin-bottom: 4px;
   }
 }

@@ -1,13 +1,13 @@
 import styles from './header.module.css'
 import Image from 'next/future/image'
 import Link from 'next/link'
-import logo from '../public/logo/laurafinallogo.svg'
+import logo from '../../public/logo/laurafinallogo.svg'
 
 const Header = () => {
   return (
     <>
-    <aside className={styles.sideBar}></aside>
-      {/*****NAVIGATION*****/}
+      {/*****MOBILE NAVIGATION*****/}
+      <aside className={styles.sideBar}></aside>
       <nav className={styles.navContainer}>
         <Image className={styles.logo2} src={logo}
         alt="logo"
@@ -25,6 +25,7 @@ const Header = () => {
           <span className={styles.dot8}></span>
           <span className={styles.dot9}></span>
         </div>
+        {/*****DESKTOP NAVIGATION*****/}
         <ul className={styles.navUl}>
           <li className={styles.navListMenu}>
             <Link href={'/'}><a className={styles.viewCurriculumButton}>View Curriculum</a></Link>
@@ -43,7 +44,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      </>
+    </>
   )
 }
 

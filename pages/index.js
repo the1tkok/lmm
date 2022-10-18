@@ -1,14 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/future/image'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link'
-import logo from '../public/logo/lauralogo1.svg'
-import disney_logo from '../public/partner_logos/disney.png'
-import sony_logo from '../public/partner_logos/sony.png'
-import universal_logo from '../public/partner_logos/universal.png'
-import paramount_logo from '../public/partner_logos/paramount.svg'
-import lionsgate_logo from '../public/partner_logos/lionsgate.png'
-import Header from '../components/Header'
+import {disney_logo, sony_logo, universal_logo, paramount_logo, lionsgate_logo} from '../public/partner_logos/partner_logos'
+import Header from '../components/Navigation/Header'
 
 export default function Home() {
   return (
@@ -20,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header>
-        
+
       </Header>
       {/*****HERO SECTION*****/}
       <section className={styles.heroSection}>
