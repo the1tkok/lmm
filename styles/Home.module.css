@@ -10,11 +10,6 @@
   src: url(../public/fonts/Avenir/AvenirLTProLight.otf);
 }
 
-@font-face {
-  font-family: "avenir black";
-  src: url(../public/fonts/Avenir/AvenirLTProBlack.otf);
-}
-
 /**********MOBILE DISPLAY**********/
 
 /*****HERO SECTION*****/
@@ -55,7 +50,6 @@
   margin: 0;
   padding: 0 0 0 0;
   font-family: "avenir light";
-  font-size: 18px;
 }
 
 .break1 {
@@ -84,8 +78,6 @@
   border-radius: 5px;
   margin: 20px 0 20px 0;
   padding: 5px;
-  font-family: "avenir medium";
-  font-size: 18px;
 }
 
 .formButton1 {
@@ -93,11 +85,12 @@
   background-color: #3d58f0;
   border: none;
   border-radius: 5px;
-  height: auto;
-  margin: 0;
+  display: flex;
+  flex-basis: auto;
+  font-weight: bold;
+  margin: 0 0 0 0;
   padding: 10px;
   white-space: nowrap;
-  font-family: "avenir black";
 }
 
 /*****PARTNER LOGOS*****/
@@ -177,8 +170,8 @@
   }
 
   .heroParagraph {
-    padding: 0em 0 3.25em 100px;
-    margin-top: 48px;
+    padding: 0em 0 3.75em 100px;
+    margin-top: 60px;
     text-align: initial;
     line-height: 2;
   }
@@ -215,15 +208,17 @@
 
   .formButton1 {
     flex-basis: auto;
+    margin-top: 0%;
     margin-left: 10px;
-    border-radius: 5px;
+    height: auto;
+    border-radius: 6px;
     border: none;
     color: white;
     background-color: #3d58f0;
     cursor: pointer;
-    padding: 0.7em 1em 0.6em 1em;
-    font-size: 16px;
-    align-items: center;
+    padding: 0.7em 1em 0.7em 1em;
+    font-weight: bold;
+    font-size: 1rem;
   }
 
   /*****PARTNER LOGOS*****/
