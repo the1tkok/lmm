@@ -93,10 +93,9 @@
   background-color: #3d58f0;
   border: none;
   border-radius: 5px;
-  display: flex;
-  flex-basis: auto;
   margin: 0 0 0 0;
   padding: 10px;
+  white-space: nowrap;
   font-family: "avenir black";
 }
 
