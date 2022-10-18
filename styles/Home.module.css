@@ -87,6 +87,10 @@
   font-size: 16px;
 }
 
+.emailInput:focus {
+  background-color: white;
+}
+
 .formButton1 {
   color: white;
   background-color: #3d58f0;
