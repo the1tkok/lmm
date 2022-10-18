@@ -86,7 +86,6 @@
   padding: 5px;
   font-family: "avenir medium";
   font-size: 18px;
-  padding-top: 7px;
 }
 
 .formButton1 {
@@ -96,6 +95,7 @@
   border-radius: 5px;
   display: flex;
   flex-basis: auto;
+  height: 2.7rem;
   margin: 0 0 0 0;
   padding: 10px;
   white-space: nowrap;
@@ -219,7 +219,6 @@
     flex-basis: auto;
     margin-top: 0%;
     margin-left: 10px;
-    height: auto;
     border-radius: 5px;
     border: none;
     color: white;
