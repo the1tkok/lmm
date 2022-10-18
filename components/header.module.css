@@ -4,7 +4,7 @@
 .logo2 {
   background-repeat: no-repeat;
   background-size: contain;
-  margin-left: 1%;
+  margin-left: 2%;
   display: block;
   height: 100%;
 }
@@ -34,7 +34,7 @@
   flex-basis: 30px;
   align-content: flex-start;
   justify-content: flex-end;
-  margin: 0 5% 0 auto;
+  margin: 0 2% 0 auto;
 }
 
 .dot1,
