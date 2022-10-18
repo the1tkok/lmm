@@ -93,7 +93,8 @@
   background-color: #3d58f0;
   border: none;
   border-radius: 5px;
-  margin: 0 0 0 0;
+  height: auto;
+  margin: 0;
   padding: 10px;
   white-space: nowrap;
   font-family: "avenir black";
