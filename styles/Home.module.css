@@ -10,6 +10,11 @@
   src: url(../public/fonts/Avenir/AvenirLTProLight.otf);
 }
 
+@font-face {
+  font-family: "avenir black";
+  src: url(../public/fonts/Avenir/AvenirLTProBlack.otf);
+}
+
 /**********MOBILE DISPLAY**********/
 
 /*****HERO SECTION*****/
@@ -78,6 +83,8 @@
   border-radius: 5px;
   margin: 20px 0 20px 0;
   padding: 5px;
+  font-family: "avenir medium";
+  font-size: 18px;
 }
 
 .formButton1 {
@@ -88,9 +95,10 @@
   display: flex;
   flex-basis: auto;
   font-weight: bold;
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 10px;
   white-space: nowrap;
+  font-family: "avenir black";
 }
 
 /*****PARTNER LOGOS*****/
