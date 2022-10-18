@@ -76,6 +76,7 @@
   font-weight: bold;
   margin: 0 0 0 0;
   padding: 10px;
+  white-space: nowrap;
 }
 
 /*****PARTNER LOGOS*****/
@@ -165,7 +166,6 @@
     width: 640px;
     height: 360px;
     border: none;
-    margin-top: 3%;
   }
 
   /*****EMAIL FORM*****/

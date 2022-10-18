@@ -1,7 +1,7 @@
 import styles from './header.module.css'
 import Image from 'next/future/image'
 import Link from 'next/link'
-import logo from '../public/logo/lauralogo1.svg'
+import logo from '../public/logo/laurafinallogo.svg'
 
 const Header = () => {
   return (
@@ -11,9 +11,8 @@ const Header = () => {
       <nav className={styles.navContainer}>
         <Image className={styles.logo2} src={logo}
         alt="logo"
-        width={125}
-        height={125}
-        layout="raw"
+        width={200}
+        height='100%'
         />
         <div className={styles.mobileNavContainer}>
           <span className={styles.dot1}></span>  

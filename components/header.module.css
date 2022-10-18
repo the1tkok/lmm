@@ -4,7 +4,9 @@
 .logo2 {
   background-repeat: no-repeat;
   background-size: contain;
-  margin-left: 6.4%;
+  margin-left: 1%;
+  display: block;
+  height: 100%;
 }
 
 /*****NAVIGATION*****/
@@ -13,6 +15,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .logo2 {
