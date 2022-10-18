@@ -26,7 +26,7 @@ export default function Home() {
           <form className={styles.heroEmailForm}>
             <label for="email"></label>
             <input className={styles.emailInput} type="text" id="userEmail" name="email" placeholder="name@email.com"></input>
-            <button className={styles.formButton1} display="inline-block">Enroll in Classes FREE</button>
+            <button className={styles.formButton1} display="block">Enroll in Classes FREE</button>
           </form>
         </section>
       </section>
