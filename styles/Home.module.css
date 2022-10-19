@@ -112,10 +112,9 @@
   flex-wrap: wrap;
   font-size: 0.8rem;
   gap: 2em;
-  height: 20vh;
   justify-content: center;
   margin-top: 50px;
-  padding: 0px;
+  padding: 1em 0em 1em 0em;
   text-align: center;
 }
 
