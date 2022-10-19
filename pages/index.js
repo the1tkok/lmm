@@ -31,11 +31,14 @@ export default function Home() {
         </section>
       </section>
       <section className={styles.partnerLogoContainer}>
-        <Image className={styles.disneyLogo} src={disney_logo} alt="disney logo" layout="responsive"></Image>
-        <Image className={styles.sonyLogo} src={sony_logo} alt="sony logo"></Image>
-        <Image className={styles.universalLogo} src={universal_logo} alt="universal logo"></Image>
-        <Image className={styles.paramountLogo} src={paramount_logo} alt="paramount logo"></Image>
-        <Image className={styles.lionsgateLogo} src={lionsgate_logo} alt="lionsgate logo"></Image>
+        <p className={styles.partnerLogoText}>Our students have worked with the top 10+ major movie studios and counting</p>
+        <div className={styles.partnerLogoImages}>
+          <Image className={styles.disneyLogo} src={disney_logo} alt="disney logo" layout="responsive"></Image>
+          <Image className={styles.sonyLogo} src={sony_logo} alt="sony logo"></Image>
+          <Image className={styles.universalLogo} src={universal_logo} alt="universal logo"></Image>
+          <Image className={styles.paramountLogo} src={paramount_logo} alt="paramount logo"></Image>
+          <Image className={styles.lionsgateLogo} src={lionsgate_logo} alt="lionsgate logo"></Image>
+        </div>
       </section>
       {/*****FOOTER*****/}
       <footer className={styles.footer}>
