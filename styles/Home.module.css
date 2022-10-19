@@ -129,6 +129,7 @@
 
 .partnerLogoText {
   flex-basis: 100%;
+  font-family: "avenir medium";
   padding: 0 2em 0 2em;
   margin: 0;
 }
