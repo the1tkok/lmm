@@ -3,6 +3,7 @@ import Image from 'next/future/image'
 import styles from '../styles/Home.module.css'
 import {disney_logo, sony_logo, universal_logo, paramount_logo, lionsgate_logo} from '../public/partner_logos/partner_logos'
 import Header from '../components/Navigation/Header'
+import Laura_mac from '../public/home_pics/lm1.jpg'
 
 export default function Home() {
   return (
@@ -33,11 +34,19 @@ export default function Home() {
       <section className={styles.partnerLogoContainer}>
         <p className={styles.partnerLogoText}>Our students have worked with the top 10+ major movie studios and counting</p>
         <div className={styles.partnerLogoImages}>
-          <Image className={styles.disneyLogo} src={disney_logo} alt="disney logo" layout="responsive"></Image>
+          <Image className={styles.disneyLogo} src={disney_logo} alt="disney logo"></Image>
           <Image className={styles.sonyLogo} src={sony_logo} alt="sony logo"></Image>
           <Image className={styles.universalLogo} src={universal_logo} alt="universal logo"></Image>
           <Image className={styles.paramountLogo} src={paramount_logo} alt="paramount logo"></Image>
           <Image className={styles.lionsgateLogo} src={lionsgate_logo} alt="lionsgate logo"></Image>
+        </div>
+      </section>
+      <section className={styles.featuresContainer}>
+        <Image className={styles.featurePic1} src={Laura_mac} alt="laura mac"></Image>
+        <div className={styles.featureTextContainer}>
+        <p className={styles.featureSubtitle1}>EXPLORE YOUR TALENTS</p>
+        <p className={styles.featureTitle1}>Succeed at your auditions</p>
+        <p className={styles.featureParagraph1}>Learn to control your nerves and perform to the best <br></br> of your ability at auditions.</p>
         </div>
       </section>
       {/*****FOOTER*****/}

@@ -157,6 +157,41 @@
   display: none;
 }
 
+/*****FEATURES*****/
+
+.featuresContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10em 25em 0em 0em;
+}
+
+.featurePic1 {
+  border: none;
+  border-radius: 15px;
+  width: 300px;
+  height: 449px;
+}
+
+.featureSubtitle1 {
+  display: block;
+  color: #f0c53c;
+  font-family: "avenir medium";
+  margin: 0;
+  padding-right: 4em;
+}
+
+.featureTitle1 {
+  font-family: "avenir medium";
+  font-size: 2rem;
+  margin: 0.5em 0 0 0;
+  padding-right: 4em;
+}
+
+.featureParagraph1 {
+  font-family: "avenir light";
+  line-height: 2;
+}
+
 /**********DESKTOP DISPLAY**********/
 
 @media only screen and (min-width: 811px) {
