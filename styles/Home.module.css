@@ -161,8 +161,17 @@
 
 .featuresContainer {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8em 25em 0em 25em;
+}
+
+.feature1 {
+  display: flex;
+  flex-basis: 100%;
   flex-direction: row-reverse;
-  padding: 8em 25em 0em 0em;
+  margin-bottom: 8em;
+  gap: 5em;
 }
 
 .featurePic1 {
@@ -172,19 +181,29 @@
   height: 449px;
 }
 
+.feature2 {
+  display: flex;
+  gap: 5em;
+}
+
+.featurePic2 {
+  border: none;
+  border-radius: 15px;
+  width: 469.64px;
+  height: 449px;
+}
+
 .featureSubtitle1 {
   display: block;
   color: #f0c53c;
   font-family: "avenir medium";
   margin: 0;
-  padding-right: 4em;
 }
 
 .featureTitle1 {
   font-family: "avenir medium";
   font-size: 2rem;
   margin: 0.5em 0 0 0;
-  padding-right: 4em;
 }
 
 .featureParagraph1 {

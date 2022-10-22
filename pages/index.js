@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import {disney_logo, sony_logo, universal_logo, paramount_logo, lionsgate_logo} from '../public/partner_logos/partner_logos'
 import Header from '../components/Navigation/Header'
 import Laura_mac from '../public/home_pics/lm1.jpg'
+import Laura_mac2 from '../public/home_pics/lm2.jpg'
 
 export default function Home() {
   return (
@@ -42,11 +43,21 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.featuresContainer}>
-        <Image className={styles.featurePic1} src={Laura_mac} alt="laura mac"></Image>
-        <div className={styles.featureTextContainer}>
-        <p className={styles.featureSubtitle1}>EXPLORE YOUR TALENTS</p>
-        <p className={styles.featureTitle1}>Surpass audition expectations</p>
-        <p className={styles.featureParagraph1}>Learn to control your nerves and perform to the best <br></br> of your ability at auditions.</p>
+        <div className={styles.feature1}>
+            <Image className={styles.featurePic1} src={Laura_mac} alt="laura mac"></Image>
+          <div className={styles.featureTextContainer}>
+            <p className={styles.featureSubtitle1}>EXPLORE YOUR TALENTS</p>
+            <p className={styles.featureTitle1}>One on One Coaching</p>
+            <p className={styles.featureParagraph1}>Work with experienced acting coaches in one on one<br></br> sessions to improve your audition success rate.</p>
+          </div>
+        </div>
+        <div className={styles.feature2}>
+            <Image className={styles.featurePic2} src={Laura_mac2} alt="laura mac team"></Image>
+          <div className={styles.featureTextContainer2}>
+            <p className={styles.featureSubtitle1}>GROW YOUR CAREER</p>
+            <p className={styles.featureTitle1}>Network of Opportunities</p>
+            <p className={styles.featureParagraph1}>Join a community of actors and learn alongside acting<br></br>peers of similar skill level from beginner to advanced.</p>
+          </div>
         </div>
       </section>
       {/*****FOOTER*****/}
