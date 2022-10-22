@@ -202,12 +202,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
+    gap: 5em;
   }
 
   .heroText {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 38%;
+    flex-basis: min-content;
     align-content: flex-start;
     padding-top: 0;
     justify-content: flex-start;
@@ -216,10 +217,10 @@
 
   .heroHeading {
     color: black;
-    flex-basis: 100;
+    flex-basis: fit-content;
     font-size: 2.7rem;
     margin: 0;
-    padding: 0 0 0px 100px;
+    padding: 0 0 0px 0px;
     text-align: initial;
   }
 
@@ -232,7 +233,8 @@
   }
 
   .heroParagraph {
-    padding: 0em 0 3.75em 100px;
+    flex-basis: fit-content;
+    padding: 0em 0 3.75em 0px;
     margin-top: 60px;
     text-align: initial;
     line-height: 2;
@@ -249,7 +251,7 @@
   .heroEmailForm {
     display: flex;
     flex-wrap: nowrap;
-    flex-basis: 100%;
+    flex-basis: fit-content;
     align-items: center;
     justify-content: flex-start;
   }
@@ -260,12 +262,10 @@
 
   .emailInput {
     border: 1px solid lightgray;
-    width: 17rem;
     height: 2.7rem;
-    margin: 0 0 0 100px;
+    margin: 0 0 0 0px;
     border-radius: 6px;
     padding-left: 10px;
-    flex-basis: 40%;
   }
 
   .formButton1 {
