@@ -162,7 +162,7 @@
 .featuresContainer {
   display: flex;
   flex-direction: row-reverse;
-  padding: 10em 25em 0em 0em;
+  padding: 8em 25em 0em 0em;
 }
 
 .featurePic1 {
@@ -203,6 +203,7 @@
     justify-content: center;
     align-items: flex-end;
     gap: 5em;
+    margin-bottom: 8em;
   }
 
   .heroText {
