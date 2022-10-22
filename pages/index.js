@@ -45,7 +45,7 @@ export default function Home() {
         <Image className={styles.featurePic1} src={Laura_mac} alt="laura mac"></Image>
         <div className={styles.featureTextContainer}>
         <p className={styles.featureSubtitle1}>EXPLORE YOUR TALENTS</p>
-        <p className={styles.featureTitle1}>Succeed at your auditions</p>
+        <p className={styles.featureTitle1}>Surpass audition expectations</p>
         <p className={styles.featureParagraph1}>Learn to control your nerves and perform to the best <br></br> of your ability at auditions.</p>
         </div>
       </section>
