@@ -181,18 +181,6 @@
   height: 449px;
 }
 
-.feature2 {
-  display: flex;
-  gap: 5em;
-}
-
-.featurePic2 {
-  border: none;
-  border-radius: 15px;
-  width: 469.64px;
-  height: 449px;
-}
-
 .featureSubtitle1 {
   display: block;
   color: #f0c53c;
@@ -209,6 +197,34 @@
 .featureParagraph1 {
   font-family: "avenir light";
   line-height: 2;
+}
+
+.feature2 {
+  display: flex;
+  gap: 5em;
+  margin-bottom: 8em;
+}
+
+.featurePic2 {
+  border: none;
+  border-radius: 15px;
+  width: 469.64px;
+  height: 449px;
+}
+
+.feature3 {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: row-reverse;
+  margin-bottom: 8em;
+  gap: 5em;
+}
+
+.featurePic3 {
+  border: none;
+  border-radius: 15px;
+  width: 449px;
+  height: 280.63px;
 }
 
 /**********DESKTOP DISPLAY**********/
