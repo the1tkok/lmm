@@ -6,6 +6,7 @@ import Header from '../components/Navigation/Header'
 import Laura_mac from '../public/home_pics/lm1.jpg'
 import Laura_mac2 from '../public/home_pics/lm2.jpg'
 import Zoom from '../public/home_pics/zoom.jpeg'
+import Video_bkg from '../public/backgrounds/video_bkg.png'
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
             <input className={styles.emailInput} type="text" id="userEmail" name="email" placeholder="name@email.com"></input>
             <button className={styles.formButton1} display="block">Enroll in Classes FREE</button>
           </form>
+        <Image className={styles.backgroundImage} src={Video_bkg} alt="background image"></Image>
         </section>
       </section>
       <section className={styles.partnerLogoContainer}>
@@ -76,6 +78,9 @@ export default function Home() {
             <p className={styles.featureParagraph1}>Join a community of actors and learn alongside acting<br></br>peers of similar skill level from beginner to advanced.</p>
           </div>
         </div>
+      </section>
+      <section>
+        <div className={styles.secondaryFeaturesBkg}></div>
       </section>
       {/*****FOOTER*****/}
       <footer className={styles.footer}>

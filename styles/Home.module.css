@@ -27,12 +27,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+}
+
+.backgroundImage {
+  display: flex;
+  position: absolute;
+  top: -8em;
+  left: 25em;
+  width: 604px;
+  height: 604px;
 }
 
 .homeIframe {
   width: 420px;
   height: 237px;
   border: none;
+  position: relative;
+  z-index: 5;
 }
 
 .heroText {
@@ -225,6 +237,22 @@
   border-radius: 15px;
   width: 449px;
   height: 280.63px;
+}
+
+.secondaryFeaturesBkg {
+  background-color: #5972ff;
+  height: 50vh;
+  transform: skewX(0deg);
+  transform-origin: left;
+}
+
+.secondaryFeaturesBkg:before {
+  display: block;
+  content: "";
+  background-color: #5972ff;
+  height: 50vh;
+  transform-origin: left;
+  transform: skewY(-50deg);
 }
 
 /**********DESKTOP DISPLAY**********/
