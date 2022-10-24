@@ -242,8 +242,8 @@
 .secondaryFeaturesBkg {
   background-color: #5972ff;
   height: 50vh;
-  transform: skewX(0deg);
-  transform-origin: left;
+  transform: skewY(-5deg);
+  transform-origin: right;
 }
 
 .secondaryFeaturesBkg:before {
@@ -252,7 +252,7 @@
   background-color: #5972ff;
   height: 50vh;
   transform-origin: left;
-  transform: skewY(-50deg);
+  transform: skewY(5deg);
 }
 
 /**********DESKTOP DISPLAY**********/
