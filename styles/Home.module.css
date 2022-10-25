@@ -262,7 +262,7 @@
 }
 
 .secFeaturesContainer::before {
-  border-top: 1px solid rgb(226, 226, 226);
+  border-top: 1px solid rgb(204, 204, 204);
   width: 50%;
   content: "";
   margin-bottom: 4em;
