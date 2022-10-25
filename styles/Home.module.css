@@ -312,9 +312,16 @@
   font-size: 1rem;
 }
 
+.secondaryFeaturesContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .secondaryFeaturesBkg {
   background-color: #5972ff;
-  height: 40vh;
+  height: 50vh;
+  width: 50vw;
+  border-radius: 15px;
 }
 
 .footer {

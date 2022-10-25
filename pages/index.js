@@ -83,6 +83,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className={styles.secondaryFeaturesContainer}>
+        <div className={styles.secondaryFeaturesBkg}>
+
+        </div>
+      </section>
       <section className={styles.secFeaturesContainer}>
         <h3 className={styles.secFeaturesTitle}>Acting Lessons Unlike Anything You&#39;ve Ever Seen</h3>
         <p className={styles.secFeaturesSubTitle}>Acting is a process we&#39;ve made into digestible pieces for actors in any stage of their career.</p>
@@ -112,8 +117,6 @@ export default function Home() {
             <p className={styles.secFeaturesCardSubTitle}>Story telling, human behavior, acting techniques and much more!</p>
           </div>
         </div>
-      </section>
-      <section className={styles.secondaryFeaturesBkg}>
       </section>
       {/*****FOOTER*****/}
     </div>
