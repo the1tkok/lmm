@@ -252,7 +252,7 @@
 .secFeaturesContainer {
   display: flex;
   flex-wrap: wrap;
-  height: 60vh;
+  height: 80%;
   font-family: "avenir medium";
   font-size: 2rem;
   text-align: center;
@@ -315,23 +315,13 @@
 .secondaryFeaturesBkg {
   background-color: #5972ff;
   height: 40vh;
-  transform: skewY(-5deg);
-  transform-origin: right;
-}
-
-.secondaryFeaturesBkg:before {
-  margin-top: 14em;
-  display: block;
-  content: "";
-  background-color: #5972ff;
-  height: 40vh;
-  transform-origin: left;
-  transform: skewY(5deg);
 }
 
 .footer {
   width: 0;
   height: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /**********DESKTOP DISPLAY**********/

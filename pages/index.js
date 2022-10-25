@@ -34,7 +34,7 @@ export default function Home() {
           <form className={styles.heroEmailForm}>
             <label for="email"></label>
             <input className={styles.emailInput} type="text" id="userEmail" name="email" placeholder="name@email.com"></input>
-            <button className={styles.formButton1} display="block">Enroll in Classes FREE</button>
+            <button className={styles.formButton1} display="block">Enroll for FREE Class</button>
           </form>
         <Image className={styles.backgroundImage} src={Video_bkg} alt="background image"></Image>
         </section>
@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.featuresContainer}>
-      <h2 className={styles.featuresTitle}>The Future of Your Acting Career Starts With...</h2>
+      <h2 className={styles.featuresTitle}>The Future Acting Careers Start With...</h2>
         <div className={styles.feature1}>
           <Image className={styles.featurePic1} src={Laura_mac} alt="laura mac"></Image>
           <div className={styles.featureTextContainer}>
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.secFeaturesContainer}>
-        <h3 className={styles.secFeaturesTitle}>Our Academic Stack</h3>
+        <h3 className={styles.secFeaturesTitle}>Acting Lessons Unlike Anything You&#39;ve Ever Seen</h3>
         <p className={styles.secFeaturesSubTitle}>Acting is a process we&#39;ve made into digestible pieces for actors in any stage of their career.</p>
         <div className={styles.secFeaturesCard1}>
           <div>
@@ -114,11 +114,8 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.secondaryFeaturesBkg}>
-        <div></div>
       </section>
       {/*****FOOTER*****/}
-      <footer className={styles.footer}>
-      </footer>
     </div>
   )
 }
