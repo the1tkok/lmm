@@ -86,11 +86,11 @@ export default function Home() {
       </section>
       <section className={styles.secFeaturesContainer}>
         <h3 className={styles.secFeaturesTitle}>Our Academic Stack</h3>
-        <p className={styles.secFeaturesSubTitle}>Acting is a process we've made into digestible pieces for actors in any stage of their career.</p>
+        <p className={styles.secFeaturesSubTitle}>Acting is a process we&#39;ve made into digestible pieces for actors in any stage of their career.</p>
         <div className={styles.secFeaturesCard1}>
           <div>
             <Image className={styles.toolkitIcon} src={Toolkit} alt="toolkit"></Image>
-            <p className={styles.secFeaturesCardTitle}>The Actor's Toolkit</p>
+            <p className={styles.secFeaturesCardTitle}>The Actor&#39;s Toolkit</p>
             <p className={styles.secFeaturesCardSubTitle}>Where your acting foundation beings.</p>
           </div>
         </div>
