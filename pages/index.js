@@ -40,7 +40,6 @@ export default function Home() {
         </section>
       </section>
       <section className={styles.partnerLogoContainer}>
-        <p className={styles.partnerLogoText}>Our students have worked for the top 10+ major movie studios and counting</p>
         <div className={styles.partnerLogoImages}>
           <Image className={styles.disneyLogo} src={disney_logo} alt="disney logo"></Image>
           <Image className={styles.lionsgateLogo} src={lionsgate_logo} alt="lionsgate logo"></Image>
@@ -63,7 +62,7 @@ export default function Home() {
           <Image className={styles.featurePic2} src={Laura_mac2} alt="laura mac team"></Image>
           <div className={styles.featureTextContainer2}>
             <p className={styles.featureSubtitle1}>GROW YOUR CAREER</p>
-            <p className={styles.featureTitle1}>Routinely Updated Course</p>
+            <p className={styles.featureTitle1}>Routinely Updated Courses</p>
             <p className={styles.featureParagraph1}>Join a community of actors and learn alongside acting<br></br>peers of similar skill level from beginner to advanced.</p>
           </div>
         </div>
@@ -71,7 +70,7 @@ export default function Home() {
           <Image className={styles.featurePic3} src={Zoom} alt="zoom meeting"></Image>
           <div className={styles.featureTextContainer}>
             <p className={styles.featureSubtitle1}>SKILL DEVELOPMENT</p>
-            <p className={styles.featureTitle1}>Online Acting Class</p>
+            <p className={styles.featureTitle1}>Online Acting Classes</p>
             <p className={styles.featureParagraph1}>Work with experienced acting coaches in one on one<br></br> sessions to improve your audition success rate.</p>
           </div>
         </div>
@@ -79,7 +78,7 @@ export default function Home() {
           <Image className={styles.featurePic2} src={Laura_mac2} alt="laura mac team"></Image>
           <div className={styles.featureTextContainer2}>
             <p className={styles.featureSubtitle1}>GROW YOUR CAREER</p>
-            <p className={styles.featureTitle1}>A Network of Opportunity</p>
+            <p className={styles.featureTitle1}>A Network of Opportunities</p>
             <p className={styles.featureParagraph1}>Join a community of actors and learn alongside acting<br></br>peers of similar skill level from beginner to advanced.</p>
           </div>
         </div>
