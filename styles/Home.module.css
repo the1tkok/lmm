@@ -293,7 +293,7 @@
 .secFeaturesCard2,
 .secFeaturesCard3,
 .secFeaturesCard4 {
-  height: 50%;
+  height: 300px;
   width: 15%;
   border-radius: 15px;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
