@@ -85,7 +85,7 @@ export default function Home() {
       </section>
       <section className={styles.secondaryFeaturesContainer}>
         <div className={styles.secondaryFeaturesBkg}>
-
+        <p className={styles.secondaryFeaturesTitle}>Level Up Your Skills</p>
         </div>
       </section>
       <section className={styles.secFeaturesContainer}>

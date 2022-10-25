@@ -319,9 +319,19 @@
 
 .secondaryFeaturesBkg {
   background-color: #5972ff;
-  height: 50vh;
+  height: 60vh;
   width: 50vw;
   border-radius: 15px;
+  padding-top: 8em;
+}
+
+.secondaryFeaturesTitle {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "avenir medium";
+  font-size: 2.7rem;
+  margin: 0;
 }
 
 .footer {
