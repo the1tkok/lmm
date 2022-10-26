@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.featuresContainer}>
-      <h2 className={styles.featuresTitle}>The Future Acting Careers Start With...</h2>
+      <h2 className={styles.featuresTitle}>The Future of Your Acting Career Start With...</h2>
         <div className={styles.feature1}>
           <Image className={styles.featurePic1} src={Laura_mac} alt="laura mac"></Image>
           <div className={styles.featureTextContainer}>
@@ -62,7 +62,7 @@ export default function Home() {
           <Image className={styles.featurePic2} src={Laura_mac2} alt="laura mac team"></Image>
           <div className={styles.featureTextContainer2}>
             <p className={styles.featureSubtitle1}>GROW YOUR CAREER</p>
-            <p className={styles.featureTitle1}>Routinely Updated Courses</p>
+            <p className={styles.featureTitle1}>Routine Course Updates</p>
             <p className={styles.featureParagraph1}>Join a community of actors and learn alongside acting<br></br>peers of similar skill level from beginner to advanced.</p>
           </div>
         </div>
@@ -74,18 +74,13 @@ export default function Home() {
             <p className={styles.featureParagraph1}>Work with experienced acting coaches in one on one<br></br> sessions to improve your audition success rate.</p>
           </div>
         </div>
-        <div className={styles.feature2}>
-          <Image className={styles.featurePic2} src={Laura_mac2} alt="laura mac team"></Image>
-          <div className={styles.featureTextContainer2}>
+        <div className={styles.feature4}>
+          <Image className={styles.featurePic4} src={Laura_mac2} alt="laura mac team"></Image>
+          <div className={styles.featureTextContainer4}>
             <p className={styles.featureSubtitle1}>GROW YOUR CAREER</p>
             <p className={styles.featureTitle1}>A Network of Opportunities</p>
             <p className={styles.featureParagraph1}>Join a community of actors and learn alongside acting<br></br>peers of similar skill level from beginner to advanced.</p>
           </div>
-        </div>
-      </section>
-      <section className={styles.secondaryFeaturesContainer}>
-        <div className={styles.secondaryFeaturesBkg}>
-        <p className={styles.secondaryFeaturesTitle}>Level Up Your Skills</p>
         </div>
       </section>
       <section className={styles.secFeaturesContainer}>
@@ -116,6 +111,11 @@ export default function Home() {
             <p className={styles.secFeaturesCardTitle}>Film & Television</p>
             <p className={styles.secFeaturesCardSubTitle}>Story telling, human behavior, acting techniques and much more!</p>
           </div>
+        </div>
+      </section>
+      <section className={styles.secondaryFeaturesContainer}>
+        <div className={styles.secondaryFeaturesBkg}>
+        <p className={styles.secondaryFeaturesTitle}>Skills That Stick With You Forever</p>
         </div>
       </section>
       {/*****FOOTER*****/}
