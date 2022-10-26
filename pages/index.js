@@ -49,7 +49,6 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.featuresContainer}>
-      <h2 className={styles.featuresTitle}>The Future of Your Acting Career Start With...</h2>
         <div className={styles.feature1}>
           <Image className={styles.featurePic1} src={Laura_mac} alt="laura mac"></Image>
           <div className={styles.featureTextContainer}>
