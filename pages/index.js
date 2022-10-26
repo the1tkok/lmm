@@ -115,7 +115,7 @@ export default function Home() {
       </section>
       <section className={styles.secondaryFeaturesContainer}>
         <div className={styles.secondaryFeaturesBkg}>
-        <p className={styles.secondaryFeaturesTitle}>Skills That Stick With You Forever</p>
+        <p className={styles.secondaryFeaturesTitle}>Develop Skills That Stick With You Forever</p>
         </div>
       </section>
       {/*****FOOTER*****/}
