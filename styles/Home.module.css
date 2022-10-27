@@ -280,14 +280,8 @@
   text-align: center;
   justify-content: center;
   align-content: flex-start;
-  margin-bottom: 4.1em;
-}
-
-.secFeaturesContainer::before {
-  border-top: 1px solid rgb(204, 204, 204);
-  width: 50%;
-  content: "";
   margin-bottom: 4em;
+  margin-top: 2em;
 }
 
 .toolkitIcon {
@@ -303,12 +297,20 @@
   margin: 0 0 0.5em 0;
 }
 
-.secFeaturesSubTitle {
+.secFeaturesText {
   flex-basis: 100%;
   font-family: "avenir light";
   font-size: 1.2rem;
   margin: 0;
   padding-bottom: 6.7em;
+}
+
+.secFeaturesSubtitle {
+  display: block;
+  color: #f0c53c;
+  font-family: "avenir medium";
+  margin: 0 0 1em 0;
+  font-size: 1rem;
 }
 
 .secFeaturesCard1,
@@ -345,7 +347,7 @@
   height: 60vh;
   width: 50vw;
   border-radius: 15px;
-  padding-top: 8em;
+  padding-top: 4em;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
 }

@@ -83,8 +83,9 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.secFeaturesContainer}>
+      <p className={styles.secFeaturesSubtitle}>NEW, FRESH & MODERN</p>
         <h3 className={styles.secFeaturesTitle}>Acting Lessons Unlike Anything You&#39;ve Ever Seen</h3>
-        <p className={styles.secFeaturesSubTitle}>Acting is a process we&#39;ve made into digestible pieces for actors in any stage of their career.</p>
+        <p className={styles.secFeaturesText}>Acting is a process we&#39;ve made into digestible pieces for actors in any stage of their career.</p>
         <div className={styles.secFeaturesCard1}>
           <div>
             <Image className={styles.toolkitIcon} src={Toolkit} alt="toolkit"></Image>
@@ -114,7 +115,7 @@ export default function Home() {
       </section>
       <section className={styles.secondaryFeaturesContainer}>
         <div className={styles.secondaryFeaturesBkg}>
-        <p className={styles.secondaryFeaturesTitle}>Develop Skills That Stick With You Forever</p>
+        <p className={styles.secondaryFeaturesTitle}>Build Your Skills</p>
         </div>
       </section>
       {/*****FOOTER*****/}
