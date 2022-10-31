@@ -7,10 +7,11 @@ import Laura_mac from '../public/home_pics/lm1.jpg'
 import Laura_mac2 from '../public/home_pics/lm2.jpg'
 import Zoom from '../public/home_pics/zoom.jpeg'
 import Video_bkg from '../public/backgrounds/video_bkg.png'
-import Toolkit from '../public/icons/toolkit.png';
-import Tv from '../public/icons/tv.png'
-import Briefcase from '../public/icons/briefcase.png'
-import Studio from '../public/icons/studio.png'
+import { BriefcaseIcon, StudioIcon, StudyIcon, ToolkitIcon, TVIcon, TechniqueIcon, ExerciseIcon, AuditionIcon, CastingIcon, CharacterIcon, BusinessIcon, MarketingIcon, ProcessIcon } from '../public/icons/home_icons/home_icons'
+import Toolkit from '../public/icons/home_icons/toolkit.png';
+import Tv from '../public/icons/home_icons/tv.png'
+import Briefcase from '../public/icons/home_icons/briefcase.png'
+import Studio from '../public/icons/home_icons/studio.png'
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
         <Image className={styles.backgroundImage} src={Video_bkg} alt="background image"></Image>
         </section>
       </section>
+      {/*****PARTNER LOGOS*****/}
       <section className={styles.partnerLogoContainer}>
         <div className={styles.partnerLogoImages}>
           <Image className={styles.disneyLogo} src={disney_logo} alt="disney logo"></Image>
@@ -48,6 +50,7 @@ export default function Home() {
           <Image className={styles.universalLogo} src={universal_logo} alt="universal logo"></Image>
         </div>
       </section>
+      {/*****PRODUCT FEATURES SECTION 1*****/}
       <section className={styles.featuresContainer}>
         <div className={styles.feature1}>
           <Image className={styles.featurePic1} src={Laura_mac} alt="laura mac"></Image>
@@ -82,6 +85,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/*****PRODUCT FEATURES SECTION 2 CARDS*****/}
       <section className={styles.secFeaturesContainer}>
       <p className={styles.secFeaturesSubtitle}>NEW, FRESH & MODERN</p>
         <h3 className={styles.secFeaturesTitle}>Acting Lessons Unlike Anything You&#39;ve Ever Seen</h3>
@@ -113,9 +117,64 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/*****PRODUCT FEATURES SECTION 3 ICONS*****/}
       <section className={styles.secondaryFeaturesContainer}>
         <div className={styles.secondaryFeaturesBkg}>
         <p className={styles.secondaryFeaturesTitle}>Build Your Skills</p>
+        <div className={styles.secondaryFeaturesIconContainer}>
+          <div className={styles.sceneStudy}>
+            <Image className={styles.sceneStudyIcon} src={ExerciseIcon} alt="acting exercises"></Image>
+            <p>Acting Exercises</p>
+          </div>
+        </div>
+        <div className={styles.secondaryFeaturesIconContainer}>
+          <div className={styles.sceneStudy}>
+            <Image className={styles.sceneStudyIcon} src={TechniqueIcon} alt="acting techniques"></Image>
+            <p>Acting Technique</p>
+          </div>
+        </div>
+        <div className={styles.secondaryFeaturesIconContainer}>
+          <div className={styles.sceneStudy}>
+            <Image className={styles.sceneStudyIcon} src={ProcessIcon} alt="acting process development"></Image>
+            <p>Acting Process Development</p>
+          </div>
+        </div>
+        <div className={styles.secondaryFeaturesIconContainer}>
+          <div className={styles.sceneStudy}>
+            <Image className={styles.sceneStudyIcon} src={AuditionIcon} alt="audition prep"></Image>
+            <p>Audition Prep</p>
+          </div>
+        </div>
+        <div className={styles.secondaryFeaturesIconContainer}>
+          <div className={styles.sceneStudy}>
+            <Image className={styles.sceneStudyIcon} src={BusinessIcon} alt="business side of acting"></Image>
+            <p>Business Management</p>
+          </div>
+        </div>
+        <div className={styles.secondaryFeaturesIconContainer}>
+          <div className={styles.sceneStudy}>
+            <Image className={styles.sceneStudyIcon} src={CastingIcon} alt="casting breakthroughs"></Image>
+            <p>Casting Breakthroughs</p>
+          </div>
+        </div>
+        <div className={styles.secondaryFeaturesIconContainer}>
+          <div className={styles.sceneStudy}>
+            <Image className={styles.sceneStudyIcon} src={CharacterIcon} alt="character building"></Image>
+            <p>Character Building</p>
+          </div>
+        </div>
+        <div className={styles.secondaryFeaturesIconContainer}>
+          <div className={styles.sceneStudy}>
+            <Image className={styles.sceneStudyIcon} src={MarketingIcon} alt="marketing material development"></Image>
+            <p>Marketing Material Development</p>
+          </div>
+        </div>
+        <div className={styles.secondaryFeaturesIconContainer}>
+          <div className={styles.sceneStudy}>
+            <Image className={styles.sceneStudyIcon} src={StudyIcon} alt="scene study"></Image>
+            <p>Scene Study</p>
+          </div>
+        </div>
         </div>
       </section>
       {/*****FOOTER*****/}

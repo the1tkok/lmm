@@ -344,21 +344,38 @@
 
 .secondaryFeaturesBkg {
   background-color: #5972ff;
-  height: 60vh;
-  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  height: 60%;
+  width: 50%;
   border-radius: 15px;
-  padding-top: 4em;
+  justify-content: center;
+  padding: 4em;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
+  gap: 6em;
 }
 
 .secondaryFeaturesTitle {
   display: flex;
+  flex-basis: 100%;
   justify-content: center;
   color: white;
   font-family: "avenir medium";
   font-size: 2.7rem;
   margin: 0;
+}
+
+.secondaryFeaturesIconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 25%;
+}
+
+.sceneStudy {
+  color: white;
+  display: flex;
+  gap: 1.5em;
 }
 
 .footer {
@@ -464,7 +481,8 @@
 
   .partnerLogoContainer {
     font-size: 1.2rem;
-    height: 20vh;
+    height: auto;
+    padding: 2em 0em 2em 0em;
   }
 
   .partnerLogoImages {
