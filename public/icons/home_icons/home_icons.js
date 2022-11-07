@@ -11,7 +11,10 @@ import CharacterIcon from './character.png'
 import BusinessIcon from './business.png'
 import MarketingIcon from './marketing.png'
 import ProcessIcon from './process.png'
-
+import LeahIcon from './leah.png'
+import LaurenIcon from './lauren.png'
+import NathanIcon from './nathan.png'
+import NikhitaIcon from './nikhita.png'
 
 export {
   BriefcaseIcon,
@@ -26,5 +29,9 @@ export {
   CharacterIcon,
   BusinessIcon,
   MarketingIcon,
-  ProcessIcon
+  ProcessIcon,
+  LeahIcon,
+  LaurenIcon,
+  NathanIcon,
+  NikhitaIcon
 }
