@@ -209,7 +209,17 @@ export default function Home() {
           </div>
         </div>
       </section>
+       {/*****SIGN UP FORM SECTION 4*****/}
+      <section className={styles.fifthFeaturesContainer}>
+      <p className={styles.secFeaturesSubtitle}>PREMIER LEARNING EXPERIENCE</p>
+        <h3 className={styles.secFeaturesTitle}>Get Started Working The Method</h3>
+        <p className={styles.fifthFeaturesText}>We love when our students share their experiences, so we thought we&#39;d share them with you.</p>
+        <button className={styles.formButton2} display="block">Get Started</button>
+      </section>
       {/*****FOOTER*****/}
+      <footer>
+        <div className={styles.footerContainer}></div>
+      </footer>
     </div>
   )
 }

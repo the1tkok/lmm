@@ -378,11 +378,43 @@
   gap: 1.5em;
 }
 
+.fifthFeaturesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80%;
+  font-family: "avenir medium";
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-content: flex-start;
+  margin-bottom: 4em;
+  margin-top: 2em;
+}
+
+.fifthFeaturesTitle {
+  flex-basis: 100%;
+  margin: 0 0 0.5em 0;
+}
+
+.fifthFeaturesText {
+  flex-basis: 100%;
+  font-family: "avenir light";
+  font-size: 1.2rem;
+  margin: 0;
+  padding-bottom: 2em;
+}
+
 .footer {
   width: 0;
   height: 0;
   margin: 0;
   padding: 0;
+}
+
+.footerContainer {
+  display: flex;
+  height: 60vh;
+  background-color: #3d58f0;
 }
 
 /**********DESKTOP DISPLAY**********/
@@ -466,6 +498,19 @@
     flex-basis: auto;
     margin-top: 0%;
     margin-left: 10px;
+    height: auto;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: #3d58f0;
+    cursor: pointer;
+    padding: 0.7em 1em 0.7em 1em;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .formButton2 {
+    flex-basis: auto;
     height: auto;
     border-radius: 6px;
     border: none;
