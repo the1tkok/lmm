@@ -12,6 +12,8 @@ import Toolkit from '../public/icons/home_icons/toolkit.png';
 import Tv from '../public/icons/home_icons/tv.png'
 import Briefcase from '../public/icons/home_icons/briefcase.png'
 import Studio from '../public/icons/home_icons/studio.png'
+import Link from 'next/link'
+import logo from '../public/logo/laurafinallogo.svg'
 
 export default function Home() {
   return (
@@ -217,8 +219,56 @@ export default function Home() {
         <button className={styles.formButton2} display="block">Get Started</button>
       </section>
       {/*****FOOTER*****/}
-      <footer>
-        <div className={styles.footerContainer}></div>
+      <footer className={styles.footerContainer}>
+        <nav className={styles.footerNav}>
+          <div className={styles.footerLogoContainer}>
+          <div className={styles.logo}><Image className={styles.logo2} src={logo}
+        alt="logo"
+        width={150}
+        height='100%'
+        /></div>
+            <p>Company Description</p>
+            <p>Social Media Icons</p>
+          </div>
+          <div className={styles.footerAboutContainer}>
+            <h3>About</h3>
+            <p>News and Updates</p>
+            <p>Mission Statement</p>
+            <p>Team</p>
+            <p>Content Specialists</p>
+            <p>Testimonials</p>
+            <p>Contributors</p>
+            <p>Careers</p>
+            <p>Internships</p>
+            <br></br>
+            <h3>Locations</h3>
+            <p>Acting Classes Near Me</p>
+          </div>
+          <div className={styles.footerServicesContainer}>
+            <h3>Services</h3>
+            <p>The Foundations</p>
+            <p>The Academy</p>
+            <p>One on One Coaching</p>
+          <br></br>
+            <h3>Courses</h3>
+            <p>The Actor&#38;s Toolkit</p>
+            <p>Commercial Acting Workshop</p>
+            <p>Business of You</p>
+            <p>Acting for Film and Television</p>
+          </div>
+          <div className={styles.footerContactContainer}>
+            <h3>Contact</h3>
+            <p>Email Us</p>
+            <p>Help Center</p>
+            <p>Press and Media</p>
+          <br></br>
+            <h3>Terms and Conditions</h3>
+            <p>Terms of Use</p>
+            <p>Privacy of Policy</p>
+            <p>Cookie Notice</p>
+            <p>Copyright and Trademark</p>
+          </div>
+        </nav>
       </footer>
     </div>
   )
