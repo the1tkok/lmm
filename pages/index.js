@@ -251,7 +251,7 @@ export default function Home() {
             <p>One on One Coaching</p>
           <br></br>
             <h3>Courses</h3>
-            <p>The Actor&#38;s Toolkit</p>
+            <p>The Actor&#39;s Toolkit</p>
             <p>Commercial Acting Workshop</p>
             <p>Business of You</p>
             <p>Acting for Film and Television</p>
