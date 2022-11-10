@@ -588,6 +588,10 @@
     display: flex;
   }
 
+  .footer p {
+    font-family: "avenir light";
+  }
+
   .footerLogoContainer {
   }
 
