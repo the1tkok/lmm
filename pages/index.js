@@ -8,7 +8,8 @@ import Laura_mac2 from '../public/home_pics/lm2.jpg'
 import Zoom from '../public/home_pics/zoom.jpeg'
 import Video_bkg from '../public/backgrounds/video_bkg.png'
 import { BriefcaseIcon, StudioIcon, StudyIcon, ToolkitIcon, TVIcon, TechniqueIcon, ExerciseIcon, AuditionIcon, CastingIcon, CharacterIcon, BusinessIcon, MarketingIcon, ProcessIcon, LeahIcon, LaurenIcon, NikhitaIcon, NathanIcon } from '../public/icons/home_icons/home_icons'
-import Toolkit from '../public/icons/home_icons/toolkit.png';
+import { Facebook_Icon, Instagram_Icon, Twitter_Icon, Youtube_Icon } from '../public/icons/social_icons/social_icons'
+import Toolkit from '../public/icons/home_icons/toolkit.png'
 import Tv from '../public/icons/home_icons/tv.png'
 import Briefcase from '../public/icons/home_icons/briefcase.png'
 import Studio from '../public/icons/home_icons/studio.png'
@@ -227,8 +228,13 @@ export default function Home() {
         width={150}
         height='100%'
         /></div>
-            <p>Company Description</p>
-            <p>Social Media Icons</p>
+            <p>Online Acting School</p>
+            <div className={styles.footerSocialIconContainer}>
+            <div><Image className={styles.instagramIcon} src={Instagram_Icon} alt="instagram icon"></Image></div>
+            <div><Image className={styles.facebookIcon} src={Facebook_Icon} alt="facebook icon"></Image></div>
+            <div><Image className={styles.twitterIcon} src={Twitter_Icon} alt="twitter icon"></Image></div>
+            <div><Image className={styles.youtubeIcon} src={Youtube_Icon} alt="youtube icon"></Image></div>
+            </div>
           </div>
           <div className={styles.footerAboutContainer}>
             <h3>About</h3>

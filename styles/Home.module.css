@@ -593,4 +593,10 @@
 
   .footerAboutContainer {
   }
+
+  .footerSocialIconContainer {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+  }
 }
