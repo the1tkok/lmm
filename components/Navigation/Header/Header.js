@@ -1,7 +1,7 @@
 import styles from './header.module.css'
 import Image from 'next/future/image'
 import Link from 'next/link'
-import logo from '../../public/logo/laurafinallogo.svg'
+import logo from '../../../public/logo/laurafinallogo.svg'
 
 const Header = () => {
   return (
