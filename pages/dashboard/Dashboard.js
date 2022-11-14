@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from '../../components/Navigation/Header/Header'
+import Header from '../../components/Dashboard/Navigation/Header/Header'
 import styles from './dashboard.module.css'
 import InfoNavBar from '../../components/Dashboard/InfoNav/InfoNav'
 
@@ -21,16 +21,34 @@ export default function Dashboard() {
         <div className={styles.dashboardNavBar}>
           <p>Welcome back, Laura!</p>
           <p>Last Logged In: 1 day ago</p>
-          <ul>
-            <li>Home</li>
-            <li>Classes</li>
-            <li>Course Materials</li>
-            <li>Messages</li>
+          <ul className={styles.dashboardNavItems}>
+            <li className={styles.dashboardNavButtons}>Home</li>
+            <li className={styles.dashboardNavButtons}>Classes</li>
+            <li className={styles.dashboardNavButtons}>Course Materials</li>
+            <li className={styles.dashboardNavButtons}>Community</li>
+            <li className={styles.dashboardNavButtons}>Messages</li>
           </ul>
         </div>
-          <div className={styles.dashboardHeader}></div>
-          <div className={styles.courseProgress}></div>
-          <div className={styles.userNotifications}></div>
+        <div className={styles.dashboardContentContainer}>
+          <div className={styles.dashboardHeader}><h1>Home</h1></div>
+          <div className={styles.dashboardMainContainer}>
+            <div className={styles.courseProgress}>
+              <h2 className={styles.courseProgressTitle}>Progress</h2>
+              <div className={styles.courseProgressLessonContainer}></div>
+            </div>
+          </div>
+
+          <div className={styles.userNotificationsContainer}>
+                <div className={styles.messagesContainer}>
+                  <h2 className={styles.userNotificationsTitle}>Messages</h2>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+          </div>
+
           <div className={styles.newsAndAnnouncements}></div>
           <div className={styles.quizzesContainer}>
             <div className={styles.quizzesCompleted}></div>
@@ -41,7 +59,8 @@ export default function Dashboard() {
             <div className={styles.userClassAttendance}></div>
           </div>
           <div className={styles.userProgressTree}></div>
-      </div>
+          </div>
+        </div>
     </div>
   )
 }

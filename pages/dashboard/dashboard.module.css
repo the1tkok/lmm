@@ -1,6 +1,9 @@
 .dashboardContainer {
   height: 100vh;
   width: 100vw;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*
@@ -18,18 +21,98 @@
 }
 
 .infoSidebar {
-  flex-basis: 7%;
+  position: fixed;
+  width: 5rem;
   height: 100vh;
   background-color: #f5f5f5;
+  top: 5rem;
 }
 
 .dashboardNavBar {
-  background-color: blue;
-  height: 10%;
-  grid-area: sidenavbar;
+  position: fixed;
+  margin-left: 5rem;
+  padding-left: 1rem;
+  background-color: white;
+  width: 15rem;
+  height: 100vh;
+  text-align: left;
+  top: 5rem;
+}
+
+.dashboardNavItems li {
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.dashboardNavButtons {
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.dashboardNavItems li:hover {
+  border-left: 5px solid #3d58f0;
+  padding-left: 1rem;
+}
+
+/*******HEADER******/
+
+.dashboardContentContainer {
+  display: flex;
 }
 
 .dashboardHeader {
-  background-color: red;
-  grid-area: dashboardheader;
+  display: flex;
+  background-color: #3d58f0;
+  border-radius: 6px;
+  margin-left: 22rem;
+  height: 4rem;
+  position: fixed;
+  color: white;
+  align-items: center;
+  padding-left: 2rem;
+  top: 6rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*****COURSE PROGRESS*****/
+
+.dashboardMainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 22rem;
+}
+
+.courseProgress {
+  display: flex;
+}
+
+.courseProgressTitle {
+  color: black;
+  margin-top: 11rem;
+  height: fit-content;
+}
+
+.courseProgressLessonContainer {
+  background-color: #3d58f0;
+  border-radius: 6px;
+  width: 40rem;
+  height: 22rem;
+  margin-top: 14rem;
+  margin-left: -6.2rem;
+}
+
+/*****USER NOTIFICATIONS*****/
+
+.userNotificationsContainer {
+}
+
+.userNotificationsTitle {
+  margin-top: 11rem;
+  height: fit-content;
 }
