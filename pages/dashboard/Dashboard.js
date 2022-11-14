@@ -18,7 +18,7 @@ export default function Dashboard() {
         <div className={styles.infoSidebar}>
           <InfoNavBar></InfoNavBar>
         </div>
-        <div className={styles.dashboardNavBar}>
+        <div className={styles.userDashboardNavBar}>
           <p>Welcome back, Laura!</p>
           <p>Last Logged In: 1 day ago</p>
           <ul className={styles.dashboardNavItems}>
@@ -36,17 +36,20 @@ export default function Dashboard() {
               <h2 className={styles.courseProgressTitle}>Progress</h2>
               <div className={styles.courseProgressLessonContainer}></div>
             </div>
+
+            <div className={styles.notificationsContainer}>
+                <div className={styles.userNotificationsTitle}><h2>Messages</h2></div>
+                <div className={styles.messagesContainer}>
+                  <div className={styles.userNotifcations}>
+                    <ul className={styles.userNotificationsList}>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
           </div>
 
-          <div className={styles.userNotificationsContainer}>
-                <div className={styles.messagesContainer}>
-                  <h2 className={styles.userNotificationsTitle}>Messages</h2>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
           </div>
 
           <div className={styles.newsAndAnnouncements}></div>
