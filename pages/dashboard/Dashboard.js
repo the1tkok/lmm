@@ -38,7 +38,7 @@ export default function Dashboard() {
             </div>
 
             <div className={styles.notificationsContainer}>
-                <div className={styles.userNotificationsTitle}><h2>Messages</h2></div>
+                <div className={styles.userNotificationsTitle}><h2>Notifications</h2></div>
                 <div className={styles.messagesContainer}>
                   <div className={styles.userNotifcations}>
                     <ul className={styles.userNotificationsList}>
