@@ -27,7 +27,10 @@ export default function Home() {
       <Header></Header>
       {/*****HERO SECTION*****/}
       <section className={styles.heroSection}>
-        <iframe className={styles.homeIframe} src={'https://player.vimeo.com/video/479896106?h=cde2d98eaa'}></iframe>
+      <div className={styles.homeIframeContainer}>
+          <Image className={styles.backgroundImage} src={Video_bkg} alt="background image"></Image>
+          <iframe className={styles.homeIframe} src={'https://player.vimeo.com/video/479896106?h=cde2d98eaa'}></iframe>
+        </div>
         <section className={styles.heroText}>
           <h1 className={styles.heroHeading}>We Build<br className={styles.break1}></br>Working Actors.<br className={styles.break2}></br></h1>
           <br></br>
@@ -37,7 +40,6 @@ export default function Home() {
             <input className={styles.emailInput} type="text" id="userEmail" name="email" placeholder="name@email.com"></input>
             <button className={styles.formButton1} display="block">Enroll for FREE Classes</button>
           </form>
-        <Image className={styles.backgroundImage} src={Video_bkg} alt="background image"></Image>
         </section>
       </section>
       {/*****PARTNER LOGOS*****/}

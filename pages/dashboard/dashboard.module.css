@@ -1,0 +1,35 @@
+.dashboardContainer {
+  height: 100vh;
+  width: 100vw;
+}
+
+/*
+.userDashboardContainer {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-areas: "infosidebar infosidebar sidenavbar sidenavbar sidenavbar sidenavbar dashboardheader dashboardheader dashboardheader";
+  gap: 30px;
+}
+*/
+
+.userDashboardContainer {
+  display: flex;
+}
+
+.infoSidebar {
+  flex-basis: 7%;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.dashboardNavBar {
+  background-color: blue;
+  height: 10%;
+  grid-area: sidenavbar;
+}
+
+.dashboardHeader {
+  background-color: red;
+  grid-area: dashboardheader;
+}

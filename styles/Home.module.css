@@ -31,12 +31,16 @@
 }
 
 .backgroundImage {
-  display: flex;
-  position: absolute;
-  top: -8em;
-  left: 25em;
-  width: 604px;
+  display: inline-block;
+  background-repeat: no-repeat;
   height: 604px;
+  width: 604px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-93%, 0);
+  z-index: 2;
+  content: "";
+  top: -120px;
 }
 
 .homeIframe {
@@ -45,6 +49,18 @@
   border: none;
   position: relative;
   z-index: 5;
+}
+
+.videoBackgroundImage::after {
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 700px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-90%, 0);
+  z-index: 2;
+  content: "";
 }
 
 .heroText {
