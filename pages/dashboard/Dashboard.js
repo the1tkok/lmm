@@ -44,6 +44,11 @@ export default function Dashboard() {
               </div>
             </div>
     
+            <div className={styles.courseNotifications}>
+              <div className={styles.courseNotificationsContainer}>
+              <h2 className={styles.courseNotificationsTitle}>News & Updates</h2>
+              </div>
+            </div>
 
           </div>
 
