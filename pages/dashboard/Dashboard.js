@@ -33,22 +33,17 @@ export default function Dashboard() {
           <div className={styles.dashboardHeader}><h1>Home</h1></div>
           <div className={styles.dashboardMainContainer}>
             <div className={styles.courseProgress}>
+              <div className={styles.courseProgressLessonContainer}>
               <h2 className={styles.courseProgressTitle}>Progress</h2>
-              <div className={styles.courseProgressLessonContainer}></div>
+              </div>
             </div>
 
-            <div className={styles.notificationsContainer}>
-                <h2 className={styles.userNotificationsTitle}>Notifications</h2>
-                <div className={styles.messagesContainer}>
-                  <div className={styles.userNotifcations}>
-                    <ul className={styles.userNotificationsList}>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                </div>
-          </div>
+            <div className={styles.courseNotifications}>
+              <div className={styles.courseNotificationsContainer}>
+              <h2 className={styles.courseNotificationsTitle}>Notifications</h2>
+              </div>
+            </div>
+    
 
           </div>
 
