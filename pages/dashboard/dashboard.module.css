@@ -36,7 +36,11 @@
   width: 15rem;
   height: 100vh;
   text-align: left;
-  top: 5rem;
+  top: 8rem;
+}
+
+.dashboardNavItems {
+  margin-top: 2.9rem;
 }
 
 .dashboardNavItems li {
@@ -45,7 +49,7 @@
 }
 
 .dashboardNavButtons {
-  border: 1px solid lightgray;
+  border: 1px solid rgb(228, 226, 226);
   border-radius: 6px;
   padding: 1rem 2rem 1rem 2rem;
   width: 100%;
@@ -75,7 +79,23 @@
   color: white;
   align-items: center;
   padding-left: 2rem;
-  top: 6rem;
+  top: 8rem;
+  bottom: 0;
+  left: 0;
+  right: 2em;
+}
+
+.dashboardHeader::before {
+  content: "";
+  display: flex;
+  background-color: white;
+  margin-left: 23rem;
+  height: 4rem;
+  position: fixed;
+  color: white;
+  align-items: center;
+  padding-left: 2rem;
+  top: 4rem;
   bottom: 0;
   left: 0;
   right: 2em;
@@ -87,7 +107,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 23rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .courseProgress {
