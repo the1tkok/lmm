@@ -599,6 +599,7 @@
   }
 
   .feature1 {
+    align-items: center;
     display: flex;
     flex-basis: 100%;
     flex-direction: row-reverse;
@@ -640,6 +641,7 @@
   }
 
   .feature2 {
+    align-items: center;
     display: flex;
     flex-basis: 100%;
     gap: 5em;
@@ -647,6 +649,7 @@
   }
 
   .featurePic2 {
+    align-items: center;
     border: none;
     border-radius: 15px;
     width: 469.64px;
@@ -654,6 +657,7 @@
   }
 
   .feature3 {
+    align-items: center;
     display: flex;
     flex-basis: 100%;
     flex-direction: row-reverse;
@@ -669,6 +673,7 @@
   }
 
   .feature4 {
+    align-items: center;
     display: flex;
     flex-basis: 100%;
     margin-bottom: 8em;
