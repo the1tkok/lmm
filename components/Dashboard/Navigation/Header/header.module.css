@@ -70,6 +70,14 @@
     z-index: 10;
   }
 
+  .logo2 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 5rem;
+    display: block;
+    height: 100%;
+  }
+
   .navContainer {
     display: flex;
     position: fixed;
