@@ -48,7 +48,7 @@ export default function Dashboard() {
     
             <div className={styles.courseNews}>
               <div className={styles.courseNewsContainer}>
-              <h2 className={styles.courseNewsTitle}>News Updates</h2>
+              <h2 className={styles.courseNewsTitle}>News & Updates</h2>
               </div>
             </div>
 
