@@ -97,7 +97,7 @@
 .dashboardHeader {
   display: flex;
   background-color: #3d58f0;
-  border-radius: 6px;
+  border-radius: 12px;
   margin-left: 23rem;
   height: 4rem;
   position: fixed;
@@ -143,6 +143,7 @@
 .courseNewsContainer {
   box-shadow: 0 5px 4px rgba(154, 160, 185, 0.05),
     0 10px 40px rgba(166, 173, 201, 0.2);
+  border-radius: 12px;
 }
 
 .courseProgress {
@@ -157,10 +158,10 @@
   margin-left: 2rem;
   height: fit-content;
   font-family: "avenir medium";
+  font-size: 1.4rem;
 }
 
 .courseProgressLessonContainer {
-  border-radius: 6px;
   width: 30rem;
   height: 18rem;
   margin-left: -6.2rem;
@@ -173,7 +174,6 @@
 }
 
 .courseNotificationsContainer {
-  border-radius: 6px;
   width: 24rem;
   height: 18rem;
   margin-left: -6.2rem;
@@ -186,7 +186,6 @@
 }
 
 .courseNewsContainer {
-  border-radius: 6px;
   width: 24rem;
   height: 18rem;
   margin-left: -6.2rem;
