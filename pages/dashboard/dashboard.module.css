@@ -20,14 +20,6 @@
   display: flex;
 }
 
-.infoSidebar {
-  position: fixed;
-  width: 5rem;
-  height: 100vh;
-  background-color: #f5f5f5;
-  top: 5rem;
-}
-
 .userDashboardNavBar {
   position: fixed;
   margin-left: 5rem;
@@ -39,6 +31,15 @@
   top: 8rem;
 }
 
+.userGreeting {
+  font-family: "avenir medium";
+  font-size: 1.3rem;
+}
+
+.lastLoggedIn {
+  font-family: "avenir light";
+}
+
 .dashboardNavItems {
   margin-top: 2.9rem;
 }
@@ -48,13 +49,25 @@
   padding-left: 2rem;
 }
 
-.dashboardNavButtons {
-  border: 1px solid rgb(228, 226, 226);
+.dashboardHomeButton,
+.dashboardClassesButton,
+.dashboardCourseMaterialsButton,
+.dashboardCommunityButton,
+.dashboardMessagesButton {
+  border: 1px solid #ededed;
   border-radius: 6px;
   padding: 1rem 2rem 1rem 2rem;
   width: 100%;
   margin-bottom: 1rem;
   cursor: pointer;
+}
+
+.dashboardHomeText {
+  font-family: "avenir medium";
+}
+
+.dashboardHomeButton {
+  border-left: 5px solid #3d58f0;
 }
 
 .dashboardNavItems li:hover {
@@ -83,6 +96,7 @@
   bottom: 0;
   left: 0;
   right: 2em;
+  font-family: "avenir black";
 }
 
 .dashboardHeader::before {
@@ -107,19 +121,30 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 29.25rem;
-  margin-top: 18rem;
+  margin-top: 16.2rem;
   gap: 11rem;
   align-items: flex-start;
+}
+
+.courseProgressLessonContainer,
+.courseNotificationsContainer,
+.courseNewsContainer {
+  box-shadow: 0 5px 4px rgba(154, 160, 185, 0.05),
+    0 10px 40px rgba(166, 173, 201, 0.2);
 }
 
 .courseProgress {
   display: flex;
 }
 
-.courseProgressTitle {
+.courseProgressTitle,
+.courseNotificationsTitle,
+.courseNewsTitle {
   color: black;
-  margin-top: -4rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
   height: fit-content;
+  font-family: "avenir medium";
 }
 
 .courseProgressLessonContainer {
@@ -127,7 +152,6 @@
   width: 30rem;
   height: 18rem;
   margin-left: -6.2rem;
-  border: 1px solid rgb(228, 226, 226);
 }
 
 /*****USER NOTIFICATIONS*****/
@@ -136,14 +160,20 @@
   display: flex;
 }
 
-.courseNotificationsTitle {
-  color: black;
-  margin-top: -4rem;
-  height: fit-content;
+.courseNotificationsContainer {
+  border-radius: 6px;
+  width: 24rem;
+  height: 18rem;
+  margin-left: -6.2rem;
 }
 
-.courseNotificationsContainer {
-  border: 1px solid rgb(228, 226, 226);
+/*****NEWS & UPDATES*****/
+
+.courseNews {
+  display: flex;
+}
+
+.courseNewsContainer {
   border-radius: 6px;
   width: 24rem;
   height: 18rem;

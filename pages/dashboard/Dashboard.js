@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../../components/Dashboard/Navigation/Header/Header'
 import styles from './dashboard.module.css'
 import InfoNavBar from '../../components/Dashboard/InfoNav/InfoNav'
+import Link from 'next/link'
 
 export default function Dashboard() {
   return (
@@ -19,19 +20,20 @@ export default function Dashboard() {
           <InfoNavBar></InfoNavBar>
         </div>
         <div className={styles.userDashboardNavBar}>
-          <p>Welcome back, Laura!</p>
-          <p>Last Logged In: 1 day ago</p>
+          <p className={styles.userGreeting}>Welcome back, Laura!</p>
+          <p className={styles.lastLoggedIn}>Last Logged In: 1 day ago</p>
           <ul className={styles.dashboardNavItems}>
-            <li className={styles.dashboardNavButtons}>Home</li>
-            <li className={styles.dashboardNavButtons}>Classes</li>
-            <li className={styles.dashboardNavButtons}>Course Materials</li>
-            <li className={styles.dashboardNavButtons}>Community</li>
-            <li className={styles.dashboardNavButtons}>Messages</li>
+            <li className={styles.dashboardHomeButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Home</a></Link></li>
+            <li className={styles.dashboardClassesButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Classes</a></Link></li>
+            <li className={styles.dashboardCourseMaterialsButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Course Materials</a></Link></li>
+            <li className={styles.dashboardCommunityButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Community</a></Link></li>
+            <li className={styles.dashboardMessagesButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Messages</a></Link></li>
           </ul>
         </div>
         <div className={styles.dashboardContentContainer}>
           <div className={styles.dashboardHeader}><h1>Home</h1></div>
           <div className={styles.dashboardMainContainer}>
+            
             <div className={styles.courseProgress}>
               <div className={styles.courseProgressLessonContainer}>
               <h2 className={styles.courseProgressTitle}>Progress</h2>
@@ -44,9 +46,9 @@ export default function Dashboard() {
               </div>
             </div>
     
-            <div className={styles.courseNotifications}>
-              <div className={styles.courseNotificationsContainer}>
-              <h2 className={styles.courseNotificationsTitle}>News & Updates</h2>
+            <div className={styles.courseNews}>
+              <div className={styles.courseNewsContainer}>
+              <h2 className={styles.courseNewsTitle}>News Updates</h2>
               </div>
             </div>
 

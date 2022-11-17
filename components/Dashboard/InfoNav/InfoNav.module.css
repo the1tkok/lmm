@@ -1,3 +1,16 @@
+.infoSidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  width: 5rem;
+  height: 100vh;
+  background-color: #3d58f0;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
 .profilePicColor {
   color: red;
   text-align: center;

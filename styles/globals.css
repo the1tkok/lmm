@@ -9,6 +9,23 @@ body {
   height: 100vh;
 }
 
+/**********FONTS**********/
+
+@font-face {
+  font-family: "avenir medium";
+  src: url(../public/fonts/Avenir/AvenirLTProMedium.otf);
+}
+
+@font-face {
+  font-family: "avenir light";
+  src: url(../public/fonts/Avenir/AvenirLTProLight.otf);
+}
+
+@font-face {
+  font-family: "avenir black";
+  src: url(../public/fonts/Avenir/AvenirLTProBlack.otf);
+}
+
 body {
   overflow-x: hidden;
 }
