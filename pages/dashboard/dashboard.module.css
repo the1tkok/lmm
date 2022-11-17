@@ -21,6 +21,11 @@
 }
 
 .userDashboardNavBar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
   position: fixed;
   margin-left: 5rem;
   padding-left: 1rem;
@@ -34,14 +39,19 @@
 .userGreeting {
   font-family: "avenir medium";
   font-size: 1.3rem;
+  margin: 0;
 }
 
 .lastLoggedIn {
   font-family: "avenir light";
+  margin: 0;
 }
 
 .dashboardNavItems {
-  margin-top: 2.9rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2em;
 }
 
 .dashboardNavItems li {
@@ -58,7 +68,6 @@
   border-radius: 6px;
   padding: 1rem 2rem 1rem 2rem;
   width: 100%;
-  margin-bottom: 1rem;
   cursor: pointer;
 }
 
