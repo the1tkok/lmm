@@ -29,19 +29,16 @@ const Header = () => {
           {/*****DESKTOP NAVIGATION*****/}
           <ul className={styles.navUl}>
             <li className={styles.navListMenu}>
-              <Link href={'/'}><a className={styles.viewCurriculumButton}>View Curriculum</a></Link>
+              <Link href={'/'}><a className={styles.viewCurriculumButton}>One on One Coaching</a></Link>
             </li>
             <li className={styles.navListMenu}>
-              <Link href={'/'}><a className={styles.pricingButton}>Pricing</a></Link>
+              <Link href={'/'}><a className={styles.pricingButton}>About</a></Link>
             </li>
             <li className={styles.navListMenu}>
               <Link href={'/'}><a className={styles.blogButton}>Blog</a></Link>
             </li>
             <li className={styles.navListMenu}>
-              <Link href={'/'}><a className={styles.loginButton}>Login</a></Link>
-            </li>
-            <li className={styles.navListMenu}>
-              <Link href={'/'}><a className={styles.registerButton}>Register</a></Link>
+              <Link href={'/'}><a className={styles.registerButton}>Upgrade Plan</a></Link>
             </li>
           </ul>
         </nav>
