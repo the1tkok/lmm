@@ -20,7 +20,7 @@ export default function Dashboard() {
         </div>
         <div className={styles.userDashboardNavBar}>
           <p className={styles.userGreeting}>Welcome back, Laura!</p>
-          <p className={styles.lastLoggedIn}>Next Class: 1 month 3 days</p>
+          <p className={styles.lastLoggedIn}>Next Class: January 6th</p>
           <ul className={styles.dashboardNavItems}>
             <li className={styles.dashboardHomeButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Home</a></Link></li>
             <li className={styles.dashboardClassesButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Classes</a></Link></li>
