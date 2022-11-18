@@ -30,9 +30,9 @@
   padding-left: 2rem;
   background-color: white;
   width: 15rem;
-  height: 100vh;
+  height: 100%;
   text-align: left;
-  top: 8rem;
+  padding-top: 8rem;
 }
 
 .userGreeting {
