@@ -146,15 +146,20 @@
 .courseAwardsContainer,
 .courseAwardsContainer,
 .courseAttendanceContainer {
-  box-shadow: 0 5px 4px rgba(154, 160, 185, 0.05),
-    0 10px 40px rgba(166, 173, 201, 0.2);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
   border-radius: 12px;
 }
 
 .courseProgressLessonContainer:hover,
-.courseNotificationsContainer:hover {
-  box-shadow: 0 5px 4px rgba(154, 160, 185, 0.05),
-    0 10px 40px rgba(61, 88, 240, 0.2);
+.courseNotificationsContainer:hover,
+.courseNewsContainer:hover,
+.courseQuizzesAvgContainer:hover,
+.courseQuizzesCompletedContainer:hover,
+.courseAwardsContainer:hover,
+.courseAttendanceContainer:hover {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(61, 88, 240, 0.14);
 }
 
 .courseProgress {
@@ -231,8 +236,8 @@
   border-radius: 90px;
   width: 8rem;
   height: 8rem;
-  box-shadow: 0 5px 4px rgba(154, 160, 185, 0.05),
-    0 10px 40px rgba(166, 173, 201, 0.2);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
 .quizzesCompletedContainerCircle {
