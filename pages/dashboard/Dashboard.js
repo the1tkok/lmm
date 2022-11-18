@@ -20,7 +20,7 @@ export default function Dashboard() {
         </div>
         <div className={styles.userDashboardNavBar}>
           <p className={styles.userGreeting}>Welcome back, Laura!</p>
-          <p className={styles.lastLoggedIn}>Last Logged In: 1 day ago</p>
+          <p className={styles.lastLoggedIn}>Next Class: 1 month 3 days</p>
           <ul className={styles.dashboardNavItems}>
             <li className={styles.dashboardHomeButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Home</a></Link></li>
             <li className={styles.dashboardClassesButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Classes</a></Link></li>
@@ -29,7 +29,7 @@ export default function Dashboard() {
             <li className={styles.dashboardMessagesButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Messages</a></Link></li>
           </ul>
         </div>
-          <div className={styles.dashboardHeader}><h1>Home</h1></div>
+          <div className={styles.dashboardHeader}><h1>The Actor&#39;s Academy</h1></div>
           <div className={styles.dashboardMainContainer}>
             
               <div className={styles.courseProgressLessonContainer}>
