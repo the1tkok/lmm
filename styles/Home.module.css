@@ -49,6 +49,7 @@
   border: none;
   position: relative;
   z-index: 5;
+  border-radius: 12px;
 }
 
 .videoBackgroundImage::after {
