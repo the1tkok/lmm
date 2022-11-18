@@ -64,6 +64,10 @@
 @media only screen and (min-width: 811px) {
   /*****NAVIGATION BAR*****/
 
+  .logo2 {
+    margin-left: 5rem;
+  }
+
   .navContainer {
     margin-bottom: 8em;
   }
