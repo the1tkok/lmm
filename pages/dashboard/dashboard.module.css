@@ -54,7 +54,7 @@
   flex-wrap: nowrap;
   gap: 2rem;
   color: #1f1f1f;
-  padding-top: 1.5rem;
+  padding-top: 2.7rem;
 }
 
 .dashboardNavItems li {
@@ -107,7 +107,7 @@
   top: 8rem;
   bottom: 0;
   left: 0;
-  right: 3rem;
+  right: 4.6rem;
   font-family: "avenir black";
 }
 
@@ -124,7 +124,7 @@
   top: 4rem;
   bottom: 0;
   left: 0;
-  right: 2em;
+  right: 4.6rem;
 }
 
 /*****COURSE PROGRESS*****/
@@ -133,7 +133,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 23rem;
-  margin-top: 14.7rem;
+  margin-top: 16rem;
   gap: 4rem;
   align-items: flex-start;
 }
