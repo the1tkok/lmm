@@ -44,14 +44,17 @@ export default function Dashboard() {
                 <h2 className={styles.courseNewsTitle}>News & Updates</h2>
               </div>
 
-          <div className={styles.newsAndAnnouncements}></div>
-          <div className={styles.quizzesContainer}>
-            <div className={styles.quizzesCompleted}></div>
-            <div className={styles.avgQuizScore}></div>
+          <div className={styles.courseQuizzesAvgContainer}>
+            <h2 className={styles.courseQuizzesAvgTitle}>Average Quiz Score</h2>
           </div>
-          <div className={styles.awardsAndRecognitionContainer}>
-            <div className={styles.userBadges}></div>
-            <div className={styles.userClassAttendance}></div>
+
+          <div className={styles.courseQuizzesCompletedContainer}>
+            <h2 className={styles.courseQuizzesCompletedTitle}>Quizzes Completed</h2>
+          </div>
+
+          <div className={styles.courseAwardsAndRecognitionContainer}>
+            <div className={styles.courseAwardsContainer}></div>
+            <div className={styles.courseAttendanceContainer}></div>
           </div>
           <div className={styles.userProgressTree}></div>
           </div>

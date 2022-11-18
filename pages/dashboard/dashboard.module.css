@@ -134,13 +134,18 @@
   flex-wrap: wrap;
   margin-left: 23rem;
   margin-top: 14.7rem;
-  gap: 4.8rem;
+  gap: 4rem;
   align-items: flex-start;
 }
 
 .courseProgressLessonContainer,
 .courseNotificationsContainer,
-.courseNewsContainer {
+.courseNewsContainer,
+.courseQuizzesAvgContainer,
+.courseQuizzesCompletedContainer,
+.courseAwardsContainer,
+.courseAwardsContainer,
+.courseAttendanceContainer {
   box-shadow: 0 5px 4px rgba(154, 160, 185, 0.05),
     0 10px 40px rgba(166, 173, 201, 0.2);
   border-radius: 12px;
@@ -152,13 +157,20 @@
 
 .courseProgressTitle,
 .courseNotificationsTitle,
-.courseNewsTitle {
+.courseNewsTitle,
+.courseQuizzesAvgTitle,
+.courseQuizzesCompletedTitle {
   color: #1f1f1f;
   margin-top: 2rem;
   margin-left: 2rem;
   height: fit-content;
   font-family: "avenir medium";
   font-size: 1.4rem;
+}
+
+.courseQuizzesAvgTitle,
+.courseQuizzesCompletedTitle {
+  font-size: 0.9rem;
 }
 
 .courseProgressLessonContainer {
@@ -168,10 +180,6 @@
 
 /*****USER NOTIFICATIONS*****/
 
-.courseNotifications {
-  display: flex;
-}
-
 .courseNotificationsContainer {
   width: 30rem;
   height: 18rem;
@@ -179,11 +187,37 @@
 
 /*****NEWS & UPDATES*****/
 
-.courseNews {
-  display: flex;
-}
-
 .courseNewsContainer {
   width: 24.4rem;
   height: 18rem;
+}
+
+/*****QUIZZES*****/
+
+.courseQuizzesAvgContainer {
+  width: 12.6rem;
+  height: 18rem;
+}
+
+.courseQuizzesCompletedContainer {
+  width: 12.6rem;
+  height: 18rem;
+}
+
+/*****BADGES*****/
+
+.courseAwardsAndRecognitionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.courseAwardsContainer {
+  width: 30rem;
+  height: 10rem;
+}
+
+.courseAttendanceContainer {
+  width: 30rem;
+  height: 10rem;
 }
