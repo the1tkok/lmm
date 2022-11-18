@@ -70,6 +70,8 @@
 
   .navContainer {
     margin-bottom: 8em;
+    margin-top: 0;
+    padding-top: 1rem;
   }
 
   .mobileNavContainer {
