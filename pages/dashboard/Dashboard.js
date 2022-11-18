@@ -15,7 +15,6 @@ export default function Dashboard() {
       </Head>
       <Header></Header>
       {/*****SIDEBAR NAVIGATION*****/}
-      <div className={styles.userDashboardContainer}>
         <div className={styles.infoSidebar}>
           <InfoNavBar></InfoNavBar>
         </div>
@@ -56,7 +55,6 @@ export default function Dashboard() {
           </div>
           <div className={styles.userProgressTree}></div>
           </div>
-        </div>
     </div>
   )
 }
