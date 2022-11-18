@@ -47,14 +47,14 @@ export default function Dashboard() {
           <div className={styles.courseQuizzesAvgContainer}>
             <h2 className={styles.courseQuizzesAvgTitle}>Average Quiz Score</h2>
             <div className={styles.quizzesContainerBkg}>
-              <div className={styles.quizzesContainerCircle}></div>
+              <div className={styles.quizzesContainerCircle}><h1 className={styles.quizzesCircleTitle}>A+</h1></div>
             </div>
           </div>
 
           <div className={styles.courseQuizzesCompletedContainer}>
             <h2 className={styles.courseQuizzesCompletedTitle}>Quizzes Completed</h2>
             <div className={styles.quizzesContainerBkg}>
-              <div className={styles.quizzesCompletedContainerCircle}></div>
+              <div className={styles.quizzesCompletedContainerCircle}><h1 className={styles.quizzesCircleTitle}>2/35</h1></div>
             </div>
           </div>
 

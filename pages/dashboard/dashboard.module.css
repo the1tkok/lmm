@@ -151,6 +151,12 @@
   border-radius: 12px;
 }
 
+.courseProgressLessonContainer:hover,
+.courseNotificationsContainer:hover {
+  box-shadow: 0 5px 4px rgba(154, 160, 185, 0.05),
+    0 10px 40px rgba(61, 88, 240, 0.2);
+}
+
 .courseProgress {
   display: flex;
 }
@@ -201,12 +207,12 @@
 /*****QUIZZES*****/
 
 .courseQuizzesAvgContainer {
-  width: 12.6rem;
+  width: 13rem;
   height: 18rem;
 }
 
 .courseQuizzesCompletedContainer {
-  width: 12.6rem;
+  width: 13rem;
   height: 18rem;
 }
 
@@ -218,6 +224,9 @@
 
 .quizzesContainerCircle,
 .quizzesCompletedContainerCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 3px solid #30f059;
   border-radius: 90px;
   width: 8rem;
@@ -228,6 +237,11 @@
 
 .quizzesCompletedContainerCircle {
   border: 3px solid #3d58f0;
+}
+
+.quizzesCircleTitle {
+  font-family: "avenir light";
+  font-size: 2rem;
 }
 
 /*****BADGES*****/
