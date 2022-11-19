@@ -187,7 +187,7 @@
 .courseAwardsContainer:hover,
 .courseAttendanceContainer:hover {
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(61, 88, 240, 0.18);
+    0 15px 40px rgba(61, 88, 240, 0.2);
 }
 
 .courseProgress {
