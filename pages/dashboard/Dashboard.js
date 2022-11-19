@@ -3,6 +3,9 @@ import Header from '../../components/Dashboard/Navigation/Header/Header'
 import styles from './dashboard.module.css'
 import InfoNavBar from '../../components/Dashboard/InfoNav/InfoNav'
 import Link from 'next/link'
+import HeaderBkg from '../../public/backgrounds/headerbkg.jpg'
+import Image from 'next/future/image'
+import SchoolIcon from '../../public/icons/dashboard_icons/school.png'
 
 export default function Dashboard() {
   return (
@@ -22,14 +25,14 @@ export default function Dashboard() {
           <p className={styles.userGreeting}>Welcome back, Laura!</p>
           <p className={styles.lastLoggedIn}>Next Class: January 6th</p>
           <ul className={styles.dashboardNavItems}>
-            <li className={styles.dashboardHomeButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Home</a></Link></li>
+            <li className={styles.dashboardHomeButton}><Image className={styles.dashboardSchoolIcon} src={SchoolIcon} alt="background image"></Image><Link href={'/'}><a className={styles.dashboardHomeText}>Home</a></Link></li>
             <li className={styles.dashboardClassesButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Classes</a></Link></li>
             <li className={styles.dashboardCourseMaterialsButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Course Materials</a></Link></li>
             <li className={styles.dashboardCommunityButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Community</a></Link></li>
             <li className={styles.dashboardMessagesButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Messages</a></Link></li>
           </ul>
         </div>
-          <div className={styles.dashboardHeader}><h1>The Actor&#39;s Academy</h1></div>
+          <div className={styles.dashboardHeader}><h1 className={styles.dashboardHeaderTitle}>The Actor&#39;s Academy</h1></div>
           <div className={styles.dashboardMainContainer}>
             
               <div className={styles.courseProgressLessonContainer}>
@@ -60,7 +63,7 @@ export default function Dashboard() {
 
           <div className={styles.courseAwardsAndRecognitionContainer}>
             <div className={styles.courseAwardsContainer}>
-              <h2 className={styles.courseAwardsTitle}>Awards</h2>
+              <h2 className={styles.courseAwardsTitle}>Awards & Badges</h2>
             </div>
             <div className={styles.courseAttendanceContainer}>
               <h2 className={styles.courseAttendanceTitle}>Class Attendance</h2>
