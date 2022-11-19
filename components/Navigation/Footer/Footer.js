@@ -1,6 +1,6 @@
 import Image from 'next/future/image'
 import styles from './footer.module.css'
-import logo from '../../../public/logo/laurafinallogo.svg'
+import logo from '../../../public/logo/laurafinallogopurple.svg'
 import { Facebook_Icon, Instagram_Icon, Twitter_Icon, Youtube_Icon } from '../../../public/icons/social_icons/social_icons'
 
 export default function Home() {
