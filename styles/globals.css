@@ -23,7 +23,12 @@ body {
 
 @font-face {
   font-family: "avenir black";
-  src: url(../public/fonts/Avenir/AvenirLTProHeavy.otf);
+  src: url(../public/fonts/Avenir/AvenirLTProBlack.otf);
+}
+
+@font-face {
+  font-family: "avenir light italic";
+  src: url(../public/fonts/Avenir/AvenirLTProLightOblique.otf);
 }
 
 body {

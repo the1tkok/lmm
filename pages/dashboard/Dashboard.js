@@ -12,6 +12,9 @@ import CommunityIcon from '../../public/icons/dashboard_icons/community.png'
 import ClassroomIcon from '../../public/icons/dashboard_icons/classroom.png'
 import MessagesIcon from '../../public/icons/dashboard_icons/messages.png'
 import BookIcon from '../../public/icons/dashboard_icons/book.png'
+import QuizzesIcon from '../../public/icons/dashboard_icons/quizzes.png'
+import AttendanceIcon from '../../public/icons/dashboard_icons/attendance.png'
+import AwardsIcon from '../../public/icons/dashboard_icons/awards.png'
 
 export default function Dashboard() {
   return (
@@ -47,6 +50,7 @@ export default function Dashboard() {
 
               <div className={styles.courseNotificationsContainer}>
                 <h2 className={styles.courseNotificationsTitle}>Notifications<Image className={styles.dashboardNotificationsIcon} src={NotificationsIcon} alt="background image"></Image></h2>
+                <p className={styles.notificationsText}>No new notifications.</p>
               </div>
     
               <div className={styles.courseNewsContainer}>
@@ -54,14 +58,14 @@ export default function Dashboard() {
               </div>
 
           <div className={styles.courseQuizzesAvgContainer}>
-            <h2 className={styles.courseQuizzesAvgTitle}>Average Quiz <br></br> Score</h2>
+            <h2 className={styles.courseQuizzesAvgTitle}>Average Quiz <Image className={styles.dashboardQuizzesIcon} src={QuizzesIcon} alt="background image"></Image> <br></br> Score</h2>
             <div className={styles.quizzesContainerBkg}>
               <div className={styles.quizzesContainerCircle}><h1 className={styles.quizzesCircleTitle}>A+</h1></div>
             </div>
           </div>
 
           <div className={styles.courseQuizzesCompletedContainer}>
-            <h2 className={styles.courseQuizzesCompletedTitle}>Quizzes <br></br> Completed</h2>
+            <h2 className={styles.courseQuizzesCompletedTitle}>Quizzes<Image className={styles.dashboardQuizzesIcon2} src={QuizzesIcon} alt="background image"></Image> <br></br> Completed</h2>
             <div className={styles.quizzesContainerBkg}>
               <div className={styles.quizzesCompletedContainerCircle}><h1 className={styles.quizzesCircleTitle}>2/35</h1></div>
             </div>
@@ -69,10 +73,10 @@ export default function Dashboard() {
 
           <div className={styles.courseAwardsAndRecognitionContainer}>
             <div className={styles.courseAwardsContainer}>
-              <h2 className={styles.courseAwardsTitle}>Awards & Badges</h2>
+              <h2 className={styles.courseAwardsTitle}>Awards & Badges <Image className={styles.awardsIcon} src={AwardsIcon} alt="background image"></Image></h2>
             </div>
             <div className={styles.courseAttendanceContainer}>
-              <h2 className={styles.courseAttendanceTitle}>Class Attendance</h2>
+              <h2 className={styles.courseAttendanceTitle}>Class Attendance<Image className={styles.attendanceIcon} src={AttendanceIcon} alt="background image"></Image></h2>
             </div>
           </div>
           <div className={styles.userProgressTree}></div>

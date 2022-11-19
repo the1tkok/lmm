@@ -152,7 +152,7 @@
 */
 .dashboardHeaderTitle {
   font-family: "avenir black";
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 /*****COURSE PROGRESS*****/
@@ -230,6 +230,14 @@
   height: 18rem;
 }
 
+.notificationsText {
+  font-family: "avenir light italic";
+  align-self: center;
+  text-align: center;
+  line-height: 9rem;
+  vertical-align: center;
+}
+
 /*****NEWS & UPDATES*****/
 
 .courseNewsContainer {
@@ -303,4 +311,21 @@
   margin-left: 1.25rem;
   width: 32px;
   height: 32px;
+}
+
+.dashboardQuizzesIcon,
+.dashboardQuizzesIcon2,
+.awardsIcon,
+.attendanceIcon {
+  position: absolute;
+  margin-left: 1.5rem;
+  margin-bottom: 10rem;
+  width: 24px;
+  height: 24px;
+}
+
+.dashboardQuizzesIcon2 {
+  position: absolute;
+  margin-left: 3rem;
+  margin-bottom: 10rem;
 }
