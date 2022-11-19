@@ -24,7 +24,7 @@
   flex-wrap: nowrap;
   align-content: flex-start;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.3rem;
   position: fixed;
   margin-left: 5rem;
   padding-left: 2rem;
@@ -32,7 +32,7 @@
   width: 15rem;
   height: 100%;
   text-align: left;
-  padding-top: 8rem;
+  padding-top: 9rem;
 }
 
 .userGreeting {
@@ -46,13 +46,14 @@
   color: #1f1f1f;
   font-family: "avenir light";
   margin: 0;
+  font-size: 0.9rem;
 }
 
 .dashboardNavItems {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 2rem;
+  gap: 1rem;
   color: #1f1f1f;
   padding-top: 2.7rem;
 }
@@ -84,16 +85,20 @@
   border-left: 5px solid #3d58f0;
 }
 
-.dashboardNavItems li:hover {
-  border-left: 5px solid #3d58f0;
-  padding-left: 1rem;
-}
-
 .dashboardSchoolIcon {
   position: fixed;
   left: 1.5rem;
   width: 32px;
   height: 32px;
+}
+
+.dashboardClassroomIcon,
+.dashboardBookIcon,
+.dashboardCommunitiesIcon,
+.dashboardMessagesIcon {
+  width: 32px;
+  height: 32px;
+  margin-right: 1rem;
 }
 
 /*******HEADER******/
@@ -105,12 +110,13 @@
 
 .dashboardHeader {
   display: flex;
-  background-color: #3d58f0;
+  background-color: white;
   border-radius: 12px;
   margin-left: 23rem;
+  margin-top: 1rem;
   height: 4rem;
   position: fixed;
-  color: white;
+  color: #1f1f1f;
   align-items: center;
   padding-left: 2rem;
   top: 8rem;
@@ -118,13 +124,16 @@
   left: 0;
   right: 4.6rem;
   font-family: "avenir black";
-  background-image: url("/backgrounds/headerbkg.jpg");
+  /*background-image: url("/backgrounds/headerbkg.jpg");*/
   background-size: 2000px;
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: -61px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  border-bottom: 3px solid #3d58f0;
 }
-
+/*
 .dashboardHeader::before {
   content: "";
   display: flex;
@@ -140,10 +149,10 @@
   left: 0;
   right: 4.6rem;
 }
-
+*/
 .dashboardHeaderTitle {
   font-family: "avenir black";
-  font-size: 1.9rem;
+  padding-top: 10px;
 }
 
 /*****COURSE PROGRESS*****/
@@ -152,7 +161,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 23rem;
-  margin-top: 16rem;
+  margin-top: 17rem;
   gap: 4rem;
   align-items: flex-start;
 }
@@ -178,7 +187,7 @@
 .courseAwardsContainer:hover,
 .courseAttendanceContainer:hover {
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(61, 88, 240, 0.14);
+    0 15px 40px rgba(61, 88, 240, 0.18);
 }
 
 .courseProgress {
@@ -284,4 +293,14 @@
 .courseAttendanceContainer {
   width: 30rem;
   height: 8rem;
+}
+
+/*****ICONS*****/
+
+.dashboardNotificationsIcon,
+.dashboardProgressIcon,
+.dashboardCommunityIcon {
+  margin-left: 1.25rem;
+  width: 32px;
+  height: 32px;
 }

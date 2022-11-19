@@ -6,6 +6,12 @@ import Link from 'next/link'
 import HeaderBkg from '../../public/backgrounds/headerbkg.jpg'
 import Image from 'next/future/image'
 import SchoolIcon from '../../public/icons/dashboard_icons/school.png'
+import NotificationsIcon from '../../public/icons/dashboard_icons/bell.png'
+import ProgressIcon from '../../public/icons/dashboard_icons/progress.png'
+import CommunityIcon from '../../public/icons/dashboard_icons/community.png'
+import ClassroomIcon from '../../public/icons/dashboard_icons/classroom.png'
+import MessagesIcon from '../../public/icons/dashboard_icons/messages.png'
+import BookIcon from '../../public/icons/dashboard_icons/book.png'
 
 export default function Dashboard() {
   return (
@@ -23,39 +29,39 @@ export default function Dashboard() {
         </div>
         <div className={styles.userDashboardNavBar}>
           <p className={styles.userGreeting}>Welcome back, Laura!</p>
-          <p className={styles.lastLoggedIn}>Next Class: January 6th</p>
+          <p className={styles.lastLoggedIn}>Last logged in: 2 days ago</p>
           <ul className={styles.dashboardNavItems}>
             <li className={styles.dashboardHomeButton}><Image className={styles.dashboardSchoolIcon} src={SchoolIcon} alt="background image"></Image><Link href={'/'}><a className={styles.dashboardHomeText}>Home</a></Link></li>
-            <li className={styles.dashboardClassesButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Classes</a></Link></li>
-            <li className={styles.dashboardCourseMaterialsButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Course Materials</a></Link></li>
-            <li className={styles.dashboardCommunityButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Community</a></Link></li>
-            <li className={styles.dashboardMessagesButton}><Link href={'/'}><a className={styles.dashboardHomeText}>Messages</a></Link></li>
+            <li className={styles.dashboardClassesButton}><Image className={styles.dashboardClassroomIcon} src={ClassroomIcon} alt="background image"></Image><Link href={'/'}><a className={styles.dashboardHomeText}>Classes</a></Link></li>
+            <li className={styles.dashboardCourseMaterialsButton}><Image className={styles.dashboardBookIcon} src={BookIcon} alt="background image"></Image><Link href={'/'}><a className={styles.dashboardHomeText}>Course Materials</a></Link></li>
+            <li className={styles.dashboardCommunityButton}><Image className={styles.dashboardCommunitiesIcon} src={CommunityIcon} alt="background image"></Image><Link href={'/'}><a className={styles.dashboardHomeText}>Community</a></Link></li>
+            <li className={styles.dashboardMessagesButton}><Image className={styles.dashboardMessagesIcon} src={MessagesIcon} alt="background image"></Image><Link href={'/'}><a className={styles.dashboardHomeText}>Messages</a></Link></li>
           </ul>
         </div>
           <div className={styles.dashboardHeader}><h1 className={styles.dashboardHeaderTitle}>The Actor&#39;s Academy</h1></div>
           <div className={styles.dashboardMainContainer}>
             
               <div className={styles.courseProgressLessonContainer}>
-                <h2 className={styles.courseProgressTitle}>Progress</h2>
+                <h2 className={styles.courseProgressTitle}>Progress<Image className={styles.dashboardProgressIcon} src={ProgressIcon} alt="background image"></Image></h2>
               </div>
 
               <div className={styles.courseNotificationsContainer}>
-                <h2 className={styles.courseNotificationsTitle}>Notifications</h2>
+                <h2 className={styles.courseNotificationsTitle}>Notifications<Image className={styles.dashboardNotificationsIcon} src={NotificationsIcon} alt="background image"></Image></h2>
               </div>
     
               <div className={styles.courseNewsContainer}>
-                <h2 className={styles.courseNewsTitle}>News & Updates</h2>
+                <h2 className={styles.courseNewsTitle}>Community<Image className={styles.dashboardCommunityIcon} src={CommunityIcon} alt="background image"></Image></h2>
               </div>
 
           <div className={styles.courseQuizzesAvgContainer}>
-            <h2 className={styles.courseQuizzesAvgTitle}>Average Quiz Score</h2>
+            <h2 className={styles.courseQuizzesAvgTitle}>Average Quiz <br></br> Score</h2>
             <div className={styles.quizzesContainerBkg}>
               <div className={styles.quizzesContainerCircle}><h1 className={styles.quizzesCircleTitle}>A+</h1></div>
             </div>
           </div>
 
           <div className={styles.courseQuizzesCompletedContainer}>
-            <h2 className={styles.courseQuizzesCompletedTitle}>Quizzes Completed</h2>
+            <h2 className={styles.courseQuizzesCompletedTitle}>Quizzes <br></br> Completed</h2>
             <div className={styles.quizzesContainerBkg}>
               <div className={styles.quizzesCompletedContainerCircle}><h1 className={styles.quizzesCircleTitle}>2/35</h1></div>
             </div>
