@@ -1,0 +1,42 @@
+/*****FEATURE SECTION 3*****/
+
+.thirdFeaturesContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8em;
+}
+
+.thirdFeaturesBkg {
+  background-color: #5972ff;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  border-radius: 15px;
+  justify-content: center;
+  padding: 4em;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  gap: 6em;
+}
+
+.thirdFeaturesTitle {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  color: white;
+  font-family: "avenir medium";
+  font-size: 2.7rem;
+  margin: 0;
+}
+
+.thirdFeaturesIconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 25%;
+}
+
+.sceneStudy {
+  color: white;
+  display: flex;
+  gap: 1.5em;
+}

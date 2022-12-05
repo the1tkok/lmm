@@ -26,10 +26,11 @@ export default function Dashboard() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header></Header>
-      {/*****SIDEBAR NAVIGATION*****/}
+        {/*****USER DASHBOARD SIDEBAR NAVIGATION*****/}
         <div className={styles.infoSidebar}>
           <InfoNavBar></InfoNavBar>
         </div>
+        {/*****USER DASHBOARD MAIN NAVIGATION*****/}
         <div className={styles.userDashboardNavBar}>
           <p className={styles.userGreeting}>Welcome back, Laura!</p>
           <p className={styles.lastLoggedIn}>Last logged in: 2 days ago</p>
@@ -41,46 +42,49 @@ export default function Dashboard() {
             <li className={styles.dashboardMessagesButton}><Image className={styles.dashboardMessagesIcon} src={MessagesIcon} alt="background image"></Image><Link href={'/'}><a className={styles.dashboardHomeText}>Messages</a></Link></li>
           </ul>
         </div>
+        {/*****USER DASHBOARD HEADER*****/}
           <div className={styles.dashboardHeader}><h1 className={styles.dashboardHeaderTitle}>The Actor&#39;s Academy</h1></div>
-          <div className={styles.dashboardMainContainer}>
-            
+            <div className={styles.dashboardMainContainer}>
+              {/*****HOME DASHBOARD PROGRESS LESSON*****/}
               <div className={styles.courseProgressLessonContainer}>
                 <h2 className={styles.courseProgressTitle}>Progress<Image className={styles.dashboardProgressIcon} src={ProgressIcon} alt="background image"></Image></h2>
               </div>
-
+              {/*****HOME DASHBOARD NOTIFICATIONS*****/}
               <div className={styles.courseNotificationsContainer}>
                 <h2 className={styles.courseNotificationsTitle}>Notifications<Image className={styles.dashboardNotificationsIcon} src={NotificationsIcon} alt="background image"></Image></h2>
                 <p className={styles.notificationsText}>No new notifications.</p>
               </div>
-    
+              {/*****HOME DASHBOARD NEWS & UPDATES****/}
               <div className={styles.courseNewsContainer}>
                 <h2 className={styles.courseNewsTitle}>Community<Image className={styles.dashboardCommunityIcon} src={CommunityIcon} alt="background image"></Image></h2>
               </div>
-
-          <div className={styles.courseQuizzesAvgContainer}>
-            <h2 className={styles.courseQuizzesAvgTitle}>Average Quiz <Image className={styles.dashboardQuizzesIcon} src={QuizzesIcon} alt="background image"></Image> <br></br> Score</h2>
-            <div className={styles.quizzesContainerBkg}>
-              <div className={styles.quizzesContainerCircle}><h1 className={styles.quizzesCircleTitle}>A+</h1></div>
-            </div>
-          </div>
-
-          <div className={styles.courseQuizzesCompletedContainer}>
-            <h2 className={styles.courseQuizzesCompletedTitle}>Quizzes<Image className={styles.dashboardQuizzesIcon2} src={QuizzesIcon} alt="background image"></Image> <br></br> Completed</h2>
-            <div className={styles.quizzesContainerBkg}>
-              <div className={styles.quizzesCompletedContainerCircle}><h1 className={styles.quizzesCircleTitle}>2/35</h1></div>
-            </div>
-          </div>
-
-          <div className={styles.courseAwardsAndRecognitionContainer}>
-            <div className={styles.courseAwardsContainer}>
-              <h2 className={styles.courseAwardsTitle}>Awards & Badges <Image className={styles.awardsIcon} src={AwardsIcon} alt="background image"></Image></h2>
-            </div>
-            <div className={styles.courseAttendanceContainer}>
-              <h2 className={styles.courseAttendanceTitle}>Class Attendance<Image className={styles.attendanceIcon} src={AttendanceIcon} alt="background image"></Image></h2>
-            </div>
-          </div>
-          <div className={styles.userProgressTree}></div>
-          </div>
+              {/*****HOME DASHBOARD AVERAGE QUIZ SCORE*****/}
+              <div className={styles.courseQuizzesAvgContainer}>
+                <h2 className={styles.courseQuizzesAvgTitle}>Average Quiz <Image className={styles.dashboardQuizzesIcon} src={QuizzesIcon} alt="background image"></Image> <br></br> Score</h2>
+                <div className={styles.quizzesContainerBkg}>
+                  <div className={styles.quizzesContainerCircle}><h1 className={styles.quizzesCircleTitle}>A+</h1></div>
+                </div>
+              </div>
+              {/*****HOME DASHBOARD NUMBER OF QUIZZES COMPLETED*****/}
+              <div className={styles.courseQuizzesCompletedContainer}>
+                <h2 className={styles.courseQuizzesCompletedTitle}>Quizzes<Image className={styles.dashboardQuizzesIcon2} src={QuizzesIcon} alt="background image"></Image> <br></br> Completed</h2>
+                <div className={styles.quizzesContainerBkg}>
+                  <div className={styles.quizzesCompletedContainerCircle}><h1 className={styles.quizzesCircleTitle}>2/35</h1></div>
+                </div>
+              </div>
+              {/*****HOME DASHBOARD AWARDS/BADGES*****/}
+              <div className={styles.courseAwardsAndRecognitionContainer}>
+                <div className={styles.courseAwardsContainer}>
+                  <h2 className={styles.courseAwardsTitle}>Awards & Badges <Image className={styles.awardsIcon} src={AwardsIcon} alt="background image"></Image></h2>
+                </div>
+                {/*****HOME DASHBOARD COURSE ATTENDANCE*****/}
+                <div className={styles.courseAttendanceContainer}>
+                  <h2 className={styles.courseAttendanceTitle}>Class Attendance<Image className={styles.attendanceIcon} src={AttendanceIcon} alt="background image"></Image></h2>
+                </div>
+              </div>
+              {/*****HOME DASHBOARD PROGRESS TREE*****/}
+              <div className={styles.userProgressTree}></div>
+              </div>
     </div>
   )
 }

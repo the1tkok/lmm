@@ -1,19 +1,14 @@
 import Head from 'next/head'
-import Image from 'next/future/image'
 import styles from '../styles/Home.module.css'
-import {disney_logo, sony_logo, universal_logo, paramount_logo, lionsgate_logo} from '../public/partner_logos/partner_logos'
 import Header from '../components/Navigation/Header/Header'
 import Footer from '../components/Navigation/Footer/Footer'
-import Laura_mac from '../public/home_pics/lm1.jpg'
-import Laura_mac2 from '../public/home_pics/lm2.jpg'
-import Zoom from '../public/home_pics/zoom.jpeg'
-import Video_bkg from '../public/backgrounds/video_bkg.png'
-import { BriefcaseIcon, StudioIcon, StudyIcon, ToolkitIcon, TVIcon, TechniqueIcon, ExerciseIcon, AuditionIcon, CastingIcon, CharacterIcon, BusinessIcon, MarketingIcon, ProcessIcon, LeahIcon, LaurenIcon, NikhitaIcon, NathanIcon } from '../public/icons/home_icons/home_icons'
-import Toolkit from '../public/icons/home_icons/toolkit.png'
-import Tv from '../public/icons/home_icons/tv.png'
-import Briefcase from '../public/icons/home_icons/briefcase.png'
-import Studio from '../public/icons/home_icons/studio.png'
-import Link from 'next/link'
+import Hero from '../components/Home/Hero'
+import PartnerLogos from '../components/PartnerLogos/PartnerLogos'
+import FeatureSection1 from '../components/FeatureSection1/FeatureSection1'
+import FeatureSection2 from '../components/FeatureSection2/FeatureSection2'
+import FeatureSection3 from '../components/FeatureSection3/FeatureSection3'
+import FeatureSection4 from '../components/FeatureSection4/FeatureSection4'
+import FeatureSection5 from '../components/FeatureSection5/FeatureSection5'
 
 export default function Home() {
   return (
@@ -27,196 +22,31 @@ export default function Home() {
       <Header></Header>
       {/*****HERO SECTION*****/}
       <section className={styles.heroSection}>
-      <div className={styles.homeIframeContainer}>
-          <Image className={styles.backgroundImage} src={Video_bkg} alt="background image"></Image>
-          <iframe className={styles.homeIframe} src={'https://player.vimeo.com/video/479896106?h=cde2d98eaa'}></iframe>
-        </div>
-        <section className={styles.heroText}>
-          <h1 className={styles.heroHeading}>We Build<br className={styles.break1}></br>Working Actors.<br className={styles.break2}></br></h1>
-          <br></br>
-          <p className={styles.heroParagraph}>We teach world-class acting to beginner,<br></br> intermediate, and advanced level actors across <br></br> the world both online and in-person.</p>
-          <form className={styles.heroEmailForm}>
-            <label for="email"></label>
-            <input className={styles.emailInput} type="text" id="userEmail" name="email" placeholder="name@email.com"></input>
-            <button className={styles.formButton1} display="block">Enroll for FREE Classes</button>
-          </form>
-        </section>
+        <Hero></Hero>
       </section>
       {/*****PARTNER LOGOS*****/}
       <section className={styles.partnerLogoContainer}>
-        <div className={styles.partnerLogoImages}>
-          <Image className={styles.disneyLogo} src={disney_logo} alt="disney logo"></Image>
-          <Image className={styles.lionsgateLogo} src={lionsgate_logo} alt="lionsgate logo"></Image>
-          <Image className={styles.paramountLogo} src={paramount_logo} alt="paramount logo"></Image>
-          <Image className={styles.sonyLogo} src={sony_logo} alt="sony logo"></Image>
-          <Image className={styles.universalLogo} src={universal_logo} alt="universal logo"></Image>
-        </div>
+        <PartnerLogos></PartnerLogos>
       </section>
       {/*****PRODUCT FEATURES SECTION 1*****/}
       <section className={styles.featuresContainer}>
-        <div className={styles.feature1}>
-          <Image className={styles.featurePic1} src={Laura_mac} alt="laura mac"></Image>
-          <div className={styles.featureTextContainer}>
-            <p className={styles.featureSubtitle1}>EXPLORE YOUR TALENTS</p>
-            <p className={styles.featureTitle1}>One on One Coaching</p>
-            <p className={styles.featureParagraph1}>Work with experienced acting coaches in one on one<br></br> sessions to improve your audition success rate.</p>
-          </div>
-        </div>
-        <div className={styles.feature2}>
-          <Image className={styles.featurePic2} src={Laura_mac2} alt="laura mac team"></Image>
-          <div className={styles.featureTextContainer2}>
-            <p className={styles.featureSubtitle1}>GROW YOUR CAREER</p>
-            <p className={styles.featureTitle1}>Routine Course Updates</p>
-            <p className={styles.featureParagraph1}>Join a community of actors and learn alongside acting<br></br>peers of similar skill level from beginner to advanced.</p>
-          </div>
-        </div>
-        <div className={styles.feature3}>
-          <Image className={styles.featurePic3} src={Zoom} alt="zoom meeting"></Image>
-          <div className={styles.featureTextContainer}>
-            <p className={styles.featureSubtitle1}>SKILL DEVELOPMENT</p>
-            <p className={styles.featureTitle1}>Online Acting Classes</p>
-            <p className={styles.featureParagraph1}>Work with experienced acting coaches in one on one<br></br> sessions to improve your audition success rate.</p>
-          </div>
-        </div>
-        <div className={styles.feature4}>
-          <Image className={styles.featurePic4} src={Laura_mac2} alt="laura mac team"></Image>
-          <div className={styles.featureTextContainer4}>
-            <p className={styles.featureSubtitle1}>GROW YOUR CAREER</p>
-            <p className={styles.featureTitle1}>A Network of Opportunities</p>
-            <p className={styles.featureParagraph1}>Join a community of actors and learn alongside acting<br></br>peers of similar skill level from beginner to advanced.</p>
-          </div>
-        </div>
+        <FeatureSection1></FeatureSection1>
       </section>
       {/*****PRODUCT FEATURES SECTION 2 CARDS*****/}
       <section className={styles.secFeaturesContainer}>
-        <p className={styles.secFeaturesSubtitle}>NEW, FRESH & MODERN</p>
-        <h3 className={styles.secFeaturesTitle}>Acting Lessons Unlike Anything You&#39;ve Ever Seen</h3>
-        <p className={styles.secFeaturesText}>Acting is a process we&#39;ve made into digestible pieces for actors in any stage of their career.</p>
-        <div className={styles.secFeaturesCard1}>
-          <div>
-            <Image className={styles.toolkitIcon} src={Toolkit} alt="toolkit"></Image>
-            <p className={styles.secFeaturesCardTitle}>The Actor&#39;s Toolkit</p>
-            <p className={styles.secFeaturesCardSubTitle}>Where your acting foundation beings.</p>
-          </div>
-        </div>
-        <div className={styles.secFeaturesCard2}>
-            <Image className={styles.tvIcon} src={Tv} alt="commercial workshop"></Image>
-            <p className={styles.secFeaturesCardTitle}>Commercial Workshop</p>
-            <p className={styles.secFeaturesCardSubTitle}>Learn precision acting to get yourself set up for commercial and TV roles.</p>
-        </div>
-        <div className={styles.secFeaturesCard3}>
-          <div>
-            <Image className={styles.toolkitIcon} src={Briefcase} alt="toolkit"></Image>
-            <p className={styles.secFeaturesCardTitle}>Business of You</p>
-            <p className={styles.secFeaturesCardSubTitle}>How to market yourself and manage your acting career.</p>
-          </div>
-        </div>
-        <div className={styles.secFeaturesCard4}>
-          <div>
-            <Image className={styles.toolkitIcon} src={Studio} alt="toolkit"></Image>
-            <p className={styles.secFeaturesCardTitle}>Film & Television</p>
-            <p className={styles.secFeaturesCardSubTitle}>Story telling, human behavior, acting techniques and much more!</p>
-          </div>
-        </div>
+        <FeatureSection2></FeatureSection2>
       </section>
       {/*****PRODUCT FEATURES SECTION 3 ICONS*****/}
       <section className={styles.thirdFeaturesContainer}>
-        <div className={styles.thirdFeaturesBkg}>
-          <p className={styles.thirdFeaturesTitle}>Build Your Skills</p>
-          <div className={styles.thirdFeaturesIconContainer}>
-            <div className={styles.sceneStudy}>
-              <Image className={styles.sceneStudyIcon} src={ExerciseIcon} alt="acting exercises"></Image>
-              <p>Acting Exercises</p>
-            </div>
-          </div>
-          <div className={styles.thirdFeaturesIconContainer}>
-            <div className={styles.sceneStudy}>
-              <Image className={styles.sceneStudyIcon} src={TechniqueIcon} alt="acting techniques"></Image>
-              <p>Acting Technique</p>
-            </div>
-          </div>
-          <div className={styles.thirdFeaturesIconContainer}>
-            <div className={styles.sceneStudy}>
-              <Image className={styles.sceneStudyIcon} src={ProcessIcon} alt="acting process development"></Image>
-              <p>Acting Process Development</p>
-            </div>
-          </div>
-          <div className={styles.thirdFeaturesIconContainer}>
-            <div className={styles.sceneStudy}>
-              <Image className={styles.sceneStudyIcon} src={AuditionIcon} alt="audition prep"></Image>
-              <p>Audition Prep</p>
-            </div>
-          </div>
-          <div className={styles.thirdFeaturesIconContainer}>
-            <div className={styles.sceneStudy}>
-              <Image className={styles.sceneStudyIcon} src={BusinessIcon} alt="business side of acting"></Image>
-              <p>Business Management</p>
-            </div>
-          </div>
-          <div className={styles.thirdFeaturesIconContainer}>
-            <div className={styles.sceneStudy}>
-              <Image className={styles.sceneStudyIcon} src={CastingIcon} alt="casting breakthroughs"></Image>
-              <p>Casting Breakthroughs</p>
-            </div>
-          </div>
-          <div className={styles.thirdFeaturesIconContainer}>
-            <div className={styles.sceneStudy}>
-              <Image className={styles.sceneStudyIcon} src={CharacterIcon} alt="character building"></Image>
-              <p>Character Building</p>
-            </div>
-          </div>
-          <div className={styles.thirdFeaturesIconContainer}>
-            <div className={styles.sceneStudy}>
-              <Image className={styles.sceneStudyIcon} src={MarketingIcon} alt="marketing material development"></Image>
-              <p>Marketing Material Development</p>
-            </div>
-          </div>
-          <div className={styles.thirdFeaturesIconContainer}>
-            <div className={styles.sceneStudy}>
-              <Image className={styles.sceneStudyIcon} src={StudyIcon} alt="scene study"></Image>
-              <p>Scene Study</p>
-            </div>
-          </div>
-        </div>
+        <FeatureSection3></FeatureSection3>
       </section>
-      {/*****CUSTOMER FEEDBACK SECTION 3 CARDS*****/}
-      <section className={styles.secFeaturesContainer}>
-        <p className={styles.secFeaturesSubtitle}>YOUR FEEDBACK MATTERS</p>
-        <h3 className={styles.secFeaturesTitle}>What Our Customers Say</h3>
-        <p className={styles.secFeaturesText}>We love when our students share their experiences, so we thought we&#39;d share them with you.</p>
-        <div className={styles.secFeaturesCard1}>
-          <div>
-            <Image className={styles.toolkitIcon} src={LeahIcon} alt="toolkit"></Image>
-            <p className={styles.secFeaturesCardTitle}>Leah Beaudry</p>
-            <p className={styles.secFeaturesCardSubTitle}>“If you’re like most actors, questioning your existence after a commercial audition, take this workshop! Laura has the answers you seek&quot;</p>
-          </div>
-        </div>
-        <div className={styles.secFeaturesCard2}>
-        <Image className={styles.tvIcon} src={LaurenIcon} alt="commercial workshop"></Image>
-            <p className={styles.secFeaturesCardTitle}>Lauren Maynard</p>
-            <p className={styles.secFeaturesCardSubTitle}>“The Laura Mac Method is eye-opening, straight forward, and to the point. Too many ‘Aha!’ moments to count in just a few hours! Highly recommend!”</p>
-        </div>
-        <div className={styles.secFeaturesCard3}>
-        <div>
-            <Image className={styles.toolkitIcon} src={NikhitaIcon} alt="toolkit"></Image>
-            <p className={styles.secFeaturesCardTitle}>Nikhita Singh</p>
-            <p className={styles.secFeaturesCardSubTitle}>“The Laura Mac Method does not only help elevate your work up but also dives into goal setting and how important it is to be specific with what you’re working towards.”</p>
-          </div>
-        </div>
-        <div className={styles.secFeaturesCard4}>
-        <div>
-            <Image className={styles.toolkitIcon} src={NathanIcon} alt="toolkit"></Image>
-            <p className={styles.secFeaturesCardTitle}>Nathan Yan</p>
-            <p className={styles.secFeaturesCardSubTitle}>“The Laura Mac Method really enabled me to get out of my shell and approach auditioning and acting in a new perspective.”</p>
-          </div>
-        </div>
+      {/*****CUSTOMER FEEDBACK SECTION 4 CARDS*****/}
+      <section className={styles.fourthFeaturesContainer}>
+        <FeatureSection4></FeatureSection4>
       </section>
-       {/*****SIGN UP FORM SECTION 4*****/}
+       {/*****SIGN UP FORM SECTION 5*****/}
       <section className={styles.fifthFeaturesContainer}>
-      <p className={styles.secFeaturesSubtitle}>PREMIER LEARNING EXPERIENCE</p>
-        <h3 className={styles.secFeaturesTitle}>Get Started Working The Method</h3>
-        <p className={styles.fifthFeaturesText}>We love when our students share their experiences, so we thought we&#39;d share them with you.</p>
-        <button className={styles.formButton2} display="block">Get Started</button>
+        <FeatureSection5></FeatureSection5>
       </section>
       {/*****FOOTER*****/}
       <Footer></Footer>

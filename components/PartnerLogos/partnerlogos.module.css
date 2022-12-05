@@ -1,0 +1,105 @@
+/*****PARTNER LOGOS*****/
+
+.partnerLogoContainer {
+  align-content: center;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 1em 0em 1em 0em;
+  text-align: center;
+}
+
+.partnerLogoImages {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.partnerLogoText {
+  flex-basis: 100%;
+  font-family: "avenir medium";
+  font-size: 1.25rem;
+  color: #3d58f0;
+  padding: 0 2em 0 2em;
+  margin: 0;
+}
+
+.disneyLogo {
+  width: 60px;
+  height: 25px;
+}
+
+.sonyLogo {
+  width: 60px;
+  height: 10.8px;
+}
+
+.universalLogo {
+  width: 60px;
+  height: 31.75px;
+}
+
+.paramountLogo {
+  width: 60px;
+  height: 19.86px;
+}
+
+.lionsgateLogo {
+  display: none;
+}
+
+/***********************************/
+/***********************************/
+/***********************************/
+/**********DESKTOP DISPLAY**********/
+/***********************************/
+/***********************************/
+/***********************************/
+
+@media only screen and (min-width: 811px) {
+  /*****HERO SECTION*****/
+
+  /*****PARTNER LOGOS*****/
+
+  .partnerLogoContainer {
+    font-size: 1.2rem;
+    height: auto;
+    padding: 2em 0em 2em 0em;
+  }
+
+  .partnerLogoImages {
+    gap: 4em;
+  }
+
+  .disneyLogo {
+    width: 150px;
+    height: 62.99px;
+  }
+
+  .sonyLogo {
+    width: 150px;
+    height: 27.01px;
+  }
+
+  .universalLogo {
+    width: 150px;
+    height: 79.38px;
+  }
+
+  .paramountLogo {
+    width: 150px;
+    height: 83.48px;
+  }
+
+  .lionsgateLogo {
+    width: 150px;
+    height: 18.63px;
+    display: block;
+  }
+}

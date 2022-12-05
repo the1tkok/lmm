@@ -11,7 +11,7 @@ const Header = () => {
       <nav className={styles.navContainer}>
         <Image className={styles.logo2} src={logo}
         alt="logo"
-        width={150}
+        width={175}
         height='100%'
         />
         <div className={styles.mobileNavContainer}>
@@ -37,10 +37,10 @@ const Header = () => {
             <Link href={'/'}><a className={styles.blogButton}>Blog</a></Link>
           </li>
           <li className={styles.navListMenu}>
-            <Link href={'/'}><a className={styles.loginButton}>Login</a></Link>
+            <Link href={'./login/Login'}><a className={styles.loginButton}>Login</a></Link>
           </li>
           <li className={styles.navListMenu}>
-            <Link href={'/'}><a className={styles.registerButton}>Register</a></Link>
+            <Link href={'./register/Register'}><a className={styles.registerButton}>Register</a></Link>
           </li>
         </ul>
       </nav>
