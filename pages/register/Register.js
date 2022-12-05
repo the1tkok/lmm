@@ -26,7 +26,7 @@ export default function Register() {
             <input className={styles.emailInput} type="email" id="email" name="email" placeholder="Email"></input>
             <input className={styles.emailInput} type="password" id="password" name="password" placeholder="Password"></input>
             <select className={styles.experienceLevelInput} id="experience" name="experience">
-              <option disabled="true" className={styles.experienceLevelOptions} value="choose acting experience" selected >Choose Acting Experience</option>
+              <option disabled="true" className={styles.experienceLevelOptions} value="choose acting experience" selected >Select Acting Experience</option>
               <option className={styles.experienceLevelOptions} value="beginner" >Beginner</option>
               <option className={styles.experienceLevelOptions} value="intermediate" >Intermediate</option>
               <option className={styles.experienceLevelOptions} value="expert">Expert</option>
