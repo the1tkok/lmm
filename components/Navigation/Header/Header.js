@@ -11,7 +11,7 @@ const Header = () => {
       <nav className={styles.navContainer}>
         <Image className={styles.logo2} src={logo}
         alt="logo"
-        width={175}
+        width={165}
         height='100%'
         />
         <div className={styles.mobileNavContainer}>
