@@ -21,14 +21,19 @@ export default function Register() {
           <h1 className={styles.registrationGreeting}>Let&#39;s Get Started!</h1>
           <p className={styles.registrationText}>We just need some basic information to help <br></br> optimize your learning experience.</p>
           <form className={styles.registrationForm}>
-            <input className={styles.firstNameInput} type="text" id="firstName" name="firstName" placeholder="First Name"></input>
-            <input className={styles.lastNameInput} type="text" id="lastName" name="lastName" placeholder="Last Name"></input>
+            <label for="fname"></label>
+            <input className={styles.firstNameInput} type="text" id="firstName" name="firstName" placeholder="First name"></input>
+            <label for="lname"></label>
+            <input className={styles.lastNameInput} type="text" id="lastName" name="lastName" placeholder="Last name"></input>
+            <label for="email"></label>
             <input className={styles.emailInput} type="email" id="email" name="email" placeholder="Email"></input>
-            <input className={styles.emailInput} type="password" id="password" name="password" placeholder="Password"></input>
+            <label for="password"></label>
+            <input className={styles.passwordInput} type="password" id="password" name="password" placeholder="Password"></input>
+            <label for="experience"></label>
             <select className={styles.experienceLevelInput} id="experience" name="experience">
               <option disabled="true" className={styles.experienceLevelOptions} value="choose acting experience" selected >Select Acting Experience</option>
-              <option className={styles.experienceLevelOptions} value="beginner" >Beginner</option>
-              <option className={styles.experienceLevelOptions} value="intermediate" >Intermediate</option>
+              <option className={styles.experienceLevelOptions} value="beginner">Beginner</option>
+              <option className={styles.experienceLevelOptions} value="intermediate">Intermediate</option>
               <option className={styles.experienceLevelOptions} value="expert">Expert</option>
             </select>
             <button className={styles.registrationPageSubmitBtn} type="submit">Register</button>
