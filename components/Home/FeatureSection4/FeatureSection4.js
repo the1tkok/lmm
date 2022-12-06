@@ -1,6 +1,6 @@
 import Image from 'next/future/image'
 import styles from './featuresection4.module.css'
-import { LeahIcon, LaurenIcon, NikhitaIcon, NathanIcon } from '../../public/icons/home_icons/home_icons'
+import { LeahIcon, LaurenIcon, NikhitaIcon, NathanIcon } from '../../../public/icons/home_icons/home_icons'
 
 export default function FeatureSection4() {
   return (

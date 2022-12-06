@@ -1,9 +1,9 @@
 import Image from 'next/future/image'
 import styles from './featuresection2.module.css'
-import Toolkit from '../../public/icons/home_icons/toolkit.png'
-import Tv from '../../public/icons/home_icons/tv.png'
-import Briefcase from '../../public/icons/home_icons/briefcase.png'
-import Studio from '../../public/icons/home_icons/studio.png'
+import Toolkit from '../../../public/icons/home_icons/toolkit.png'
+import Tv from '../../../public/icons/home_icons/tv.png'
+import Briefcase from '../../../public/icons/home_icons/briefcase.png'
+import Studio from '../../../public/icons/home_icons/studio.png'
 
 export default function FeatureSection2() {
   return (

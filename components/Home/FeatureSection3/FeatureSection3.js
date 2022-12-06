@@ -1,6 +1,6 @@
 import Image from 'next/future/image'
 import styles from './featuresection3.module.css'
-import { StudyIcon, TechniqueIcon, ExerciseIcon, AuditionIcon, CastingIcon, CharacterIcon, BusinessIcon, MarketingIcon, ProcessIcon } from '../../public/icons/home_icons/home_icons'
+import { StudyIcon, TechniqueIcon, ExerciseIcon, AuditionIcon, CastingIcon, CharacterIcon, BusinessIcon, MarketingIcon, ProcessIcon } from '../../../public/icons/home_icons/home_icons'
 
 export default function FeatureSection3() {
   return (

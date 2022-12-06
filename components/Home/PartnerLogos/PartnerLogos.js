@@ -1,6 +1,6 @@
 import Image from 'next/future/image'
 import styles from './partnerlogos.module.css'
-import {disney_logo, sony_logo, universal_logo, paramount_logo, lionsgate_logo} from '../../public/partner_logos/partner_logos'
+import {disney_logo, sony_logo, universal_logo, paramount_logo, lionsgate_logo} from '../../../public/partner_logos/partner_logos'
 
 export default function PartnerLogos() {
   return (

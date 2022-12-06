@@ -1,8 +1,8 @@
 import Image from 'next/future/image'
 import styles from './featuresection1.module.css'
-import Laura_mac from '../../public/home_pics/lm1.jpg'
-import Laura_mac2 from '../../public/home_pics/lm2.jpg'
-import Zoom from '../../public/home_pics/zoom.jpeg'
+import Laura_mac from '../../../public/home_pics/lm1.jpg'
+import Laura_mac2 from '../../../public/home_pics/lm2.jpg'
+import Zoom from '../../../public/home_pics/zoom.jpeg'
 
 export default function FeatureSection1() {
   return (

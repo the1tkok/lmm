@@ -1,6 +1,6 @@
 import Image from 'next/future/image'
 import styles from './hero.module.css'
-import Video_bkg from '../../public/backgrounds/video_bkg.png'
+import Video_bkg from '../../../public/backgrounds/video_bkg.png'
 
 export default function Hero() {
   return (
