@@ -1,0 +1,81 @@
+.userDashboardNavBar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  flex-direction: column;
+  gap: 1.3rem;
+  position: fixed;
+  margin-left: 5rem;
+  padding-left: 2rem;
+  background-color: white;
+  width: 15rem;
+  height: 100%;
+  text-align: left;
+  padding-top: 9rem;
+}
+
+.userGreeting {
+  color: #1f1f1f;
+  font-family: "avenir medium";
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.lastLoggedIn {
+  color: #1f1f1f;
+  font-family: "avenir light";
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.dashboardNavItems {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  color: #1f1f1f;
+  padding-top: 2.7rem;
+}
+
+.dashboardNavItems li {
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.dashboardHomeButton,
+.dashboardClassesButton,
+.dashboardCourseMaterialsButton,
+.dashboardCommunityButton,
+.dashboardMessagesButton {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ededed;
+  border-radius: 6px;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dashboardHomeText {
+  font-family: "avenir medium";
+}
+
+.dashboardHomeButton {
+  border-left: 5px solid #3d58f0;
+}
+
+.dashboardSchoolIcon {
+  position: fixed;
+  left: 1.5rem;
+  width: 32px;
+  height: 32px;
+}
+
+.dashboardClassroomIcon,
+.dashboardBookIcon,
+.dashboardCommunitiesIcon,
+.dashboardMessagesIcon {
+  width: 32px;
+  height: 32px;
+  margin-right: 1rem;
+}
