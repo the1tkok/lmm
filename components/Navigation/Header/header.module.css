@@ -71,8 +71,8 @@
   .navContainer {
     margin-bottom: 8em;
     margin-top: 0;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   /*****USER DASHBOARD*****/
@@ -92,8 +92,8 @@
     justify-content: space-between;
     flex-basis: 100%;
     margin: 0;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     width: 100%;
     background-color: white;
     box-shadow: 0 3px 5px rgba(154, 160, 185, 0.05),
@@ -106,7 +106,13 @@
     align-items: center;
   }
 
-  /*****USER DASHBOARD*****/
+  /******************
+  ^^^^^^^^^^^^^^^^^^^
+  ^^^^^^^^^^^^^^^^^^^
+  END OF USER DASHBOARD
+  ^^^^^^^^^^^^^^^^^^^
+  ^^^^^^^^^^^^^^^^^^^
+  ******************/
 
   .mobileNavContainer {
     display: none;
