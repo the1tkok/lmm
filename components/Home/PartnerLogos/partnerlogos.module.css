@@ -78,28 +78,28 @@
   }
 
   .disneyLogo {
-    width: 150px;
-    height: 62.99px;
+    width: 100px;
+    height: 41.33px;
   }
 
   .sonyLogo {
-    width: 150px;
-    height: 27.01px;
+    width: 100px;
+    height: 18px;
   }
 
   .universalLogo {
-    width: 150px;
-    height: 79.38px;
+    width: 100px;
+    height: 52.67px;
   }
 
   .paramountLogo {
-    width: 150px;
-    height: 83.48px;
+    width: 100px;
+    height: 55.33px;
   }
 
   .lionsgateLogo {
-    width: 150px;
-    height: 18.63px;
+    width: 100px;
+    height: 12px;
     display: block;
   }
 }
