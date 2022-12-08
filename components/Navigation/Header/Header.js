@@ -29,19 +29,19 @@ const Header = ({item1, item2, item3, item4, item5, link1, link2, link3, link4, 
         {/*****DESKTOP NAVIGATION*****/}
         <ul className={`${styles[navUl]}`}>
           <li className={styles.navListMenu}>
-            <Link href={{link1}}><a className={styles.menuItem1}>{item1}</a></Link>
+            <Link href={`${link1}`}><a className={styles.menuItem1}>{item1}</a></Link>
           </li>
           <li className={styles.navListMenu}>
-            <Link href={{link2}}><a className={styles.menuItem2}>{item2}</a></Link>
+            <Link href={`${link2}`}><a className={styles.menuItem2}>{item2}</a></Link>
           </li>
           <li className={styles.navListMenu}>
-            <Link href={{link3}}><a className={styles.menuItem3}>{item3}</a></Link>
+            <Link href={`${link3}`}><a className={styles.menuItem3}>{item3}</a></Link>
           </li>
           <li className={styles.navListMenu}>
-            <Link href={{link4}}><a className={styles.menuItem4}>{item4}</a></Link>
+            <Link href={`${link4}`}><a className={styles.menuItem4}>{item4}</a></Link>
           </li>
           <li className={styles.navListMenu}>
-            <Link href={{link5}}><a className={styles.menuItem5}>{item5}</a></Link>
+            <Link href={`${link5}`}><a className={styles.menuItem5}>{item5}</a></Link>
           </li>
         </ul>
       </nav>
