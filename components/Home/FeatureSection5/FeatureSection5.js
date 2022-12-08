@@ -5,7 +5,7 @@ export default function FeatureSection5() {
     <section className={styles.fifthFeaturesContainer}>
       <p className={styles.fifthFeaturesSubtitle}>PREMIER LEARNING EXPERIENCE</p>
       <h3 className={styles.fifthFeaturesTitle}>Get Started Working The Method</h3>
-      <p className={styles.fifthFeaturesText}>We love when our students share their experiences, so we thought we&#39;d share them with you.</p>
+      <p className={styles.fifthFeaturesText}>The more acting you do alongside other great actors, the better you become. Sign up today.</p>
       <button className={styles.fifthFeaturesButton} display="block">Get Started</button>
     </section>
   );

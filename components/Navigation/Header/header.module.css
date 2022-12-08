@@ -75,6 +75,39 @@
     padding-bottom: 1.5rem;
   }
 
+  /*****USER DASHBOARD*****/
+
+  .logo2Dashboard {
+    margin-left: 5rem;
+  }
+
+  .headerNavContainer {
+    position: relative;
+    z-index: 10;
+  }
+
+  .navContainerDashboard {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    flex-basis: 100%;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(154, 160, 185, 0.05),
+      0 2px 5px rgba(166, 173, 201, 0.2);
+  }
+
+  .navUlDashboard {
+    display: flex;
+    padding-right: 4rem;
+    align-items: center;
+  }
+
+  /*****USER DASHBOARD*****/
+
   .mobileNavContainer {
     display: none;
   }
@@ -91,26 +124,26 @@
     padding: 0 10px 0 10px;
   }
 
-  .viewCurriculumButton,
-  .pricingButton,
-  .blogButton,
-  .loginButton {
+  .menuItem1,
+  .menuItem2,
+  .menuItem3,
+  .menuItem4 {
     color: #1f1f1f;
     border-bottom: 4px solid white;
     font-size: 1.1rem;
     font-family: "avenir light";
   }
 
-  .viewCurriculumButton:hover,
-  .pricingButton:hover,
-  .blogButton:hover,
-  .loginButton:hover {
+  .menuItem1:hover,
+  .menuItem2:hover,
+  .menuItem3:hover,
+  .menuItem4:hover {
     transition-duration: 30ms;
     padding-bottom: 0px;
     border-bottom: 4px solid #3d58f0;
   }
 
-  .registerButton {
+  .menuItem5 {
     border-radius: 24px;
     border: none;
     background-color: #3d58f0;
