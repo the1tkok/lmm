@@ -14,8 +14,8 @@ const links = [
   { label: "View Curriculum", href: "" },
   { label: "Pricing", href: "" },
   { label: "Blog", href: "" },
-  { label: "Login", href: "/login/Login" },
-  { label: "Register", href: "/register/Register" },
+  { label: "Login", href: "/login" },
+  { label: "Register", href: "/register" },
 ];
 
 export default function Home() {
