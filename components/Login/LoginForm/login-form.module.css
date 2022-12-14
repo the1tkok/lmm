@@ -1,0 +1,36 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.emailInput,
+.firstNameInput,
+.lastNameInput,
+.experienceLevelInput {
+  border-radius: 24px;
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 15vw;
+  height: 2.5rem;
+  font-size: 1rem;
+  padding-left: 1.2rem;
+}
+
+.loginPageSubmitBtn {
+  background-color: #3d58f0;
+  border: none;
+  border-radius: 24px;
+  color: white;
+  font-family: "avenir light";
+  width: 15vw;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.inputError {
+  font-size: 0.8rem;
+  color: red;
+  margin-top: 0.5rem;
+}

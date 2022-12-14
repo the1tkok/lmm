@@ -1,23 +1,22 @@
-import Head from "next/head";
-import Header from "../../components/Navigation/Header/Header";
-import styles from "./dashboard.module.css";
-import InfoNavBar from "../../components/Dashboard/InfoNav/InfoNav";
-import Link from "next/link";
 import Image from "next/future/image";
-import NotificationsIcon from "../../public/icons/dashboard_icons/bell.png";
-import ProgressIcon from "../../public/icons/dashboard_icons/progress.png";
-import CommunityIcon from "../../public/icons/dashboard_icons/community.png";
-import QuizzesIcon from "../../public/icons/dashboard_icons/quizzes.png";
+import Head from "next/head";
+import InfoNavBar from "../../components/Dashboard/InfoNav/InfoNav";
+import DashboardNavBar from "../../components/Dashboard/MainNav/MainNav";
+import Header from "../../components/Navigation/Header/Header";
 import AttendanceIcon from "../../public/icons/dashboard_icons/attendance.png";
 import AwardsIcon from "../../public/icons/dashboard_icons/awards.png";
-import DashboardNavBar from "../../components/Dashboard/MainNav/MainNav";
+import NotificationsIcon from "../../public/icons/dashboard_icons/bell.png";
+import CommunityIcon from "../../public/icons/dashboard_icons/community.png";
+import ProgressIcon from "../../public/icons/dashboard_icons/progress.png";
+import QuizzesIcon from "../../public/icons/dashboard_icons/quizzes.png";
+import styles from "./dashboard.module.css";
 
 const links = [
   { label: "One on One Coaching", href: "" },
   { label: "About", href: "" },
   { label: "Blog", href: "" },
-  { label: "Log out", href: "" },
   { label: "Upgrade plan", href: "" },
+  { label: "Log out", href: "/api/logout" },
 ];
 export default function Dashboard() {
   return (

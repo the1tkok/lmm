@@ -18,7 +18,7 @@ export default function Hero() {
         <p className={styles.heroParagraph}>We teach world-class acting to beginner,<br></br> intermediate, and advanced level actors across <br></br> the world both online and in-person.</p>
         {/*****HERO FORM*****/}
         <form className={styles.heroEmailForm}>
-          <label for="email"></label>
+          <label htmlFor="email"></label>
           <input className={styles.emailInput} type="text" id="userEmail" name="email" placeholder="name@email.com"></input>
           <button className={styles.formButton1} display="block">Enroll for FREE Classes</button>
         </form>

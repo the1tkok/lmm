@@ -46,35 +46,3 @@
   padding-bottom: 2rem;
   font-family: "avenir light";
 }
-
-.registrationForm {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.emailInput,
-.firstNameInput,
-.lastNameInput,
-.passwordInput,
-.experienceLevelInput {
-  border-radius: 24px;
-  border: 1px solid lightgray;
-  background-color: white;
-  width: 15vw;
-  height: 2.5rem;
-  font-size: 1rem;
-  padding-left: 1.2rem;
-}
-
-.registrationPageSubmitBtn {
-  background-color: #3d58f0;
-  border: none;
-  border-radius: 24px;
-  color: white;
-  font-family: "avenir light";
-  width: 15vw;
-  height: 2.5rem;
-  font-size: 1.2rem;
-  margin-top: 0.8rem;
-}
