@@ -7,7 +7,7 @@ export function middleware(request) {
 
   const isAuthPage = ["/login", "/register"].includes(url.pathname);
 
-  if (isAuthPage && accessToken) {
+  if ((isAuthPage || url.pathname === "/") && accessToken) {
     return NextResponse.redirect(new URL("/dashboard", request.url));
   }
 
