@@ -6,12 +6,13 @@ export function middleware(request) {
   const accessToken = request.cookies.get("accessToken");
 
   const isAuthPage = ["/login", "/register"].includes(url.pathname);
+  const isLandingPage = url.pathname === "/";
 
-  if ((isAuthPage || url.pathname === "/") && accessToken) {
+  if ((isAuthPage || isLandingPage) && accessToken) {
     return NextResponse.redirect(new URL("/dashboard", request.url));
   }
 
-  if (!accessToken && !isAuthPage) {
+  if (!accessToken && !isAuthPage && !isLandingPage) {
     return NextResponse.redirect(new URL("/login", request.url));
   }
 }
