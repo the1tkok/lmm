@@ -47,7 +47,7 @@ export default function Dashboard() {
         {/*****HOME DASHBOARD PROGRESS LESSON*****/}
         <div className={styles.courseProgressLessonContainer}>
           <h2 className={styles.courseProgressTitle}>
-            Progress
+            Progression
             <Image
               className={styles.dashboardProgressIcon}
               src={ProgressIcon}
