@@ -30,10 +30,10 @@ const Header = ({ links, navContainer, navUl, logoStyling, linkClass }) => {
           </div>
           {/*****DESKTOP NAVIGATION*****/}
           <ul className={`${styles[navUl]}`}>
-            {links.map(({ href, label, linkClass }) => (
+            {links.map(({ href, label, useButtonStyle }) => (
               <li className={styles.navListMenu} key={href}>
                 <Link href={href}>
-                  <a className={`${styles[linkClass]}`}>{label}</a>
+                  <a className={useButtonStyle ? styles.menuItem2 : styles.menuItem}>{label}</a>
                 </Link>
               </li>
             ))}

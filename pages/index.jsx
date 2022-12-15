@@ -11,11 +11,11 @@ import FeatureSection4 from "../components/Home/FeatureSection4/FeatureSection4"
 import FeatureSection5 from "../components/Home/FeatureSection5/FeatureSection5";
 
 const links = [
-  { label: "View Curriculum", href: "", linkClass: "menuItem" },
-  { label: "Pricing", href: "", linkClass: "menuItem" },
-  { label: "Blog", href: "", linkClass: "menuItem" },
-  { label: "Login", href: "/login", linkClass: "menuItem" },
-  { label: "Register", href: "/register", linkClass: "menuItem2" },
+  { label: "View Curriculum", href: "",  },
+  { label: "Pricing", href: "",  },
+  { label: "Blog", href: "",  },
+  { label: "Login", href: "/login",  },
+  { label: "Register", href: "/register", useButtonStyle: true },
 ];
 
 export default function Home() {
