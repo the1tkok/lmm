@@ -3,7 +3,7 @@ import Image from "next/future/image";
 import Link from "next/link";
 import logo from "../../../public/logo/laurafinallogo.svg";
 
-const Header = ({ links, navContainer, navUl, logoStyling }) => {
+const Header = ({ links, navContainer, navUl, logoStyling, linkClass }) => {
   return (
     <>
       {/*****MOBILE NAVIGATION*****/}
@@ -30,10 +30,10 @@ const Header = ({ links, navContainer, navUl, logoStyling }) => {
           </div>
           {/*****DESKTOP NAVIGATION*****/}
           <ul className={`${styles[navUl]}`}>
-            {links.map(({ href, label }) => (
+            {links.map(({ href, label, linkClass }) => (
               <li className={styles.navListMenu} key={href}>
                 <Link href={href}>
-                  <a className={styles.menuItem}>{label}</a>
+                  <a className={`${styles[linkClass]}`}>{label}</a>
                 </Link>
               </li>
             ))}
