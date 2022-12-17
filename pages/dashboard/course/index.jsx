@@ -83,6 +83,8 @@ export default function Course() {
           <p className={styles.resourcesText}><Link href="/">2. Resource 2 Link</Link></p>
           <p className={styles.resourcesText}><Link href="/">3. Resource 3 Link</Link></p>
         </div>
+        <div className={styles.courseLineBreak}></div>
+        <div className={styles.courseLineBreak}></div>
       </div>
     </div>
   )
