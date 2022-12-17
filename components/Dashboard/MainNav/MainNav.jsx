@@ -4,9 +4,9 @@ import Link from "next/link";
 import SchoolIcon from "../../../public/icons/dashboard_icons/school.svg";
 import SchoolDarkIcon from '../../../public/icons/dashboard_icons/schoolDark.png'
 import ClassroomIcon from "../../../public/icons/dashboard_icons/classroom.png";
-import MessagesIcon from "../../../public/icons/dashboard_icons/messages.png";
+import MessagesIcon from "../../../public/icons/dashboard_icons/messages.svg";
 import BookIcon from "../../../public/icons/dashboard_icons/book.png";
-import CommunityIcon from "../../../public/icons/dashboard_icons/community.png";
+import CommunityIcon from "../../../public/icons/dashboard_icons/community.svg";
 import { useGetMe } from "../../../lib/api/user";
 import { useRouter } from "next/router";
 
