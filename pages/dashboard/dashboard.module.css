@@ -5,26 +5,7 @@
   flex-wrap: wrap;
 }
 
-/*
-.userDashboardContainer {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-areas: "infosidebar infosidebar sidenavbar sidenavbar sidenavbar sidenavbar dashboardheader dashboardheader dashboardheader";
-  gap: 30px;
-}
-*/
-
-.userDashboardContainer {
-  display: flex;
-}
-
 /*******HEADER******/
-
-.dashboardContentContainer {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .dashboardHeader {
   display: flex;
@@ -50,6 +31,7 @@
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
   border-bottom: 3px solid #3d58f0;
+  z-index: 10;
 }
 /*
 .dashboardHeader::before {

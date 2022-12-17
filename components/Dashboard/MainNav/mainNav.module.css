@@ -39,7 +39,6 @@
 
 .dashboardNavItems li {
   list-style: none;
-  padding-left: 2rem;
 }
 
 .dashboardHomeButton,
@@ -78,4 +77,51 @@
   width: 32px;
   height: 32px;
   margin-right: 1rem;
+}
+
+/*****ACTIVE BUTTONS*****/
+
+@keyframes navSlide {
+  from {
+    left: 1.5rem;
+  }
+
+  to {
+    left: 9rem;
+  }
+}
+
+@keyframes navBtnTextSlide {
+  from {
+    padding-left: 0rem;
+  }
+
+  to {
+    padding-left: 3rem;
+  }
+}
+
+.dashboardHomeButtonActive {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ededed;
+  border-radius: 6px;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dashboardSchoolIconActive {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  animation-duration: 0.7s;
+  animation-name: navSlide;
+}
+
+.dashboardHomeTextActive {
+  font-family: "avenir medium";
+  padding-left: 3rem;
+  animation-duration: 0.7s;
+  animation-name: navBtnTextSlide;
 }

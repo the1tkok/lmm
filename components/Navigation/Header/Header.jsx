@@ -3,7 +3,7 @@ import Image from "next/future/image";
 import Link from "next/link";
 import logo from "../../../public/logo/laurafinallogo.svg";
 
-const Header = ({ links, navContainer, navUl, logoStyling, linkClass }) => {
+const Header = ({ links, navContainer, navUl, logoStyling}) => {
   return (
     <>
       {/*****MOBILE NAVIGATION*****/}

@@ -1,0 +1,49 @@
+/*******HEADER******/
+
+.dashboardHeader {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  margin-left: 23rem;
+  margin-top: 1rem;
+  height: 4rem;
+  position: fixed;
+  color: #1f1f1f;
+  align-items: center;
+  padding-left: 2rem;
+  top: 8rem;
+  bottom: 0;
+  left: 0;
+  right: 4.6rem;
+  font-family: "avenir black";
+  /*background-image: url("/backgrounds/headerbkg.jpg");*/
+  background-size: 2000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -61px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  border-bottom: 3px solid #3d58f0;
+  z-index: 9;
+}
+
+.dashboardHeader::before {
+  content: "";
+  display: flex;
+  background-color: white;
+  margin-left: 23rem;
+  height: 6rem;
+  position: fixed;
+  color: white;
+  align-items: center;
+  padding-left: 2rem;
+  top: 4rem;
+  bottom: 0;
+  left: 0;
+  right: 4.6rem;
+}
+
+.dashboardHeaderTitle {
+  font-family: "avenir black";
+  padding-top: 5px;
+}

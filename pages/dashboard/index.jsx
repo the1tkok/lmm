@@ -2,21 +2,22 @@ import Image from "next/future/image";
 import Head from "next/head";
 import InfoNavBar from "../../components/Dashboard/InfoNav/InfoNav";
 import DashboardNavBar from "../../components/Dashboard/MainNav/MainNav";
+import DashboardTitle from "../../components/Dashboard/DashboardTitle/DashboardTitle";
 import Header from "../../components/Navigation/Header/Header";
 import AttendanceIcon from "../../public/icons/dashboard_icons/attendance.png";
 import AwardsIcon from "../../public/icons/dashboard_icons/awards.png";
 import NotificationsIcon from "../../public/icons/dashboard_icons/bell.png";
-import CommunityIcon from "../../public/icons/dashboard_icons/community.png";
-import ProgressIcon from "../../public/icons/dashboard_icons/progress.png";
-import QuizzesIcon from "../../public/icons/dashboard_icons/quizzes.png";
+import CommunityIcon from "../../public/icons/dashboard_icons/community.svg";
+import ProgressIcon from "../../public/icons/dashboard_icons/progress.svg";
+import QuizzesIcon from "../../public/icons/dashboard_icons/quizzes.svg";
 import styles from "./dashboard.module.css";
 
 const links = [
   { label: "One on One Coaching", href: "" },
   { label: "About", href: "" },
   { label: "Blog", href: "" },
-  { label: "Upgrade plan", href: "" },
   { label: "Log out", href: "/api/logout" },
+  { label: "Upgrade plan", href: "", useButtonStyle: true },
 ];
 export default function Dashboard() {
   return (
@@ -39,10 +40,9 @@ export default function Dashboard() {
       </div>
       {/*****USER DASHBOARD MAIN NAVIGATION*****/}
       <DashboardNavBar></DashboardNavBar>
-      {/*****USER DASHBOARD HEADER*****/}
-      <div className={styles.dashboardHeader}>
-        <h1 className={styles.dashboardHeaderTitle}>The Actor&#39;s Academy</h1>
-      </div>
+      {/*****USER DASHBOARD HEADER TITLE*****/}
+      <DashboardTitle title={"The Actor's Academy"}></DashboardTitle>
+      {/*****USER DASHBOARD CARD CONTAINER*****/}
       <div className={styles.dashboardMainContainer}>
         {/*****HOME DASHBOARD PROGRESS LESSON*****/}
         <div className={styles.courseProgressLessonContainer}>

@@ -1,0 +1,112 @@
+.dashboardContainer {
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboardMainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 23rem;
+  margin-top: 16.6rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.courseTitle {
+  flex-basis: fit-content;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+
+.courseContent {
+  font-family: "avenir light";
+  font-size: 1.2rem;
+  flex-basis: 60%;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.courseProgressLessonContainer {
+  width: 30rem;
+  height: 18rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  border-radius: 12px;
+}
+
+.courseProgressLessonContainer:hover {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(61, 88, 240, 0.2);
+}
+
+.courseProgress {
+  display: flex;
+}
+
+.courseProgressTitle {
+  font-family: "avenir light";
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.learningOutcomeCard {
+  color: white;
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+  font-family: "avenir medium";
+  justify-content: center;
+  width: 10rem;
+  height: 4rem;
+  background-color: #5972ff;
+  border-radius: 12px;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.courseNavContainer {
+  display: flex;
+  flex-basis: 45%;
+  justify-content: space-between;
+}
+
+.nextLessonBtn {
+  align-self: flex-end;
+  border: none;
+  background-color: #f0c53c;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.courseLineBreak {
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.resourcesText {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  font-family: "avenir light";
+}
+
+.contributors {
+  display: flex;
+  gap: 2rem;
+}
+
+.courseVideo {
+  width: 700px;
+  height: 394px;
+  border: none;
+  position: relative;
+  z-index: 5;
+  border-radius: 12px;
+}
