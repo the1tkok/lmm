@@ -15,10 +15,10 @@ export default function Home() {
             /></div>
             <p>Online Acting School</p>
             <div className={styles.footerSocialIconContainer}>
-            <div><Image className={styles.instagramIcon} src={Instagram_Icon} alt="instagram icon"></Image></div>
-            <div><Image className={styles.facebookIcon} src={Facebook_Icon} alt="facebook icon"></Image></div>
-            <div><Image className={styles.twitterIcon} src={Twitter_Icon} alt="twitter icon"></Image></div>
-            <div><Image className={styles.youtubeIcon} src={Youtube_Icon} alt="youtube icon"></Image></div>
+            <div><Image className={styles.instagramIcon} src={Instagram_Icon} height={24} width={24} alt="instagram icon"></Image></div>
+            <div><Image className={styles.facebookIcon} src={Facebook_Icon} height={24} width={24} alt="facebook icon"></Image></div>
+            <div><Image className={styles.twitterIcon} src={Twitter_Icon} height={24} width={24} alt="twitter icon"></Image></div>
+            <div><Image className={styles.youtubeIcon} src={Youtube_Icon} height={24} width={24} alt="youtube icon"></Image></div>
             </div>
           </div>
           <div className={styles.footerAboutContainer}>
