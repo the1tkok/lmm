@@ -28,7 +28,7 @@
   border: none;
   position: relative;
   z-index: 5;
-  border-radius: 24px;
+  border-radius: 16px;
 }
 
 .videoBackgroundImage::after {
