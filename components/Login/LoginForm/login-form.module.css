@@ -4,13 +4,11 @@
   gap: 2rem;
 }
 
-.emailInput,
-.firstNameInput,
-.lastNameInput,
-.experienceLevelInput {
+.emailInput {
   border-radius: 24px;
   border: 1px solid lightgray;
   background-color: white;
+  color: rgb(65, 65, 65);
   width: 15vw;
   height: 2.5rem;
   font-size: 1rem;
