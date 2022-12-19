@@ -1,6 +1,7 @@
 import Image from 'next/future/image'
 import styles from './footer.module.css'
 import logo from '../../../public/logo/laurafinallogopurple.svg'
+import Link from 'next/link'
 import { Facebook_Icon, Instagram_Icon, Twitter_Icon, Youtube_Icon } from '../../../public/icons/social_icons/social_icons'
 
 export default function Home() {
@@ -8,11 +9,13 @@ export default function Home() {
     <footer className={styles.footerContainer}>
       <nav className={styles.footerNav}>
         <div className={styles.footerLogoContainer}>
-          <div className={styles.logo}><Image className={styles.logo2} src={logo}
-            alt="logo"
-            width={150}
-            height='100%'
+          <Link href="/">
+            <div className={styles.logo}><Image className={styles.logo2} src={logo}
+              alt="logo"
+              width={150}
+              height='100%'
             /></div>
+          </Link>
             <p>Online Acting School</p>
             <div className={styles.footerSocialIconContainer}>
             <div><Image className={styles.instagramIcon} src={Instagram_Icon} height={24} width={24} alt="instagram icon"></Image></div>

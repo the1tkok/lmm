@@ -3,6 +3,7 @@ import Image from "next/future/image";
 import styles from "./register.module.css";
 import logo from "../../public/logo/laurafinallogo.svg";
 import { RegistrationForm } from "../../components/Register/RegistrationForm/RegistrationForm";
+import Link from 'next/link';
 
 export default function Register() {
   return (
@@ -15,15 +16,17 @@ export default function Register() {
       <div className={styles.registrationFormContainer}>
         <div className={styles.registrationProductContainer}></div>
         <div className={styles.formContainer}>
-          <div className={styles.registrationLogoContainer}>
-            <Image
-              className={styles.logo}
-              src={logo}
-              alt="logo"
-              width={200}
-              height="100%"
-            />
-          </div>
+          <Link href="/">
+            <div className={styles.registrationLogoContainer}>
+              <Image
+                className={styles.logo}
+                src={logo}
+                alt="logo"
+                width={200}
+                height="100%"
+              />
+            </div>
+          </Link>
           <h1 className={styles.registrationGreeting}>
             Let&#39;s Get Started!
           </h1>

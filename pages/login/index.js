@@ -3,6 +3,7 @@ import Image from "next/future/image";
 import styles from "./login.module.css";
 import logo from "../../public/logo/laurafinallogo.svg";
 import { LoginForm } from "../../components/Login/LoginForm";
+import Link from 'next/link';
 
 export default function LoginPage() {
   return (
@@ -15,15 +16,17 @@ export default function LoginPage() {
       <div className={styles.loginFormContainer}>
         <div className={styles.loginProductContainer}></div>
         <div className={styles.formContainer}>
-          <div className={styles.loginLogoContainer}>
-            <Image
-              className={styles.logo}
-              src={logo}
-              alt="logo"
-              width={200}
-              height="100%"
-            />
-          </div>
+          <Link href="/">
+            <div className={styles.loginLogoContainer}>
+              <Image
+                className={styles.logo}
+                src={logo}
+                alt="logo"
+                width={200}
+                height="100%"
+              />
+            </div>
+          </Link>
           <h1 className={styles.loginGreeting}>Welcome Back!</h1>
           <p className={styles.loginText}>
             “I can always see something of myself in <br></br> the characters I

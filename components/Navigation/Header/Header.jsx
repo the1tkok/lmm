@@ -10,13 +10,15 @@ const Header = ({ links, navContainer, navUl, logoStyling}) => {
       <aside className={styles.sideBar}></aside>
       <div className={styles.headerNavContainer}>
         <nav className={`${styles[navContainer]}`}>
-          <Image
-            className={`${styles[logoStyling]}`}
-            src={logo}
-            alt="logo"
-            width={165}
-            height="100%"
-          />
+          <Link href="/">
+            <Image
+              className={`${styles[logoStyling]}`}
+              src={logo}
+              alt="logo"
+              width={165}
+              height="100%"
+            />
+          </Link>
           <div className={styles.mobileNavContainer}>
             <span className={styles.dot1} />
             <span className={styles.dot2} />

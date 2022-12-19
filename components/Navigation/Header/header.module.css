@@ -7,6 +7,7 @@
   margin-left: 2%;
   display: block;
   height: 100%;
+  cursor: pointer;
 }
 
 /*****NAVIGATION*****/
@@ -79,6 +80,7 @@
 
   .logo2Dashboard {
     margin-left: 5rem;
+    cursor: pointer;
   }
 
   .headerNavContainer {
