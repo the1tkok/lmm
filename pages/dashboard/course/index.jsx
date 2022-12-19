@@ -8,6 +8,7 @@ import Image from 'next/future/image';
 import AuditionIcon from '../../../public/icons/home_icons/audition.png';
 import ExerciseIcon from '../../../public/icons/home_icons/exercises.png'
 import LauraIcon from '../../../public/icons/dashboard_icons/avatar.png'
+import CastingIcon from '../../../public/icons/home_icons/casting.png'
 
 const links = [
   { label: "One on One Coaching", href: "" },
@@ -52,6 +53,10 @@ export default function Course() {
         <Image src={ExerciseIcon} height={32} alt="auditionIcon"></Image>
         <p>Acting Exercises</p>
         </div>
+        <div className={styles.learningOutcomeCard}>
+        <Image src={CastingIcon} height={32} alt="auditionIcon"></Image>
+        <p>Casting Breakthrough</p>
+        </div>
         {/*****COURSE TEXT CONTENT*****/}
         <div className={styles.courseLineBreak}></div>
         <p className={styles.courseContent}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -75,13 +80,15 @@ export default function Course() {
         </div>
         {/*****COURSE ADDITIONAL RESOURCES*****/}
         <div className={styles.courseLineBreak}></div>
-        <div className={styles.courseProgressLessonContainer}>
-          <h2 className={styles.courseProgressTitle}>
+        <div className={styles.additionalResourcesContainer}>
+          <h2 className={styles.additionalResourcesTitle}>
             Additional Resources
           </h2>
-          <p className={styles.resourcesText}><Link href="/">1. Resource 1 Link</Link></p>
-          <p className={styles.resourcesText}><Link href="/">2. Resource 2 Link</Link></p>
-          <p className={styles.resourcesText}><Link href="/">3. Resource 3 Link</Link></p>
+          <ul>
+          <li><p className={styles.additionalResourcesText}><Link href="/">Read this to learn what casting directors look for.</Link></p></li>
+          <li><p className={styles.additionalResourcesText}><Link href="/">Check out these casting wardrobe tips.</Link></p></li>
+          <li><p className={styles.additionalResourcesText}><Link href="/">Learn what method acting is and when to use it.</Link></p></li>
+          </ul>
         </div>
         <div className={styles.courseLineBreak}></div>
         <div className={styles.courseLineBreak}></div>
