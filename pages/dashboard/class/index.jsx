@@ -118,7 +118,7 @@ export default function ClassRoom() {
         {/*****ASSIGNMENTS & SYLLABUS CARD*****/}
         <div className={styles.classInformationContainer}>
           <h2 className={styles.classInformationTitle}>
-            Assignmentts & Syllabus
+            Assignments & Syllabus
           </h2>
           <div className={styles.classInformationContent}>
             {/*****SELF TAPE SUBMISSION BUTTON*****/}
