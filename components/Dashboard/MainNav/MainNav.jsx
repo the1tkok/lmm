@@ -2,7 +2,7 @@ import styles from "./mainNav.module.css";
 import Image from "next/future/image";
 import Link from "next/link";
 import SchoolIcon from "../../../public/icons/dashboard_icons/school.svg";
-import SchoolDarkIcon from '../../../public/icons/dashboard_icons/schoolDark.png'
+import SchoolDarkIcon from '../../../public/icons/dashboard_icons/schoolDark.svg'
 import ClassroomIcon from "../../../public/icons/dashboard_icons/classroom.svg";
 import MessagesIcon from "../../../public/icons/dashboard_icons/messages2.svg";
 import BookIcon from "../../../public/icons/dashboard_icons/book.svg";
@@ -20,56 +20,56 @@ export default function DashboardNavBar() {
       <p className={styles.userGreeting}>Welcome back, {data?.firstName}!</p>
       <p className={styles.lastLoggedIn}>Last logged in: 2 days ago</p>
       <ul className={styles.dashboardNavItems}>
+      <Link href={{pathname: '/dashboard'}} passHref legacyBehavior>
         <li className={currentRoute === '/dashboard' ? styles.dashboardHomeButton : styles.dashboardHomeButtonActive}>
           <Image
             className={currentRoute === '/dashboard' ? styles.dashboardSchoolIcon : styles.dashboardSchoolIconActive}
             src={currentRoute === '/dashboard' ? SchoolIcon : SchoolDarkIcon}
             alt="background image"
           ></Image>
-          <Link href={{pathname: '/dashboard'}} passHref legacyBehavior>
             <a className={currentRoute === '/dashboard' ? styles.dashboardHomeText : styles.dashboardHomeTextActive}>Home</a>
-          </Link>
         </li>
+      </Link>
+      <Link href={{pathname: '/dashboard/class'}}>
         <li className={styles.dashboardClassesButton}>
           <Image
             className={styles.dashboardClassroomIcon}
             src={ClassroomIcon}
             alt="background image"
           ></Image>
-          <Link href={"/"}>
-            <a className={styles.dashboardClassesText}>Classes</a>
-          </Link>
+            <a className={styles.dashboardClassesText}>Class</a>
         </li>
+      </Link>
+      <Link href={{pathname: '/dashboard/course'}}>
         <li className={styles.dashboardCourseMaterialsButton}>
           <Image
             className={styles.dashboardBookIcon}
             src={BookIcon}
             alt="background image"
           ></Image>
-          <Link href={{pathname: '/dashboard/course'}}>
-            <a className={styles.dashboardCourseText}>Course Materials</a>
-          </Link>
+            <a className={styles.dashboardCourseText}>Course</a>
         </li>
+      </Link>
+      <Link href={"/"}>
         <li className={styles.dashboardCommunityButton}>
           <Image
             className={styles.dashboardCommunitiesIcon}
             src={CommunityIcon}
             alt="background image"
           ></Image>
-          <Link href={"/"}>
             <a className={styles.dashboardCommunityText}>Community</a>
-          </Link>
         </li>
+      </Link>
+      <Link href={"/"}>
         <li className={styles.dashboardMessagesButton}>
           <Image
             className={styles.dashboardMessagesIcon}
             src={MessagesIcon}
             alt="background image"
           ></Image>
-          <Link href={"/"}>
             <a className={styles.dashboardMessagesText}>Messages</a>
-          </Link>
         </li>
+      </Link>
       </ul>
     </div>
   );
