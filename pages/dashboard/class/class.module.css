@@ -109,7 +109,7 @@
   font-family: "avenir light";
   height: fit-content;
   margin-top: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,10 +117,11 @@
 
 .assignedCoachTitle {
   margin-top: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "avenir medium";
 }
 
 /*****SELF TAPE & SYLLABUS BUTTON*****/

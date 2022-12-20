@@ -43,9 +43,9 @@ export default function ClassRoom() {
         <div className={styles.joinClassContainer}>
           {/*****CALENDAR CONTAINER*****/}
           <div className={styles.calendarContainer}>
-            <h2 className={styles.calendarTitle}>
+            <p className={styles.calendarTitle}>
               Calendar goes here
-            </h2>
+            </p>
           </div>
           {/*****JOIN CLASS BUTTON*****/}
           <div className={styles.joinClassBtn}>
@@ -61,7 +61,7 @@ export default function ClassRoom() {
             <h1 className={styles.assignedCoachTitle}>
               Class Times
             </h1>
-            <h2>9am - 1pm</h2>
+            <h2>9AM - 1PM</h2>
               <h2 className={styles.coachNameTitle}>
               Tuesday & Thursday
             </h2>
