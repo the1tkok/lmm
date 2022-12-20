@@ -13,8 +13,8 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-left: 23rem;
-  margin-top: 16.6rem;
-  gap: 2rem;
+  margin-top: 14.5rem;
+  gap: 1.25rem;
   align-items: flex-start;
 }
 
@@ -42,9 +42,8 @@
 /*****CLASS CARDS TITLE*****/
 
 .classInformationTitle {
-  font-family: "avenir light";
+  font-family: "avenir medium";
   padding-top: 1rem;
-  border-bottom: 1px solid black;
 }
 
 /*****JOIN CLASS/CALENDAR CONTAINER*****/
@@ -58,7 +57,7 @@
 
 .joinClassBtn {
   width: 31rem;
-  height: 8rem;
+  height: 4rem;
   display: flex;
   align-content: center;
   justify-content: center;

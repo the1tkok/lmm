@@ -76,7 +76,7 @@ export default function Course() {
         <div className={styles.courseLineBreak}></div>
         <div className={styles.contributors}>
           <h3>Contributors:</h3>
-          <Image src={LauraIcon} alt="Laura Mac"></Image>
+          <Image src={LauraIcon} alt="Laura Mac" width={48}></Image>
         </div>
         {/*****COURSE ADDITIONAL RESOURCES*****/}
         <div className={styles.courseLineBreak}></div>

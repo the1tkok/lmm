@@ -11,7 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 23rem;
-  margin-top: 16.6rem;
+  margin-top: 14.3rem;
   gap: 2rem;
   align-items: flex-start;
 }
@@ -34,7 +34,7 @@
   font-family: "avenir medium";
   justify-content: center;
   width: 11rem;
-  height: 4rem;
+  height: 3.3rem;
   background-color: #5972ff;
   border-radius: 12px;
   align-items: center;
@@ -87,7 +87,8 @@
 
 .contributors {
   display: flex;
-  gap: 2rem;
+  gap: 1.25rem;
+  align-items: center;
 }
 
 /*****ADDITIONAL RESOURCES CONTAINER*****/
