@@ -120,6 +120,10 @@
   color: blue;
 }
 
+.additionalResourcesContainer li {
+  list-style: none;
+}
+
 /*****COURSE LINE BREAKS*****/
 
 .courseLineBreak {
