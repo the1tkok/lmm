@@ -37,26 +37,11 @@ export default function Course() {
       {/*****USER DASHBOARD MAIN NAV BAR*****/}
       <DashboardNavBar activeBtn={activeBtn}></DashboardNavBar>
       {/*****USER DASHBOARD HEADER TITLE*****/}
-      <DashboardTitle title={"Course Materials"}></DashboardTitle>
+      <DashboardTitle title={"Dashboard"} subTitle={"Course"}></DashboardTitle>
       {/*****COURSE MATERIALS CONTAINER*****/}
       <div className={styles.dashboardMainContainer}>
         {/*****COURSE MATERIALS CONTENT TITLE*****/}
         <h2 className={styles.courseTitle}>The Actor&#39;s Toolkit Overview</h2>
-        {/*****LEARNING OUTCOMES CARDS*****/}
-        <div className={styles.courseLineBreak}></div>
-        <h3>Learning Outcomes:</h3>
-        <div className={styles.learningOutcomeCard}>
-        <Image src={AuditionIcon} height={32} alt="auditionIcon"></Image>
-        <p>Audition Prep</p>
-        </div>
-        <div className={styles.learningOutcomeCard}>
-        <Image src={ExerciseIcon} height={32} alt="auditionIcon"></Image>
-        <p>Acting Exercises</p>
-        </div>
-        <div className={styles.learningOutcomeCard}>
-        <Image src={CastingIcon} height={32} alt="auditionIcon"></Image>
-        <p>Casting Breakthrough</p>
-        </div>
         {/*****COURSE TEXT CONTENT*****/}
         <div className={styles.courseLineBreak}></div>
         <p className={styles.courseContent}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -71,6 +56,21 @@ export default function Course() {
         <div className={styles.courseNavContainer}>
           <button className={styles.nextLessonBtn}>Previous Lesson</button>
           <button className={styles.nextLessonBtn}>Next Lesson</button>
+        </div>
+        {/*****LEARNING OUTCOMES CARDS*****/}
+        <div className={styles.courseLineBreak}></div>
+        <h3>Learning Outcomes:</h3>
+        <div className={styles.learningOutcomeCard}>
+        <Image src={AuditionIcon} height={32} alt="auditionIcon"></Image>
+        <p>Audition Prep</p>
+        </div>
+        <div className={styles.learningOutcomeCard}>
+        <Image src={ExerciseIcon} height={32} alt="auditionIcon"></Image>
+        <p>Acting Exercises</p>
+        </div>
+        <div className={styles.learningOutcomeCard}>
+        <Image src={CastingIcon} height={32} alt="auditionIcon"></Image>
+        <p>Casting Breakthrough</p>
         </div>
         {/*****COURSE CONTRIBUTORS*****/}
         <div className={styles.courseLineBreak}></div>

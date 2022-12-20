@@ -1,7 +1,10 @@
 /*******HEADER******/
 
 .dashboardHeader {
+  align-items: flex-start;
+  align-content: flex-start;
   display: flex;
+  flex-wrap: wrap;
   background-color: white;
   border-radius: 12px;
   margin-left: 21rem;
@@ -11,7 +14,7 @@
   color: #1f1f1f;
   align-items: center;
   padding-left: 2rem;
-  top: 8rem;
+  top: 6rem;
   bottom: 0;
   left: 0;
   right: 4.6rem;
@@ -33,13 +36,13 @@
   content: "";
   display: flex;
   background-color: white;
-  margin-left: 23rem;
+  margin-left: 21rem;
   height: 6rem;
   position: fixed;
   color: white;
   align-items: center;
   padding-left: 2rem;
-  top: 4rem;
+  top: 2rem;
   bottom: 0;
   left: 0;
   right: 4.6rem;
@@ -48,4 +51,20 @@
 .dashboardHeaderTitle {
   font-family: "avenir black";
   padding-top: 5px;
+  display: block;
+  flex-basis: 100%;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.dashboardHeadersubTitle {
+  display: flex;
+  color: rgb(131, 131, 131);
+  flex-basis: 100%;
+  font-size: 1.1rem;
+  background-color: white;
+  font-family: "avenir light";
+  padding: 0;
+  padding-bottom: 0.2rem;
+  margin: 0;
 }

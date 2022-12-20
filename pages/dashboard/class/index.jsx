@@ -36,7 +36,7 @@ export default function ClassRoom() {
       {/*****USER DASHBOARD MAIN NAV BAR*****/}
       <DashboardNavBar></DashboardNavBar>
       {/*****USER DASHBOARD HEADER TITLE*****/}
-      <DashboardTitle title={"Classroom"}></DashboardTitle>
+      <DashboardTitle title={"Dashboard"} subTitle={"Class"}></DashboardTitle>
       {/*****CLASS CONTAINER*****/}
       <div className={styles.dashboardMainContainer}>
         {/*****JOIN CLASS CONTAINER*****/}

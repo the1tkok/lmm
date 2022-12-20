@@ -41,7 +41,7 @@ export default function Dashboard() {
       {/*****USER DASHBOARD MAIN NAVIGATION*****/}
       <DashboardNavBar></DashboardNavBar>
       {/*****USER DASHBOARD HEADER TITLE*****/}
-      <DashboardTitle title={"The Actor's Academy"}></DashboardTitle>
+      <DashboardTitle title={"Dashboard"} subTitle={"Home"}></DashboardTitle>
       {/*****USER DASHBOARD CARD CONTAINER*****/}
       <div className={styles.dashboardMainContainer}>
         {/*****HOME DASHBOARD PROGRESS LESSON*****/}
