@@ -96,7 +96,7 @@
   display: flex;
   flex-basis: 33%;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 /*****ASSIGNED COACH CONTAINER*****/
