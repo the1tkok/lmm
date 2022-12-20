@@ -111,6 +111,10 @@
     padding: 8em 25em 0em 25em;
   }
 
+  .featureTextContainer {
+    width: 25rem;
+  }
+
   .featuresTitle {
     flex-basis: 100%;
     font-family: "avenir medium";

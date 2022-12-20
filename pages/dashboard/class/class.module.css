@@ -14,7 +14,7 @@
   justify-content: flex-start;
   margin-left: 23rem;
   margin-top: 14.5rem;
-  gap: 1.25rem;
+  gap: 2rem;
   align-items: flex-start;
 }
 
@@ -29,14 +29,14 @@
   flex-direction: column;
   width: 25rem;
   height: 32rem;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(166, 173, 201, 0.2);
+  box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
+    0 10px 26.7px rgba(166, 173, 201, 0.15);
   border-radius: 12px;
 }
 
 .classInformationContainer:hover {
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(61, 88, 240, 0.2);
+  box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
+    0 10px 26.7px rgba(61, 88, 240, 0.12);
 }
 
 /*****CLASS CARDS TITLE*****/
@@ -87,8 +87,14 @@
 }
 
 .classCardContainer {
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(166, 173, 201, 0.2);
+  box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
+    0 10px 26.7px rgba(166, 173, 201, 0.15);
+  border-radius: 12px;
+}
+
+.classCardContainer:hover {
+  box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
+    0 10px 26.7px rgba(61, 88, 240, 0.12);
   border-radius: 12px;
 }
 

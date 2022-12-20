@@ -17,7 +17,7 @@ export default function FeatureSection1() {
       </div>
       <div className={styles.feature2}>
         <Image className={styles.featurePic2} src={Laura_mac2} alt="laura mac team"></Image>
-        <div className={styles.featureTextContainer2}>
+        <div className={styles.featureTextContainer}>
           <p className={styles.featureSubtitle1}>GROW YOUR CAREER</p>
           <p className={styles.featureTitle1}>Routine Course Updates</p>
           <p className={styles.featureParagraph1}>Join a community of actors and learn alongside acting<br></br>peers of similar skill level from beginner to advanced.</p>
@@ -33,7 +33,7 @@ export default function FeatureSection1() {
       </div>
       <div className={styles.feature4}>
         <Image className={styles.featurePic4} src={Laura_mac2} alt="laura mac team"></Image>
-        <div className={styles.featureTextContainer4}>
+        <div className={styles.featureTextContainer}>
           <p className={styles.featureSubtitle1}>GROW YOUR CAREER</p>
           <p className={styles.featureTitle1}>A Network of Opportunities</p>
           <p className={styles.featureParagraph1}>Join a community of actors and learn alongside acting<br></br>peers of similar skill level from beginner to advanced.</p>
