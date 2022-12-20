@@ -70,7 +70,7 @@
 .joinClassContainer {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 /*****CLASS INFORMATION CARDS*****/
@@ -94,7 +94,7 @@
 
 .classCardGroup {
   display: flex;
-  flex-basis: 33%;
+  flex-basis: 32.3%;
   flex-wrap: wrap;
   gap: 1.25rem;
 }
