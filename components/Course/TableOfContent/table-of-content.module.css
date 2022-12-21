@@ -1,0 +1,65 @@
+.tableOfContentContainer {
+}
+
+.tableOfContentTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.tableOfContentList {
+  margin-top: 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tableOfContentItem {
+  position: relative;
+  padding-left: 1.5rem;
+  color: #475262;
+}
+
+.tableOfContentContent {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.tableOfContentLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #dee5e8;
+  width: 2.5px;
+}
+
+.tableOfContentCircle {
+  position: absolute;
+  left: -0.5rem;
+  top: 0;
+  border: 2.5px solid #dee5e8;
+  background-color: #fff;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 100%;
+}
+
+.tableOfContentUnderline {
+  height: 2px;
+  background-color: transparent;
+  width: 40%;
+  position: absolute;
+  bottom: -0.7rem;
+}
+
+.tableOfContentItemActive {
+  font-weight: 600;
+}
+
+.tableOfContentItemActive .tableOfContentUnderline {
+  background-color: #dee5e8;
+}
+
+.tableOfContentItemActive .tableOfContentCircle {
+  background-color: #ffc72d;
+}
