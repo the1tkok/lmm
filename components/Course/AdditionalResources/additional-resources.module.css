@@ -1,0 +1,28 @@
+/*****ADDITIONAL RESOURCES CONTAINER*****/
+
+.additionalResourcesContainer {
+  width: 30rem;
+  height: 18rem;
+  padding-left: 3rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  border-radius: 12px;
+}
+
+.additionalResourcesContainer:hover {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(61, 88, 240, 0.2);
+}
+
+.additionalResourcesTitle {
+  font-family: "avenir light";
+  padding-top: 1rem;
+}
+
+.additionalResourcesText {
+  padding-top: 1rem;
+  width: fit-content;
+  font-family: "avenir light";
+  border-bottom: 1px solid blue;
+  color: blue;
+}

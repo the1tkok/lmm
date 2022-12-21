@@ -10,63 +10,26 @@
 .dashboardMainContainer {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  padding-right: 6rem;
   margin-left: 23rem;
-  margin-top: 14.3rem;
-  gap: 1.5rem;
+  margin-top: 16.6rem;
+  gap: 7rem;
   align-items: flex-start;
 }
 
-/*****COURSE TITLE*****/
-
-.courseTitle {
-  flex-basis: fit-content;
-  margin: 0;
-}
-
-/*****LEARNING OUTCOME CARDS*****/
-
-.learningOutcomeCard {
-  color: white;
+.content {
   display: flex;
-  gap: 1rem;
-  font-size: 1rem;
-  font-family: "avenir light";
-  justify-content: center;
-  width: 11rem;
-  height: 3.3rem;
-  background-color: #5972ff;
-  border-radius: 12px;
-  align-items: center;
-  padding: 0 1rem;
-}
-
-/*****COURSE TEXT CONTENT*****/
-
-.courseContent {
-  font-family: "avenir light";
-  font-size: 1.2rem;
-  flex-basis: 60%;
-  flex-wrap: wrap;
-  margin: 0;
-}
-
-/*****COURSE VIDEO*****/
-
-.courseVideo {
-  width: 700px;
-  height: 394px;
-  border: none;
-  position: relative;
-  z-index: 5;
-  border-radius: 16px;
+  flex-direction: column;
+  padding-bottom: 4rem;
 }
 
 /*****COURSE NAVIGATION BUTTONS*****/
 
 .courseNavContainer {
   display: flex;
-  flex-basis: 45%;
   justify-content: space-between;
+  margin-top: 4rem;
 }
 
 .nextLessonBtn {
@@ -86,37 +49,9 @@
 
 .contributors {
   display: flex;
-  gap: 1.25rem;
-  align-items: center;
-}
-
-/*****ADDITIONAL RESOURCES CONTAINER*****/
-
-.additionalResourcesContainer {
-  width: 30rem;
-  height: 18rem;
-  padding-left: 3rem;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(166, 173, 201, 0.2);
-  border-radius: 12px;
-}
-
-.additionalResourcesContainer:hover {
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(61, 88, 240, 0.2);
-}
-
-.additionalResourcesTitle {
-  font-family: "avenir light";
-  padding-top: 1rem;
-}
-
-.additionalResourcesText {
-  padding-top: 1rem;
-  width: fit-content;
-  font-family: "avenir light";
-  border-bottom: 1px solid blue;
-  color: blue;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .additionalResourcesContainer li {

@@ -1,0 +1,57 @@
+.lessonTitle {
+  flex-basis: fit-content;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+
+.courseLineBreak {
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.learningOutcomeCard {
+  color: white;
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+  font-family: "avenir medium";
+  justify-content: center;
+  width: 11rem;
+  height: 4rem;
+  background-color: #5972ff;
+  border-radius: 12px;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.lessonContent {
+  font-family: "avenir light";
+  font-size: 1.2rem;
+  max-width: 70ch;
+  line-height: 1.8;
+}
+
+.lessonVideo {
+  width: 700px;
+  height: 394px;
+  border: none;
+  position: relative;
+  z-index: 5;
+  border-radius: 16px;
+}
+
+.lessonContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.learningOutcomeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
