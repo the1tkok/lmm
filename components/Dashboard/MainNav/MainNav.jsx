@@ -14,7 +14,7 @@ export default function DashboardNavBar() {
   const { data } = useGetMe();
   const router = useRouter();
   const currentRoute = router.pathname;
-  
+
   return (
     <div className={styles.userDashboardNavBar}>
       <p className={styles.userGreeting}>Welcome back, {data?.firstName}!</p>

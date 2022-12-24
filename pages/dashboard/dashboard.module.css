@@ -77,6 +77,19 @@
   box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
     0 10px 26.7px rgba(166, 173, 201, 0.15);
   border-radius: 12px;
+  animation-duration: 0.6s;
+  animation-name: boxShadow;
+}
+
+@keyframes boxShadow {
+  from {
+    box-shadow: none;
+  }
+
+  to {
+    box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
+      0 10px 26.7px rgba(166, 173, 201, 0.15);
+  }
 }
 
 .courseProgressLessonContainer:hover,
@@ -107,6 +120,18 @@
   height: fit-content;
   font-family: "avenir medium";
   font-size: 1.4rem;
+  animation-duration: 0.7s;
+  animation-name: titleFadeIn;
+}
+
+@keyframes titleFadeIn {
+  from {
+    color: white;
+  }
+
+  to {
+    color: #1f1f1f;
+  }
 }
 
 .courseQuizzesAvgTitle,
