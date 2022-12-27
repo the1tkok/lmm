@@ -1,0 +1,42 @@
+/*****CLASS CONTAINER*****/
+
+.dashboardContainer {
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboardMainContainer {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 23rem;
+  margin-top: 14.5rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/*****USER TYPE CONTAINER*****/
+
+.userTypeCard {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "avenir light";
+  width: 15rem;
+  height: 5rem;
+  box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
+    0 10px 26.7px rgba(166, 173, 201, 0.15);
+  border-radius: 12px;
+  color: #1f1f1f;
+  cursor: pointer;
+}
+
+.studentStatsOverviewTitle {
+  font-size: 1.2rem;
+  font-family: "avenir black";
+}

@@ -11,6 +11,8 @@ import Header from "../../../components/Navigation/Header/Header";
 import { useGetCourses } from "../../../lib/api/course";
 import LauraIcon from "../../../public/icons/dashboard_icons/avatar.png";
 import styles from "./course.module.css";
+import SchoolIcon from "../../../public/icons/dashboard_icons/school.svg";
+import SchoolDarkIcon from '../../../public/icons/dashboard_icons/schoolDark.svg'
 
 const links = [
   { label: "One on One Coaching", href: "" },
@@ -112,7 +114,7 @@ export default function Course() {
 
           <div className={styles.contributors}>
             <h3>Contributors:</h3>
-            <Image src={LauraIcon} alt="Laura Mac" />
+            <Image src={LauraIcon} width={48} alt="Laura Mac" />
           </div>
           {/*****COURSE ADDITIONAL RESOURCES*****/}
 

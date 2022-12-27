@@ -8,6 +8,9 @@ import Image from 'next/future/image';
 import LauraIcon from '../../../public/icons/dashboard_icons/avatar.png'
 import CheckMarkIcon from '../../../public/icons/class_icons/checkmark.png'
 import UploadIcon from '../../../public/icons/class_icons/upload.png' 
+import ClassroomIcon from "../../../public/icons/dashboard_icons/classroom.svg";
+import SchoolIcon from "../../../public/icons/dashboard_icons/school.svg";
+import SchoolDarkIcon from '../../../public/icons/dashboard_icons/schoolDark.svg'
 
 const links = [
   { label: "One on One Coaching", href: "" },

@@ -1,0 +1,103 @@
+/*****CLASS CONTAINER*****/
+
+.dashboardContainer {
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboardMainContainer {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 23rem;
+  margin-top: 14.5rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/*****USER TYPE CONTAINER*****/
+
+.userAccountCard,
+.userAccountAcademyCard {
+  align-items: center;
+  align-content: flex-start;
+  background-color: white;
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-family: "avenir light";
+  width: 54rem;
+  height: 47rem;
+  box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
+    0 10px 26.7px rgba(166, 173, 201, 0.15);
+  border-radius: 12px;
+  color: #1f1f1f;
+  padding-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.userAccountAcademyCard {
+  height: 70rem;
+}
+
+.userAccountTitle {
+  font-size: 1.2rem;
+  font-family: "avenir black";
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.subtitle {
+  flex-basis: 100%;
+  margin: 0;
+  padding-left: 2rem;
+}
+
+/*****TITLES*****/
+.firstNameText,
+.lastNameText,
+.emailText,
+.membershipStatusText,
+.avgQuizScoreText,
+.syllabusText,
+.coachSelectionText,
+.classAttendanceText,
+.selfTapeText,
+.homeworkText {
+  font-family: "avenir medium";
+  padding-left: 2rem;
+  flex-basis: 40%;
+}
+
+.selfTapeLink {
+  cursor: pointer;
+  color: blue;
+}
+
+.homeworkLink {
+  list-style: none;
+  color: blue;
+  cursor: pointer;
+}
+
+/*****COACH SELECTION*****/
+.coachSelection {
+  padding-left: 0.4rem;
+  padding-right: 2rem;
+  padding-top: 2.5px;
+}
+/*****LINE BREAK*****/
+
+.lineBreak {
+  display: flex;
+  flex-basis: 100%;
+  margin: 0;
+  border-bottom: 1px solid lightgray;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}

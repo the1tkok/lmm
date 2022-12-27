@@ -19,6 +19,7 @@ const links = [
   { label: "Log out", href: "/api/logout" },
   { label: "Upgrade plan", href: "", useButtonStyle: true },
 ];
+
 export default function Dashboard() {
   return (
     <div className={styles.dashboardContainer}>

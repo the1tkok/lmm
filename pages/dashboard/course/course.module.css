@@ -49,6 +49,7 @@
 
 .contributors {
   display: flex;
+  align-items: center;
   gap: 2rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
