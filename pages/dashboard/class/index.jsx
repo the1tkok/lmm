@@ -2,7 +2,7 @@ import * as Popover from "@radix-ui/react-popover";
 import { format } from "date-fns";
 import Image from "next/future/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { HomeworkForm } from "../../../components/Class/HomeworkForm/HomeworkForm";
 import { SelfTapeForm } from "../../../components/Class/SelfTapeForm/SelfTapeForm";
@@ -30,11 +30,13 @@ const links = [
 export default function ClassRoom() {
   const [isOpenSelfTapePopover, setIsOpenSelfTapePopover] = useState(false);
   const [isOpenHomeworkPopover, setIsOpenHomeworkPopover] = useState(false);
+  const [classNotes, setClassNotes] = useState("");
 
   const { mutateAsync: updateUser } = useUpdateUser();
   const { mutateAsync: submitHomework } = useSubmitHomeworkLink();
   const { data } = useGetClasses();
   const currentClass = data?.classes?.[0];
+  const studentProfile = currentClass?.studentProfile;
 
   const startTime = currentClass?.startTime
     ? format(parseTimeToDate(currentClass?.startTime), "ha")
@@ -44,11 +46,17 @@ export default function ClassRoom() {
     : undefined;
 
   const coachName = [
-    currentClass?.studentProfile?.coaches?.[0]?.firstName,
-    currentClass?.studentProfile?.coaches?.[0]?.lastName,
+    studentProfile?.coaches?.[0]?.firstName,
+    studentProfile?.coaches?.[0]?.lastName,
   ]
     .filter(Boolean)
     .join(" ");
+
+  useEffect(() => {
+    if (studentProfile) {
+      setClassNotes(studentProfile?.classNotes);
+    }
+  }, [studentProfile]);
 
   return (
     <div className={styles.dashboardContainer}>
@@ -235,7 +243,21 @@ export default function ClassRoom() {
               </p>
             </div>
             <form className={styles.assignmentNotes}>
-              <textarea className={styles.notesTextArea}></textarea>
+              <textarea
+                className={styles.notesTextArea}
+                value={classNotes}
+                onChange={(e) => setClassNotes(e.target.value)}
+                onBlur={async () => {
+                  try {
+                    await updateUser({
+                      classNotes,
+                    });
+                    toast.success("Class notes updated successfully");
+                  } catch (err) {
+                    toast.error("Error trying to update class notes.");
+                  }
+                }}
+              ></textarea>
             </form>
           </div>
         </div>
