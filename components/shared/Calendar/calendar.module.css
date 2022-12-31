@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.calendarDaysContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1.5rem;
+}
+
+.weekdays {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 2rem;
+}
+
+.dayToday {
+  background-color: #3d58f0;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.calendarHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  /* font-weight: 700; */
+  margin-bottom: 1.5rem;
+}
+
+.dayMark {
+  width: 0.7rem;
+  height: 0.3rem;
+  border-radius: 999px;
+  background-color: #3d58f0;
+  margin-top: 2px;
+}
+
+.activeDay {
+  font-weight: 700;
+  color: #3d58f0;
+}

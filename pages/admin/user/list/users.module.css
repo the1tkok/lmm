@@ -1,0 +1,32 @@
+/*****CLASS CONTAINER*****/
+
+.dashboardContainer {
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboardMainContainer {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 23rem;
+  margin-top: 14.5rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/*****ALL USERS TABLE*****/
+
+.allUsersTable {
+  border: none;
+  border-collapse: collapse;
+  font-family: "avenir light";
+}
+
+.viewProfileLink {
+  color: blue;
+}

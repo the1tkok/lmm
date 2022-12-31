@@ -5,6 +5,7 @@ const AdditionalResources = ({ data }) => {
   if (!data || data?.length === 0) {
     return null;
   }
+
   return (
     <div className={styles.additionalResourcesContainer}>
       <h2 className={styles.additionalResourcesTitle}>Additional Resources</h2>
