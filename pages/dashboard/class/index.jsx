@@ -10,7 +10,7 @@ import DashboardTitle from "../../../components/Dashboard/DashboardTitle/Dashboa
 import InfoNavBar from "../../../components/Dashboard/InfoNav/InfoNav";
 import DashboardNavBar from "../../../components/Dashboard/MainNav/MainNav";
 import Header from "../../../components/Navigation/Header/Header";
-import { Avatar } from "../../../components/shared/Avatar/avatar";
+import { Avatar } from "../../../components/shared/Avatar/Avatar";
 import { Calendar } from "../../../components/shared/Calendar/Calendar";
 import { useGetClasses, useSubmitHomeworkLink } from "../../../lib/api/classes";
 import { useUpdateUser } from "../../../lib/api/user";
