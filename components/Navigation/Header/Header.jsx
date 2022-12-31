@@ -17,7 +17,7 @@ const Header = ({ links, navContainer, navUl, logoStyling }) => {
               alt="logo"
               width={165}
               height="100%"
-            />
+            /> 
           </Link>
           <div className={styles.mobileNavContainer}>
             <span className={styles.dot1} />
