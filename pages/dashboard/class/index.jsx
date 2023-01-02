@@ -12,8 +12,11 @@ import DashboardNavBar from "../../../components/Dashboard/MainNav/MainNav";
 import Header from "../../../components/Navigation/Header/Header";
 import { Avatar } from "../../../components/shared/Avatar/Avatar";
 import { Calendar } from "../../../components/shared/Calendar/Calendar";
-import { useGetClasses, useSubmitHomeworkLink } from "../../../lib/api/classes";
-import { useUpdateUser } from "../../../lib/api/user";
+import {
+  useGetMe,
+  useSubmitHomeworkLink,
+  useUpdateUser,
+} from "../../../lib/api/user";
 import { parseTimeToDate } from "../../../lib/helpers";
 import CheckMarkIcon from "../../../public/icons/class_icons/checkmark.png";
 import UploadIcon from "../../../public/icons/class_icons/upload.png";
@@ -34,9 +37,10 @@ export default function ClassRoom() {
 
   const { mutateAsync: updateUser } = useUpdateUser();
   const { mutateAsync: submitHomework } = useSubmitHomeworkLink();
-  const { data } = useGetClasses();
-  const currentClass = data?.classes?.[0];
-  const studentProfile = currentClass?.studentProfile;
+
+  const { data } = useGetMe();
+  const user = data?.user;
+  const currentClass = data?.user?.class;
 
   const startTime = currentClass?.startTime
     ? format(parseTimeToDate(currentClass?.startTime), "ha")
@@ -46,17 +50,17 @@ export default function ClassRoom() {
     : undefined;
 
   const coachName = [
-    studentProfile?.coaches?.[0]?.firstName,
-    studentProfile?.coaches?.[0]?.lastName,
+    currentClass?.coaches?.[0]?.firstName,
+    currentClass?.coaches?.[0]?.lastName,
   ]
     .filter(Boolean)
     .join(" ");
 
   useEffect(() => {
-    if (studentProfile) {
-      setClassNotes(studentProfile?.classNotes);
+    if (user?.classNotes) {
+      setClassNotes(user?.classNotes);
     }
-  }, [studentProfile]);
+  }, [user?.classNotes]);
 
   return (
     <div className={styles.dashboardContainer}>
@@ -131,8 +135,7 @@ export default function ClassRoom() {
                     onSubmit={async ({ homeworkLink }) => {
                       try {
                         await submitHomework({
-                          data: { homeworkLink },
-                          classId: currentClass._id,
+                          homeworkLink,
                         });
                         setIsOpenHomeworkPopover(false);
                       } catch (err) {
@@ -161,7 +164,7 @@ export default function ClassRoom() {
               width={32}
             />
             <h2 className={styles.coachNameTitle}>
-              {currentClass?.studentProfile?.registrationStatus}
+              {user?.registrationStatus}
             </h2>
           </div>
           {/*****ASSIGNED COACH CARD*****/}

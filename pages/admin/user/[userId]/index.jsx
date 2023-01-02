@@ -1,4 +1,5 @@
 import capitalize from "capitalize";
+import { format } from "date-fns";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -7,9 +8,14 @@ import DashboardTitle from "../../../../components/Dashboard/DashboardTitle/Dash
 import InfoNavBar from "../../../../components/Dashboard/InfoNav/InfoNav";
 import DashboardNavBar from "../../../../components/Dashboard/MainNav/AdminNav";
 import Header from "../../../../components/Navigation/Header/Header";
-import { useUpdateClassById } from "../../../../lib/api/classes";
+import {
+  useEnrollUserToClass,
+  useGetClasses,
+  useUpdateClassById,
+} from "../../../../lib/api/classes";
 import { useGetMetadata } from "../../../../lib/api/metadata";
 import { useGetUserById, useUpdateUserById } from "../../../../lib/api/user";
+import { parseTimeToDate } from "../../../../lib/helpers";
 import styles from "./user-account.module.css";
 
 const links = [
@@ -28,14 +34,17 @@ export default function UserProfilePage() {
   const user = data?.user;
 
   const { data: metadata } = useGetMetadata();
+  const { data: classesData } = useGetClasses();
+
   const { mutateAsync: updateUser } = useUpdateUserById();
   const { mutateAsync: updateClass } = useUpdateClassById();
+  const { mutateAsync: enrollUser } = useEnrollUserToClass();
 
   const [syllabusLink, setSyllabusLink] = useState();
 
-  const studentProfile = data?.user?.class?.students?.find(
-    (student) => student.user === user._id
-  );
+  const hasAcademyMembership = data?.user?.subscription?.name === "Academy";
+
+  const classes = classesData?.classes;
 
   const handleUpdateUser = async (data) => {
     toast.promise(updateUser({ userId: user._id, data }), {
@@ -45,8 +54,15 @@ export default function UserProfilePage() {
     });
   };
 
+  const handleEnrollUser = async ({ classId }) => {
+    toast.promise(enrollUser({ classId, data: { userId: user._id } }), {
+      error: "Error changing class.",
+      loading: "Loading...",
+      success: "Class updated successfully.",
+    });
+  };
+
   const handleUpdateClass = async (data) => {
-    console.log("class");
     toast.promise(updateClass({ classId: user?.class?._id, data }), {
       error: "Error updating class.",
       loading: "Loading...",
@@ -62,6 +78,8 @@ export default function UserProfilePage() {
     },
     [user]
   );
+
+  console.log("class", classes);
 
   return (
     <div className={styles.dashboardContainer}>
@@ -120,6 +138,40 @@ export default function UserProfilePage() {
                 ))}
             </select>
             <div className={styles.lineBreak}></div>
+            {hasAcademyMembership && (
+              <>
+                <p className={styles.coachSelectionText}>Class</p>
+                <select
+                  value={user?.class?._id}
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    if (!value) {
+                      return;
+                    }
+
+                    handleEnrollUser({ classId: value });
+                  }}
+                >
+                  <option>Choose class</option>
+                  {classes?.map((currentClass) => {
+                    const startTime = currentClass?.startTime
+                      ? format(parseTimeToDate(currentClass?.startTime), "ha")
+                      : undefined;
+                    const endTime = currentClass?.endTime
+                      ? format(parseTimeToDate(currentClass?.endTime), "ha")
+                      : undefined;
+                    const classDays = currentClass?.weekDays?.join(" & ");
+                    return (
+                      <option key={currentClass._id} value={currentClass._id}>
+                        {currentClass?.coaches?.map((coach) => coach.firstName)}{" "}
+                        - {classDays} at {startTime} - {endTime}
+                      </option>
+                    );
+                  })}
+                </select>
+                <div className={styles.lineBreak}></div>
+              </>
+            )}
             <p className={styles.avgQuizScoreText}>Average quiz score</p>
             <p>B</p>
             <div className={styles.lineBreak}></div>
@@ -130,7 +182,7 @@ export default function UserProfilePage() {
             <p>display badges here</p>
           </div>
           {/*****USER ACCOUNT INFORMATION*****/}
-          {studentProfile && (
+          {user?.class && (
             <div className={styles.userAccountAcademyCard}>
               <p className={styles.userAccountTitle}>Academy Controls</p>
               <p className={styles.subtitle}>
@@ -139,7 +191,7 @@ export default function UserProfilePage() {
               <div className={styles.lineBreak}></div>
               <p className={styles.firstNameText}>Registration</p>
               <select
-                value={studentProfile?.registrationStatus}
+                value={user?.registrationStatus}
                 onChange={(e) => {
                   const value = e.target.value;
                   if (!value) {
@@ -156,17 +208,6 @@ export default function UserProfilePage() {
                 <option value="Incomplete">Incomplete</option>
               </select>
               <div className={styles.lineBreak}></div>
-              <p className={styles.coachSelectionText}>Coaches</p>
-              <select>
-                <option disabled selected>
-                  Choose coaches
-                </option>
-                <option>Laura Mac & Coach 2</option>
-                <option>Coach 3 & Coach 4</option>
-                <option>Coach 4 & Coach 5</option>
-                <option>Coach 6 & Coach 7</option>
-              </select>
-              <div className={styles.lineBreak}></div>
               <p className={styles.syllabusText}>Syllabus</p>
               <input
                 type="text"
@@ -175,8 +216,6 @@ export default function UserProfilePage() {
                 placeholder="Paste syllabus link"
                 onBlur={() => handleUpdateClass({ syllabusLink })}
               />
-              <div className={styles.lineBreak}></div>
-
               <div className={styles.lineBreak}></div>
               <p className={styles.classAttendanceText}>Class attendance</p>
               <p>2/20</p>
@@ -192,7 +231,7 @@ export default function UserProfilePage() {
               <div className={styles.lineBreak}></div>
               <p className={styles.homeworkText}>Homework</p>
               <ul className={styles.homeworkList}>
-                {studentProfile?.homeworks?.map((homework, index) => (
+                {user?.homeworks?.map((homework, index) => (
                   <li className={styles.homeworkLink} key={homework._id}>
                     <a href={homework.link}>Assignment {index}</a>
                   </li>
