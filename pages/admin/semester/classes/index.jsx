@@ -34,21 +34,38 @@ export default function ClassRoom() {
       {/*****CLASS CONTAINER*****/}
       <div className={styles.dashboardMainContainer}>
         <div className={styles.courseNavContainer}>
-          <button className={styles.nextLessonBtn}>
-            Create Class
-          </button>
+          <Link href={{ pathname: "/admin/semester/classes/create" }}>
+            <button className={styles.nextLessonBtn}>
+              Create Class
+            </button>
+          </Link>
         </div>
         {/*****USER STATS OVERVIEW CONTAINER*****/}
         <div className={styles.userOverviewContainer}>
           {/*****USER STATS*****/}
           <div className={styles.userStatsOverviewContainer}>
             <p className={styles.studentStatsOverviewTitle}>Class #1 </p>
-            <p className={styles.totalUsersText}>
-              Coaches: Laura Mac & Coach 2
-            </p>
-            <p className={styles.totalUsersText}>
-              Students: 7/16
-            </p>
+            <div className={styles.classCoachesTitle}>
+              <p className={styles.coachesTitle}>
+                Coaches:
+              </p>
+              <p className={styles.coachesNamesText}>
+                Laura Mac & Coach 2
+              </p>
+            </div>
+            <div className={styles.classCoachesTitle}>
+              <p className={styles.coachesTitle}>
+                Students:
+              </p>
+              <p className={styles.coachesNamesText}>
+                9/16
+              </p>
+            </div>
+            <Link href={{ pathname: "/admin/semester/classes/create" }}>
+              <button className={styles.nextLessonBtn}>
+                View Class
+              </button>
+            </Link>
           </div>
         </div>
       </div>
