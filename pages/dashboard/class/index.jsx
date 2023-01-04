@@ -126,7 +126,7 @@ export default function ClassRoom() {
               onOpenChange={(open) => setIsOpenHomeworkPopover(open)}
             >
               <Popover.Trigger asChild>
-                <button className={styles.uploadButton}>Upload Now</button>
+                <button className={styles.uploadButton}><h2 className={styles.coachNameTitle}>Upload Now</h2></button>
               </Popover.Trigger>
               <Popover.Anchor />
               <Popover.Portal>
