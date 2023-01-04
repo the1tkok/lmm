@@ -113,6 +113,10 @@
   gap: 1.25rem;
 }
 
+.classTimeText {
+  margin: 0;
+}
+
 /*****ASSIGNED COACH CONTAINER*****/
 
 .assignedCoachTitle,
@@ -184,7 +188,7 @@
   flex-basis: 100%;
   font-family: "avenir light";
   height: fit-content;
-  margin-top: 1.5rem;
+  margin-top: 0rem;
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -225,5 +229,3 @@
   background-color: transparent;
   border: none;
 }
-
-
