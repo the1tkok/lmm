@@ -109,7 +109,7 @@ export default function ClassRoom() {
           {/*****CLASS SCHEDULE CARD*****/}
           <div className={styles.classCardContainer}>
             <h1 className={styles.assignedCoachTitle}>Class Times</h1>
-            <h2>
+            <h2 className={styles.classTimeText}>
               {startTime} - {endTime}
             </h2>
             <h2 className={styles.coachNameTitle}>
@@ -159,8 +159,8 @@ export default function ClassRoom() {
               className={styles.classCoachIcon}
               src={CheckMarkIcon}
               alt="background image"
-              height={32}
-              width={32}
+              height={48}
+              width={48}
             />
             <h2 className={styles.coachNameTitle}>
               {user?.registrationStatus}

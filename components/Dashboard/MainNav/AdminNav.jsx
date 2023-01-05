@@ -60,7 +60,7 @@ export default function DashboardNavBar() {
             <a className={styles.dashboardClassesText}>User Management</a>
           </li>
         </Link>
-        <Link href={{ pathname: "./admin/semester" }}>
+        <Link href={{ pathname: "/admin/semester" }}>
           <li className={styles.dashboardClassesButton}>
             <Image
               className={styles.dashboardClassroomIcon}
@@ -68,16 +68,6 @@ export default function DashboardNavBar() {
               alt="background image"
             ></Image>
             <a className={styles.dashboardClassesText}>Class Management</a>
-          </li>
-        </Link>
-        <Link href={{ pathname: "/admin/homework" }}>
-          <li className={styles.dashboardCourseMaterialsButton}>
-            <Image
-              className={styles.dashboardBookIcon}
-              src={BookIcon}
-              alt="background image"
-            ></Image>
-            <a className={styles.dashboardCourseText}>Homework</a>
           </li>
         </Link>
         <Link href={"/admin/course-editor"}>
