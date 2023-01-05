@@ -5,6 +5,8 @@ import InfoNavBar from "../../../../components/Dashboard/InfoNav/InfoNav";
 import DashboardNavBar from "../../../../components/Dashboard/MainNav/AdminNav";
 import DashboardTitle from "../../../../components/Dashboard/DashboardTitle/DashboardTitle";
 import Image from "next/future/image";
+import { useGetSemesters } from "../../../../lib/api/semester";
+import { useRouter } from "next/router";
 
 const links = [
   { label: "One on One Coaching", href: "" },
@@ -15,6 +17,15 @@ const links = [
 ];
 
 export default function ClassRoom() {
+  const router = useRouter();
+  const semesterId = router.query.semesterId;
+
+  const { data } = useGetSemesters();
+  const currentSemester = data?.semesters?.find(
+    (semester) => semester._id === semesterId
+  );
+
+  console.log("current", currentSemester);
 
   return (
     <div className={styles.dashboardContainer}>
@@ -34,22 +45,33 @@ export default function ClassRoom() {
       {/*****CLASS CONTAINER*****/}
       <div className={styles.dashboardMainContainer}>
         <div className={styles.courseNavContainer}>
-          <button className={styles.nextLessonBtn}>
-            Create Class
-          </button>
+          <button className={styles.nextLessonBtn}>Create Class</button>
         </div>
         {/*****USER STATS OVERVIEW CONTAINER*****/}
         <div className={styles.userOverviewContainer}>
           {/*****USER STATS*****/}
-          <div className={styles.userStatsOverviewContainer}>
-            <p className={styles.studentStatsOverviewTitle}>Class #1 </p>
-            <p className={styles.totalUsersText}>
-              Coaches: Laura Mac & Coach 2
-            </p>
-            <p className={styles.totalUsersText}>
-              Students: 7/16
-            </p>
-          </div>
+          {currentSemester?.classes?.map((currentClass, index) => {
+            const coachesName = currentClass.coaches.map((coach) =>
+              [coach?.firstName, coach?.lastName].filter(Boolean).join(" ")
+            );
+
+            return (
+              <div
+                className={styles.userStatsOverviewContainer}
+                key={currentClass._id}
+              >
+                <p className={styles.studentStatsOverviewTitle}>
+                  Class #{index + 1}{" "}
+                </p>
+                <p className={styles.totalUsersText}>
+                  Coaches: {coachesName?.join(" & ")}
+                </p>
+                <p className={styles.totalUsersText}>
+                  Students: {currentClass.students.length}/16
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

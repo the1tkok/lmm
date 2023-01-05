@@ -62,3 +62,9 @@
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+.userOverviewContainer {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

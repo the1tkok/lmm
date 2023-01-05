@@ -1,4 +1,3 @@
-import * as Popover from "@radix-ui/react-popover";
 import { format } from "date-fns";
 import Image from "next/future/image";
 import Link from "next/link";
@@ -12,6 +11,12 @@ import DashboardNavBar from "../../../components/Dashboard/MainNav/MainNav";
 import Header from "../../../components/Navigation/Header/Header";
 import { Avatar } from "../../../components/shared/Avatar/Avatar";
 import { Calendar } from "../../../components/shared/Calendar/Calendar";
+import {
+  Popover,
+  PopoverAnchor,
+  PopoverContent,
+  PopoverTrigger,
+} from "../../../components/shared/Popover/Popover";
 import {
   useGetMe,
   useSubmitHomeworkLink,
@@ -121,37 +126,31 @@ export default function ClassRoom() {
               height={48}
               width={48}
             />
-            <Popover.Root
+            <Popover
               open={isOpenHomeworkPopover}
               onOpenChange={(open) => setIsOpenHomeworkPopover(open)}
             >
-              <Popover.Trigger asChild>
+              <PopoverTrigger asChild>
                 <button className={styles.uploadButton}>Upload Now</button>
-              </Popover.Trigger>
-              <Popover.Anchor />
-              <Popover.Portal>
-                <Popover.Content className={styles.popoverContent}>
-                  <HomeworkForm
-                    onSubmit={async ({ homeworkLink }) => {
-                      try {
-                        await submitHomework({
-                          homeworkLink,
-                        });
-                        setIsOpenHomeworkPopover(false);
-                      } catch (err) {
-                        toast.error(
-                          "Error trying to submit the homework. Try again."
-                        );
-                      }
-                    }}
-                  />
-                  <Popover.Close className={styles.popoverClose}>
-                    X
-                  </Popover.Close>
-                  <Popover.Arrow className={styles.popoverArrow} />
-                </Popover.Content>
-              </Popover.Portal>
-            </Popover.Root>
+              </PopoverTrigger>
+              <PopoverAnchor />
+              <PopoverContent>
+                <HomeworkForm
+                  onSubmit={async ({ homeworkLink }) => {
+                    try {
+                      await submitHomework({
+                        homeworkLink,
+                      });
+                      setIsOpenHomeworkPopover(false);
+                    } catch (err) {
+                      toast.error(
+                        "Error trying to submit the homework. Try again."
+                      );
+                    }
+                  }}
+                />
+              </PopoverContent>
+            </Popover>
           </div>
           {/*****REGISTRATION STATUS CARD*****/}
           <div className={styles.classCardContainer}>
@@ -183,43 +182,35 @@ export default function ClassRoom() {
             {/*****SELF TAPE SUBMISSION BUTTON*****/}
             <div className={styles.selfTapeSubmissionContainer}>
               <p className={styles.selfTapeText}>Self Tape:</p>
-              <Popover.Root
+              <Popover
                 open={isOpenSelfTapePopover}
                 onOpenChange={(open) => setIsOpenSelfTapePopover(open)}
               >
-                <Popover.Trigger asChild>
+                <PopoverTrigger asChild>
                   <button className={styles.selfTapeSubmissionBtn}>
                     Submit self-tape
                   </button>
-                </Popover.Trigger>
-                <Popover.Anchor />
-                <Popover.Portal>
-                  <Popover.Content className={styles.popoverContent}>
-                    <SelfTapeForm
-                      initialValues={{
-                        selfTapeVideoLink:
-                          currentClass?.studentProfile?.user?.selfTapeVideoLink,
-                      }}
-                      onSubmit={async ({ selfTapeVideoLink }) => {
-                        try {
-                          await updateUser({
-                            selfTapeVideoLink,
-                          });
-                          setIsOpenSelfTapePopover(false);
-                        } catch (err) {
-                          toast.error(
-                            "Error trying to update self tape video."
-                          );
-                        }
-                      }}
-                    />
-                    <Popover.Close className={styles.popoverClose}>
-                      X
-                    </Popover.Close>
-                    <Popover.Arrow className={styles.popoverArrow} />
-                  </Popover.Content>
-                </Popover.Portal>
-              </Popover.Root>
+                </PopoverTrigger>
+                <PopoverAnchor />
+                <PopoverContent>
+                  <SelfTapeForm
+                    initialValues={{
+                      selfTapeVideoLink:
+                        currentClass?.studentProfile?.user?.selfTapeVideoLink,
+                    }}
+                    onSubmit={async ({ selfTapeVideoLink }) => {
+                      try {
+                        await updateUser({
+                          selfTapeVideoLink,
+                        });
+                        setIsOpenSelfTapePopover(false);
+                      } catch (err) {
+                        toast.error("Error trying to update self tape video.");
+                      }
+                    }}
+                  />
+                </PopoverContent>
+              </Popover>
             </div>
             {/*****VIEW SYLLABUS BUTTON*****/}
             <div className={styles.syllabusContainer}>
