@@ -58,13 +58,11 @@
   }
 
   .subTitle {
-    color: white;
+    color: #f0c53c;
     border-radius: 24px;
     display: flex;
     font-family: "avenir medium";
     width: fit-content;
-    padding: 0.7rem;
-    background-color: #3d58f0;
     margin: 0;
   }
 
