@@ -11,7 +11,7 @@ import FeatureSection4 from "../components/Home/FeatureSection4/FeatureSection4"
 import FeatureSection5 from "../components/Home/FeatureSection5/FeatureSection5";
 
 const links = [
-  { label: "View Curriculum", href: "",  },
+  { label: "View Curriculum", href: "/view-curriculum",  },
   { label: "Pricing", href: "",  },
   { label: "Blog", href: "",  },
   { label: "Login", href: "/login",  },
