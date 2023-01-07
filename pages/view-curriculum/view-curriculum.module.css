@@ -1,0 +1,222 @@
+/**********FONTS**********/
+
+/**********MOBILE DISPLAY**********/
+
+.container {
+  background-color: white;
+}
+
+/*****HERO SECTION*****/
+
+/*****PARTNER LOGOS*****/
+
+/*****FEATURE SECTION 1*****/
+
+/*****FEATURE SECTION 2*****/
+
+/*****FEATURE SECTION 3*****/
+
+/*****FEATURE SECTION 4*****/
+
+/*****FEATURE SECTION 5*****/
+
+/*****FOOTER*****/
+
+.footer {
+  display: flex;
+}
+
+.footerContainer {
+}
+
+.footerLogoCOntainer {
+}
+
+/***********************************/
+/***********************************/
+/***********************************/
+/**********DESKTOP DISPLAY**********/
+/***********************************/
+/***********************************/
+/***********************************/
+
+@media only screen and (min-width: 811px) {
+  /*****HERO SECTION*****/
+
+  .heroSectionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+  }
+
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    font-family: "avenir medium";
+    width: 35%;
+  }
+
+  .subTitle {
+    color: white;
+    border-radius: 24px;
+    display: flex;
+    font-family: "avenir medium";
+    width: fit-content;
+    padding: 0.7rem;
+    background-color: #3d58f0;
+    margin: 0;
+  }
+
+  .heroTitleYear {
+    font-family: "avenir black";
+    margin: 0;
+    margin-right: 1rem;
+  }
+
+  .heroTitle {
+    display: flex;
+    align-items: center;
+    font-family: "avenir medium";
+    font-size: 3rem;
+    margin-bottom: 0;
+    width: 93%;
+  }
+
+  .heroParagraph {
+    font-size: 1.1rem;
+    font-family: "avenir light";
+    width: 90%;
+  }
+
+  .image1 {
+    width: 480px;
+    height: 320px;
+    background-color: red;
+  }
+
+  /*****SECTION 2*****/
+
+  .section2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+  }
+
+  .secFeaturesTitle {
+    display: flex;
+    flex-basis: 67%;
+    margin: 0 0 0.5em 0;
+    color: #1f1f1f;
+    font-family: "avenir light";
+  }
+
+  .secFeaturesText {
+    display: flex;
+    flex-basis: 67%;
+    text-align: left;
+    font-family: "avenir light";
+    font-size: 1.2rem;
+    margin: 0;
+    padding-bottom: 2.5rem;
+  }
+
+  .secFeaturesSubtitle {
+    display: block;
+    color: #f0c53c;
+    font-family: "avenir medium";
+    margin: 0 0 1em 0;
+    font-size: 1rem;
+  }
+
+  .secFeaturesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    font-family: "avenir medium";
+    font-size: 2rem;
+    text-align: center;
+    justify-content: flex-start;
+    flex-basis: 67%;
+    align-content: flex-start;
+    margin-bottom: 4em;
+    margin-top: 2em;
+  }
+
+  .toolkitIcon {
+    margin-top: 20%;
+  }
+
+  .tvIcon {
+    margin-top: 20%;
+  }
+
+  .secFeaturesCard1,
+  .secFeaturesCard2,
+  .secFeaturesCard3,
+  .secFeaturesCard4 {
+    height: 20rem;
+    width: 18rem;
+    border-radius: 24px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+      0 15px 40px rgba(166, 173, 201, 0.2);
+    margin-right: 2rem;
+    padding: 0 1em 0 1em;
+  }
+
+  .secFeaturesCardTitle {
+    font-family: "avenir medium";
+    font-size: 1.25rem;
+  }
+
+  .secFeaturesCardSubTitle {
+    font-family: "avenir light";
+    font-size: 1rem;
+  }
+
+  .cardContainer {
+    display: flex;
+  }
+
+  /*****PARTNER LOGOS*****/
+
+  /*****FEATURE SECTION 1*****/
+
+  /*****FEATURE SECTION 2*****/
+
+  /*****FOOTER*****/
+
+  .footerContainer {
+    display: flex;
+    background-color: #3d58f0;
+    color: white;
+    font-family: "avenir light";
+    justify-content: center;
+  }
+
+  .footerNav {
+    display: flex;
+    gap: 8em;
+    padding: 8em 0em 8em 0em;
+  }
+
+  .logo {
+    background-color: white;
+  }
+
+  .footer a {
+    display: flex;
+  }
+
+  .footerLogoContainer {
+  }
+
+  .footerAboutContainer {
+  }
+
+  .footerSocialIconContainer {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+  }
+}
