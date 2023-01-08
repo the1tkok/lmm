@@ -29,13 +29,18 @@
   justify-content: flex-start;
   flex-direction: column;
   font-family: "avenir light";
-  width: 20rem;
-  /* height: 20rem; */
+  width: 30rem;
+  /* height: 40rem; */
+  margin-bottom: 2rem;
   box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
     0 10px 26.7px rgba(166, 173, 201, 0.15);
   border-radius: 12px;
-  padding: 2rem;
+  padding-left: 2rem;
   color: #1f1f1f;
+}
+
+.userStatsOverviewContainer {
+  padding: 2rem;
 }
 
 .studentStatsOverviewTitle {
@@ -48,39 +53,4 @@
   justify-content: flex-start;
   margin-top: 0.5rem;
   flex-basis: 100%;
-}
-
-.classCoachesTitle {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.coachesTitle {
-  font-family: "avenir medium";
-  margin: 0;
-  padding-bottom: 2rem;
-}
-
-.coachesNamesText {
-  margin: 0;
-}
-
-.nextLessonBtn {
-  align-self: center;
-  border: none;
-  background-color: #f0c53c;
-  border-radius: 24px;
-  font-size: 1.1rem;
-  font-family: "avenir medium";
-  padding: 10px 20px 10px 20px;
-  cursor: pointer;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-right: 2rem;
-}
-
-.userOverviewContainer {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
 }

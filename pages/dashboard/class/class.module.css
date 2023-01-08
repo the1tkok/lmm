@@ -197,3 +197,11 @@
   border: none;
   cursor: pointer;
 }
+
+.calendarTimeTitle {
+  font-weight: 700;
+}
+
+.calendarTimeContent {
+  margin-top: 1rem;
+}

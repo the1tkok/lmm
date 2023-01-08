@@ -7,6 +7,8 @@ import DashboardTitle from "../../../../components/Dashboard/DashboardTitle/Dash
 import Image from "next/future/image";
 import { useGetSemesters } from "../../../../lib/api/semester";
 import { useRouter } from "next/router";
+import { parseTimeToDate } from "../../../../lib/helpers";
+import { format } from "date-fns";
 
 const links = [
   { label: "One on One Coaching", href: "" },
@@ -16,6 +18,8 @@ const links = [
   { label: "Upgrade plan", href: "", useButtonStyle: true },
 ];
 
+const lf = new Intl.ListFormat("en");
+
 export default function ClassRoom() {
   const router = useRouter();
   const semesterId = router.query.semesterId;
@@ -24,8 +28,6 @@ export default function ClassRoom() {
   const currentSemester = data?.semesters?.find(
     (semester) => semester._id === semesterId
   );
-
-  console.log("current", currentSemester);
 
   return (
     <div className={styles.dashboardContainer}>
@@ -45,7 +47,7 @@ export default function ClassRoom() {
       {/*****CLASS CONTAINER*****/}
       <div className={styles.dashboardMainContainer}>
         <div className={styles.courseNavContainer}>
-          <Link href={{ pathname: "/admin/semester/classes/create" }}>
+          <Link href={`/admin/semester/${semesterId}/classes/create`}>
             <button className={styles.nextLessonBtn}>Create Class</button>
           </Link>
         </div>
@@ -63,7 +65,7 @@ export default function ClassRoom() {
                 key={currentClass._id}
               >
                 <p className={styles.studentStatsOverviewTitle}>
-                  Class #{index + 1}{" "}
+                  {currentClass.title}
                 </p>
                 <div className={styles.classCoachesTitle}>
                   <p className={styles.coachesTitle}>Coaches:</p>
@@ -71,14 +73,24 @@ export default function ClassRoom() {
                     {coachesName?.join(" & ")}
                   </p>
                 </div>
+                {/* <div className={styles.classCoachesTitle}>
+                  <p className={styles.coachesTitle}>Date:</p>
+                  <p className={styles.coachesNamesText}>
+                    {lf.format(currentClass.weekDays)},{" "}
+                    {format(parseTimeToDate(currentClass.startTime), "ha")} -{" "}
+                    {format(parseTimeToDate(currentClass.endTime), "ha")}
+                  </p>
+                </div> */}
                 <div className={styles.classCoachesTitle}>
                   <p className={styles.coachesTitle}>Students:</p>
                   <p className={styles.coachesNamesText}>
                     {currentClass.students.length}/16
                   </p>
                 </div>
-                <Link href={{ pathname: "/admin/semester/classes/create" }}>
-                  <button className={styles.nextLessonBtn}>View Class</button>
+                <Link
+                  href={`/admin/semester/${semesterId}/classes/${currentClass._id}/edit`}
+                >
+                  <a className={styles.nextLessonBtn}>View Class</a>
                 </Link>
               </div>
             );

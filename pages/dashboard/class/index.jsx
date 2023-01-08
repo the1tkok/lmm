@@ -1,6 +1,7 @@
 import { format } from "date-fns";
 import Image from "next/future/image";
 import Link from "next/link";
+import { useMemo } from "react";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { HomeworkForm } from "../../../components/Class/HomeworkForm/HomeworkForm";
@@ -35,6 +36,16 @@ const links = [
   { label: "Upgrade plan", href: "", useButtonStyle: true },
 ];
 
+const weekDays = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
+
 export default function ClassRoom() {
   const [isOpenSelfTapePopover, setIsOpenSelfTapePopover] = useState(false);
   const [isOpenHomeworkPopover, setIsOpenHomeworkPopover] = useState(false);
@@ -46,13 +57,6 @@ export default function ClassRoom() {
   const { data } = useGetMe();
   const user = data?.user;
   const currentClass = data?.user?.class;
-
-  const startTime = currentClass?.startTime
-    ? format(parseTimeToDate(currentClass?.startTime), "ha")
-    : undefined;
-  const endTime = currentClass?.endTime
-    ? format(parseTimeToDate(currentClass?.endTime), "ha")
-    : undefined;
 
   const coachName = [
     currentClass?.coaches?.[0]?.firstName,
@@ -66,6 +70,26 @@ export default function ClassRoom() {
       setClassNotes(user?.classNotes);
     }
   }, [user?.classNotes]);
+
+  const upcomingClassSchedule = useMemo(() => {
+    const todayWeekDay = Number(format(new Date(), "i"));
+    const upcomingClassWeekDay = [...weekDays, ...weekDays].filter(
+      (_, index) => index + 1 >= todayWeekDay
+    );
+
+    const upcomingClassSchedule = currentClass?.schedule?.find(({ weekDay }) =>
+      upcomingClassWeekDay.includes(weekDay)
+    );
+
+    return upcomingClassSchedule;
+  }, [currentClass]);
+
+  const startTime = upcomingClassSchedule?.startTime
+    ? format(parseTimeToDate(upcomingClassSchedule?.startTime), "ha")
+    : undefined;
+  const endTime = upcomingClassSchedule?.endTime
+    ? format(parseTimeToDate(upcomingClassSchedule?.endTime), "ha")
+    : undefined;
 
   return (
     <div className={styles.dashboardContainer}>
@@ -91,7 +115,33 @@ export default function ClassRoom() {
             <Calendar
               shouldMarkDay={(date) => {
                 const weekday = format(date, "EEEE");
-                return currentClass?.weekDays.includes(weekday);
+
+                return currentClass?.schedule
+                  ?.map(({ weekDay }) => weekDay)
+                  .includes(weekday);
+              }}
+              renderPopoverContent={(date) => {
+                const weekDay = format(date, "EEEE");
+                const weekDaySchedule = currentClass?.schedule?.find(
+                  (v) => v.weekDay === weekDay
+                );
+
+                if (weekDaySchedule) {
+                  const startTime = weekDaySchedule?.startTime
+                    ? format(parseTimeToDate(weekDaySchedule?.startTime), "ha")
+                    : undefined;
+                  const endTime = weekDaySchedule?.endTime
+                    ? format(parseTimeToDate(weekDaySchedule?.endTime), "ha")
+                    : undefined;
+                  return (
+                    <div>
+                      <div className={styles.calendarTimeTitle}>Time</div>
+                      <div className={styles.calendarTimeContent}>
+                        {startTime} - {endTime}{" "}
+                      </div>
+                    </div>
+                  );
+                }
               }}
             />
           </div>
@@ -108,12 +158,12 @@ export default function ClassRoom() {
         <div className={styles.classCardGroup}>
           {/*****CLASS SCHEDULE CARD*****/}
           <div className={styles.classCardContainer}>
-            <h1 className={styles.assignedCoachTitle}>Class Times</h1>
+            <h1 className={styles.assignedCoachTitle}>Upcoming Class</h1>
             <h2 className={styles.classTimeText}>
               {startTime} - {endTime}
             </h2>
             <h2 className={styles.coachNameTitle}>
-              {currentClass?.weekDays?.join(" & ")}
+              {upcomingClassSchedule?.weekDay}
             </h2>
           </div>
           {/*****HOMEWORK UPLOAD CARD*****/}

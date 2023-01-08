@@ -9,9 +9,15 @@ import {
   startOfWeek,
 } from "date-fns";
 import { useState } from "react";
+import {
+  Popover,
+  PopoverAnchor,
+  PopoverContent,
+  PopoverTrigger,
+} from "../Popover/Popover";
 import styles from "./calendar.module.css";
 
-const Calendar = ({ shouldMarkDay }) => {
+const Calendar = ({ shouldMarkDay, renderPopoverContent }) => {
   const [date, setDate] = useState(new Date());
 
   const firstDayOfMonth = startOfMonth(date);
@@ -41,19 +47,33 @@ const Calendar = ({ shouldMarkDay }) => {
           const isDayToday = isToday(dayDate);
 
           const shouldRenderMark = shouldMarkDay?.(dayDate) ?? false;
+          const popoverContent = renderPopoverContent?.(dayDate) ?? null;
 
           return (
-            <div
-              className={`${styles.day} ${isDayToday ? styles.dayToday : ""} ${
-                shouldRenderMark && !isDayToday ? styles.activeDay : ""
-              }`}
-              key={dayDate.toString()}
-              data-date={format(dayDate, "yyyy-MM-dd")}
-            >
-              {format(dayDate, "d")}
-              {/* {shouldRenderMark && !isDayToday && (
+            <div className={styles.day} key={dayDate.toString()}>
+              <Popover open={popoverContent ? undefined : false}>
+                <PopoverTrigger asChild>
+                  <button
+                    className={`${styles.day} ${
+                      isDayToday ? styles.dayToday : ""
+                    } ${
+                      shouldRenderMark && !isDayToday ? styles.activeDay : ""
+                    }`}
+                    data-date={format(dayDate, "yyyy-MM-dd")}
+                    style={{
+                      width: "100%",
+                      cursor: popoverContent ? "pointer" : undefined,
+                    }}
+                  >
+                    {format(dayDate, "d")}
+                    {/* {shouldRenderMark && !isDayToday && (
                 <div className={styles.dayMark} />
               )} */}
+                  </button>
+                </PopoverTrigger>
+                <PopoverAnchor />
+                <PopoverContent>{popoverContent}</PopoverContent>
+              </Popover>
             </div>
           );
         })}
