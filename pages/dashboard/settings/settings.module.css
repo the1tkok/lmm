@@ -64,6 +64,7 @@
   margin-top: 14.5rem;
   gap: 2rem;
   align-items: flex-start;
+  padding-bottom: 5rem;
 }
 
 .accountSettingsContainer {
@@ -140,7 +141,8 @@
   width: fit-content;
 }
 
-.cardEditText {
+.cardEditText,
+.changePasswordText {
   background-color: none;
   border: none;
   color: blue;
@@ -220,8 +222,22 @@
   padding-right: 3.5rem;
   padding-top: 2.5px;
   margin-left: 0;
+  width: 13rem;
 }
 
 .experienceSelectionContainer {
   margin-bottom: 0;
+}
+
+.saveChanges {
+  color: white;
+  background-color: #f0c53c;
+  font-family: "avenir light";
+  font-size: 1.1rem;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  width: 10rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 24px;
 }

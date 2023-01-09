@@ -73,7 +73,6 @@ export default function Dashboard() {
             </select>
           </div>
         </div>
-          <div className={styles.lineBreak}></div>
         {/*****SUBSCRIPTION & BILLING SETTINGS*****/}
         <div>
           <h2 className={styles.accountSettingsTitle}>
@@ -90,14 +89,14 @@ export default function Dashboard() {
             <p className={styles.editText}>Change Plan</p>
           </div>
           </div>
-          <div className={styles.lineBreak}></div>
           <h2 className={styles.accountSettingsTitle}>
             Account Settings
           </h2>
           <div className={styles.passwordContainer}>
             <p className={styles.passwordText}>Password:</p>
-            <p className={styles.editText}>Change Password</p>
+            <p className={styles.changePasswordText}>Click here to reset your password</p>
           </div>
+          <button className={styles.saveChanges}>Save Changes</button>
         </div>
       </div>
     </div>
