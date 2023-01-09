@@ -13,14 +13,6 @@
   margin-top: 2em;
 }
 
-.toolkitIcon {
-  margin-top: 20%;
-}
-
-.tvIcon {
-  margin-top: 20%;
-}
-
 .secFeaturesTitle {
   flex-basis: 100%;
   margin: 0 0 0.5em 0;
@@ -41,6 +33,14 @@
   font-family: "avenir medium";
   margin: 0 0 1em 0;
   font-size: 1rem;
+}
+
+.toolkitIcon {
+  margin-top: 20%;
+}
+
+.tvIcon {
+  margin-top: 20%;
 }
 
 .secFeaturesCard1,

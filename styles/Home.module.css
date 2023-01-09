@@ -60,6 +60,11 @@
 
   /*****PARTNER LOGOS*****/
 
+  .partnerLogoContainer {
+    display: flex;
+    justify-content: center;
+  }
+
   /*****FEATURE SECTION 1*****/
 
   /*****FEATURE SECTION 2*****/
