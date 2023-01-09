@@ -1,0 +1,224 @@
+.dashboardContainer {
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*******HEADER******/
+
+.dashboardHeader {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  margin-left: 23rem;
+  margin-top: 1rem;
+  height: 4rem;
+  position: fixed;
+  color: #1f1f1f;
+  align-items: center;
+  padding-left: 2rem;
+  top: 8rem;
+  bottom: 0;
+  left: 0;
+  right: 4.6rem;
+  font-family: "avenir black";
+  /*background-image: url("/backgrounds/headerbkg.jpg");*/
+  background-size: 2000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -61px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  border-bottom: 3px solid #3d58f0;
+  z-index: 10;
+}
+/*
+.dashboardHeader::before {
+  content: "";
+  display: flex;
+  background-color: white;
+  margin-left: 23rem;
+  height: 4rem;
+  position: fixed;
+  color: white;
+  align-items: center;
+  padding-left: 2rem;
+  top: 4rem;
+  bottom: 0;
+  left: 0;
+  right: 4.6rem;
+}
+*/
+.dashboardHeaderTitle {
+  font-family: "avenir black";
+  padding-top: 5px;
+}
+
+/*****COURSE PROGRESS*****/
+
+.dashboardMainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 23rem;
+  margin-top: 14.5rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.accountSettingsContainer {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
+    0 10px 26.7px rgba(166, 173, 201, 0.15);
+  border-radius: 12px;
+  animation-duration: 0.6s;
+  animation-name: boxShadow;
+  width: 40rem;
+  height: 45rem;
+}
+
+.editProfilePicContainer {
+  color: blue;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.editProfilePicContainer,
+.firstNameContainer,
+.lastNameContainer,
+.emailAddressContainer,
+.experienceSelection,
+.subscriptionPlanContainer,
+.cardInfoContainer,
+.passwordContainer,
+.experienceSelectionContainer,
+.changePlanButton {
+  font-family: "avenir light";
+  margin-left: 1.5rem;
+  margin-bottom: 0rem;
+}
+
+.changePlanButton {
+  margin-top: 0.9rem;
+}
+
+.firstNameText,
+.lastNameText,
+.emailAddressText,
+.experienceLevelText {
+  margin-bottom: 0.5rem;
+}
+
+.editText {
+  color: blue;
+}
+
+.editProfilePicText {
+  background-color: white;
+  border: 1px solid blue;
+  border-radius: 24px;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.editText {
+  align-self: center;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid blue;
+  border-radius: 24px;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0;
+  width: fit-content;
+}
+
+.cardEditText {
+  background-color: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  padding: 0;
+}
+
+.subscriptionPlanContainer,
+.cardInfoContainer,
+.passwordContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.firstNameInput,
+.lastNameInput,
+.experienceSelection {
+  border: 1px solid lightgray;
+  border-radius: 24px;
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+
+.profileInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@keyframes boxShadow {
+  from {
+    box-shadow: none;
+  }
+
+  to {
+    box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
+      0 10px 26.7px rgba(166, 173, 201, 0.15);
+  }
+}
+
+.courseProgressLessonContainer:hover {
+  box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
+    0 10px 26.7px rgba(61, 88, 240, 0.12);
+}
+
+.accountSettingsTitle {
+  color: #1f1f1f;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  height: fit-content;
+  font-family: "avenir medium";
+  font-size: 1.3rem;
+  animation-duration: 0.7s;
+  animation-name: titleFadeIn;
+}
+
+@keyframes titleFadeIn {
+  from {
+    color: white;
+  }
+
+  to {
+    color: #1f1f1f;
+  }
+}
+
+.lineBreak {
+  align-self: center;
+  border-bottom: 1px solid lightgray;
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.experienceSelection {
+  background-color: white;
+  border-radius: 24px;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 2.5px;
+  margin-left: 0;
+  text-align: center;
+}
+
+.experienceSelectionContainer {
+  margin-bottom: 0;
+}
