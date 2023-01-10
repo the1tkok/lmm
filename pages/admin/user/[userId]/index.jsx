@@ -26,6 +26,8 @@ const links = [
   { label: "Upgrade plan", href: "", useButtonStyle: true },
 ];
 
+const lf = new Intl.ListFormat("en");
+
 export default function UserProfilePage() {
   const router = useRouter();
   const userId = router.query.userId;
@@ -154,17 +156,25 @@ export default function UserProfilePage() {
                 >
                   <option>Choose class</option>
                   {classes?.map((currentClass) => {
-                    const startTime = currentClass?.startTime
-                      ? format(parseTimeToDate(currentClass?.startTime), "ha")
-                      : undefined;
-                    const endTime = currentClass?.endTime
-                      ? format(parseTimeToDate(currentClass?.endTime), "ha")
-                      : undefined;
-                    const classDays = currentClass?.weekDays?.join(" & ");
+                    // const classDays = currentClass?.weekDays?.join(" & ");
+                    const classDays = lf.format(
+                      currentClass?.schedule?.map((schedule) => {
+                        const startTime = schedule?.startTime
+                          ? format(parseTimeToDate(schedule?.startTime), "ha")
+                          : undefined;
+                        const endTime = schedule?.endTime
+                          ? format(parseTimeToDate(schedule?.endTime), "ha")
+                          : undefined;
+
+                        return `${schedule.weekDay} at ${startTime} - ${endTime}`;
+                      })
+                    );
                     return (
                       <option key={currentClass._id} value={currentClass._id}>
-                        {currentClass?.coaches?.map((coach) => coach.firstName)}{" "}
-                        - {classDays} at {startTime} - {endTime}
+                        {lf.format(
+                          currentClass?.coaches?.map((coach) => coach.firstName)
+                        )}{" "}
+                        - {classDays}
                       </option>
                     );
                   })}
