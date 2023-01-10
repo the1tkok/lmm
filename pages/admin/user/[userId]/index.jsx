@@ -12,7 +12,7 @@ import {
   useEnrollUserToClass,
   useGetClasses,
   useUpdateClassById,
-} from "../../../../lib/api/classes";
+} from "../../../../lib/api/class";
 import { useGetMetadata } from "../../../../lib/api/metadata";
 import { useGetUserById, useUpdateUserById } from "../../../../lib/api/user";
 import { parseTimeToDate } from "../../../../lib/helpers";
