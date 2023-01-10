@@ -85,10 +85,10 @@ export default function ClassRoom() {
   }, [currentClass]);
 
   const startTime = upcomingClassSchedule?.startTime
-    ? format(parseTimeToDate(upcomingClassSchedule?.startTime), "ha")
+    ? format(parseTimeToDate(upcomingClassSchedule?.startTime), "h:mm a")
     : undefined;
   const endTime = upcomingClassSchedule?.endTime
-    ? format(parseTimeToDate(upcomingClassSchedule?.endTime), "ha")
+    ? format(parseTimeToDate(upcomingClassSchedule?.endTime), "h:mm a")
     : undefined;
 
   return (
@@ -128,10 +128,10 @@ export default function ClassRoom() {
 
                 if (weekDaySchedule) {
                   const startTime = weekDaySchedule?.startTime
-                    ? format(parseTimeToDate(weekDaySchedule?.startTime), "ha")
+                    ? format(parseTimeToDate(weekDaySchedule?.startTime), "h:mm a")
                     : undefined;
                   const endTime = weekDaySchedule?.endTime
-                    ? format(parseTimeToDate(weekDaySchedule?.endTime), "ha")
+                    ? format(parseTimeToDate(weekDaySchedule?.endTime), "h:mm a")
                     : undefined;
                   return (
                     <div>
