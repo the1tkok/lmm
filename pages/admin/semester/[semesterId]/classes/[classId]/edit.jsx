@@ -7,6 +7,7 @@ import DashboardNavBar from "../../../../../../components/Dashboard/MainNav/Admi
 import Header from "../../../../../../components/Navigation/Header/Header";
 import {
   useDeleteClass,
+  useEndClass,
   useGetClasses,
   useUpdateClassById,
 } from "../../../../../../lib/api/class";
@@ -27,12 +28,12 @@ export default function ClassRoom() {
 
   const { mutateAsync: updateClass } = useUpdateClassById();
   const { mutateAsync: deleteClass } = useDeleteClass();
+  const { mutateAsync: endClass } = useEndClass();
 
   const { data } = useGetClasses();
   const currentClass = data?.classes?.find(
     (currentClass) => currentClass._id === classId
   );
-  console.log("currentclass", currentClass);
 
   const handleEditClass = async (data) => {
     toast.promise(updateClass({ data, classId }), {
@@ -47,6 +48,17 @@ export default function ClassRoom() {
       await toast.promise(deleteClass({ classId }), {
         error: "There was an error deleting the class",
         success: "Class deleted successfully",
+        loading: "Loading...",
+      });
+      router.push(`/admin/semester/${semesterId}`);
+    } catch (err) {}
+  };
+
+  const handleEndClass = async () => {
+    try {
+      await toast.promise(endClass({ classId }), {
+        error: "There was an error ending the class",
+        success: "Class ended successfully",
         loading: "Loading...",
       });
       router.push(`/admin/semester/${semesterId}`);
@@ -78,6 +90,7 @@ export default function ClassRoom() {
             <CreateClassForm
               onSubmit={handleEditClass}
               onDelete={handleDeleteClass}
+              onEndClass={handleEndClass}
               initialData={{
                 coaches: currentClass?.coaches?.map((coach) => coach._id),
                 schedule: currentClass?.schedule,

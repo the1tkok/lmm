@@ -8,7 +8,7 @@ import Image from "next/future/image";
 import { useEndSemester, useGetSemesters } from "../../../../lib/api/semester";
 import { useRouter } from "next/router";
 import { parseTimeToDate } from "../../../../lib/helpers";
-import { format } from "date-fns";
+import { differenceInCalendarWeeks, format, parseISO } from "date-fns";
 import toast from "react-hot-toast";
 
 const links = [
@@ -110,6 +110,26 @@ export default function ClassRoom() {
                     {currentClass.students.length}/16
                   </p>
                 </div>
+                <div className={styles.classCoachesTitle}>
+                  <p className={styles.coachesTitle}>Weeks:</p>
+                  <p className={styles.coachesNamesText}>
+                    {differenceInCalendarWeeks(
+                      new Date(),
+                      parseISO(currentClass.createdAt)
+                    )}
+                    /10
+                  </p>
+                </div>
+
+                <div className={styles.classCoachesTitle}>
+                  <p className={styles.coachesTitle}>End date:</p>
+                  <p className={styles.coachesNamesText}>
+                    {currentClass.endedAt
+                      ? format(parseISO(currentClass.endedAt), "PPP")
+                      : "-"}
+                  </p>
+                </div>
+
                 <Link
                   href={`/admin/semester/${semesterId}/classes/${currentClass._id}/edit`}
                 >

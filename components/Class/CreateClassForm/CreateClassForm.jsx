@@ -13,7 +13,7 @@ const weekDays = [
   "Sunday",
 ];
 
-const CreateClassForm = ({ onSubmit, onDelete, initialData }) => {
+const CreateClassForm = ({ onSubmit, onDelete, onEndClass, initialData }) => {
   const initialDataWithSchedule = initialData
     ? {
         ...initialData,
@@ -127,6 +127,15 @@ const CreateClassForm = ({ onSubmit, onDelete, initialData }) => {
             className={styles.deleteClassBtn}
           >
             Delete Class
+          </button>
+        )}
+        {onEndClass && (
+          <button
+            onClick={onEndClass}
+            type="button"
+            className={styles.deleteClassBtn}
+          >
+            End Class
           </button>
         )}
       </div>
