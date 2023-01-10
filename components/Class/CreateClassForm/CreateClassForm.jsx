@@ -40,8 +40,6 @@ const CreateClassForm = ({ onSubmit, onDelete, initialData }) => {
     return schedule.map(({ weekDay }) => weekDay).includes(day);
   };
 
-  console.log("schedule", schedule);
-
   const localOnSubmit = (data) => {
     onSubmit({
       ...data,
@@ -57,7 +55,7 @@ const CreateClassForm = ({ onSubmit, onDelete, initialData }) => {
       {/*****TITLE*****/}
       <div className={styles.coachSelectionContainer}>
         <p className={styles.legendTitle}>Title:</p>
-        <input {...register("title")} id="title" />
+        <input {...register("title")} id="title" className={styles.input} />
       </div>
       {/*****COACH SELECTION*****/}
       <div className={styles.coachSelectionContainer}>

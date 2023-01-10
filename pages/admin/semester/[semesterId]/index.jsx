@@ -5,10 +5,11 @@ import InfoNavBar from "../../../../components/Dashboard/InfoNav/InfoNav";
 import DashboardNavBar from "../../../../components/Dashboard/MainNav/AdminNav";
 import DashboardTitle from "../../../../components/Dashboard/DashboardTitle/DashboardTitle";
 import Image from "next/future/image";
-import { useGetSemesters } from "../../../../lib/api/semester";
+import { useEndSemester, useGetSemesters } from "../../../../lib/api/semester";
 import { useRouter } from "next/router";
 import { parseTimeToDate } from "../../../../lib/helpers";
 import { format } from "date-fns";
+import toast from "react-hot-toast";
 
 const links = [
   { label: "One on One Coaching", href: "" },
@@ -29,6 +30,19 @@ export default function ClassRoom() {
     (semester) => semester._id === semesterId
   );
 
+  const { mutateAsync: endSemester } = useEndSemester();
+
+  const handleEndSemester = async () => {
+    try {
+      await endSemester({ semesterId });
+      toast.success("Semester ended successfully");
+    } catch (err) {
+      toast.error("Error ending the semester. Try again.");
+    }
+  };
+
+  const semesterEnded = currentSemester && currentSemester.endedAt;
+
   return (
     <div className={styles.dashboardContainer}>
       {/*****HEADER*****/}
@@ -46,11 +60,20 @@ export default function ClassRoom() {
       <DashboardTitle title={"Coach Dashboard"} subTitle={"Class Management"} />
       {/*****CLASS CONTAINER*****/}
       <div className={styles.dashboardMainContainer}>
-        <div className={styles.courseNavContainer}>
-          <Link href={`/admin/semester/${semesterId}/classes/create`}>
-            <button className={styles.nextLessonBtn}>Create Class</button>
-          </Link>
-        </div>
+        {!semesterEnded && (
+          <div className={styles.courseNavContainer}>
+            <Link href={`/admin/semester/${semesterId}/classes/create`}>
+              <a className={styles.nextLessonBtn}>Create Class</a>
+            </Link>
+
+            <button
+              onClick={handleEndSemester}
+              className={`${styles.nextLessonBtn} ${styles.deleteClassBtn}`}
+            >
+              End Semester
+            </button>
+          </div>
+        )}
         {/*****USER STATS OVERVIEW CONTAINER*****/}
         <div className={styles.userOverviewContainer}>
           {/*****USER STATS*****/}

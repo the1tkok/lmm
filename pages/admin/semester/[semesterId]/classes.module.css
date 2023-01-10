@@ -79,6 +79,11 @@
   margin-right: 2rem;
 }
 
+.deleteClassBtn {
+  color: white;
+  background-color: #f05466;
+}
+
 .userOverviewContainer {
   display: flex;
   gap: 1rem;
