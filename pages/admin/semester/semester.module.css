@@ -71,3 +71,9 @@
   background-color: #3d58f0;
   color: white;
 }
+
+.userOverviewContainer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
