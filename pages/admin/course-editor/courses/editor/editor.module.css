@@ -1,0 +1,86 @@
+/*****CLASS CONTAINER*****/
+
+.dashboardContainer {
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboardMainContainer {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 23rem;
+  margin-top: 14.5rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/*****USER COUNT CONTAINER*****/
+
+.courseEditorContainer {
+  align-items: flex-start;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: "avenir light";
+  width: 50rem;
+  height: 60rem;
+  box-shadow: 0 3.4px 6.7px rgba(154, 160, 185, 0.04),
+    0 10px 26.7px rgba(166, 173, 201, 0.15);
+  border-radius: 12px;
+  padding-left: 2rem;
+  color: #1f1f1f;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.studentStatsOverviewTitle {
+  font-size: 1.5rem;
+  font-family: "avenir black";
+}
+
+.courseNavContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+  flex-basis: 100%;
+}
+
+.toggleLearningOutcomes {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.learningOutcomesSelector {
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+.lessonBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.difficultySelector {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.additionalResourceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.additionalResourceLinks {
+  display: flex;
+  gap: 1rem;
+  flex-basis: 100%;
+}
